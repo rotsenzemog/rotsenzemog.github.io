@@ -1,0 +1,19 @@
+title: Rotsen Zemog
+tagline: Relatos y reflexiones desde los confines de la ciencia ficción.
+url: "https://rotsenzemog.github.io"
+baseurl: ""
+
+# Configuración de Autor / Redes Sociales
+author:
+  name: Rotsen Zemog
+  bio: Escritor de ciencia ficción y explorador de universos narrativos.
+  avatar: /assets/images/avatar.jpg
+  social:
+    twitter: "rotsenzemog"
+    instagram: "rotsenzemog"
+    github: "rotsenzemog"
+
+markdown: kramdown
+theme: null # Usaremos nuestro propio diseño sobrio
+plugins:
+  - jekyll-feed

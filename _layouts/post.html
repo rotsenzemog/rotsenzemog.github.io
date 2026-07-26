@@ -1,0 +1,35 @@
+---
+layout: default
+---
+<article style="max-width: 750px; margin: 40px auto;">
+  <span class="category-tag">{{ page.category }}</span>
+  <h1 style="font-family: var(--font-serif); font-size: 2.8rem; margin: 10px 0;">{{ page.title }}</h1>
+  <p style="color: var(--muted-text); margin-bottom: 30px;">Publicado el {{ page.date | date: "%d/%m/%Y" }} por {{ site.author.name }}</p>
+  
+  {% if page.image %}
+    <img src="{{ page.image | relative_url }}" alt="{{ page.title }}" style="width:100%; border-radius:8px; margin-bottom:30px;">
+  {% endif %}
+
+  <div class="post-content" style="font-size: 1.1rem; line-height: 1.8;">
+    {{ content }}
+  </div>
+
+  <!-- Comentarios con Giscus (Gratuito y basado en GitHub Discussions) -->
+  <section style="margin-top: 60px;">
+    <h3>Comentarios</h3>
+    <script src="https://giscus.app/client.js"
+            data-repo="rotsenzemog/rotsenzemog.github.io"
+            data-repo-id="R_kgD... [TUS_DATOS_GISCUS]"
+            data-category="General"
+            data-mapping="pathname"
+            data-strict="0"
+            data-reactions-enabled="1"
+            data-emit-metadata="0"
+            data-input-position="bottom"
+            data-theme="light"
+            data-lang="es"
+            crossorigin="anonymous"
+            async>
+    </script>
+  </section>
+</article>

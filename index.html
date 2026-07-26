@@ -1,0 +1,38 @@
+---
+layout: default
+---
+<section class="hero">
+  <h1>Pensamientos, historias e ideas.</h1>
+  <p>{{ site.tagline }}</p>
+</section>
+
+<!-- Relato Destacado (El último publicado) -->
+{% assign featured_post = site.posts.first %}
+{% if featured_post %}
+<div class="featured-post">
+  <a href="{{ featured_post.url | relative_url }}">
+    <img src="{{ featured_post.image | relative_url }}" class="card-img featured-img" alt="{{ featured_post.title }}">
+  </a>
+  <div>
+    <span class="category-tag">{{ featured_post.category }}</span>
+    <h2 class="card-title" style="font-size: 2rem;"><a href="{{ featured_post.url | relative_url }}">{{ featured_post.title }}</a></h2>
+    <p class="card-excerpt">{{ featured_post.excerpt | strip_html | truncatewords: 25 }}</p>
+    <small style="color: var(--muted-text);">{{ featured_post.date | date: "%d %b %Y" }}</small>
+  </div>
+</div>
+{% endif %}
+
+<!-- Grilla de Relatos Recientes -->
+<h2 style="font-family: var(--font-serif); margin-bottom: 20px;">Relatos Recientes</h2>
+<div class="grid-3">
+  {% for post in site.posts offset:1 limit:6 %}
+  <article>
+    <a href="{{ post.url | relative_url }}">
+      <img src="{{ post.image | relative_url }}" class="card-img" alt="{{ post.title }}">
+    </a>
+    <span class="category-tag">{{ post.category }}</span>
+    <h3 class="card-title"><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h3>
+    <p class="card-excerpt">{{ post.excerpt | strip_html | truncatewords: 15 }}</p>
+  </article>
+  {% endfor %}
+</div>

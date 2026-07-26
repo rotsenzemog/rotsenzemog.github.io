@@ -57,3 +57,95 @@ nav a:hover { color: var(--text-color); }
 /* Footer */
 footer { border-top: 1px solid #eee; padding: 40px 0; text-align: center; color: var(--muted-text); font-size: 0.9rem; }
 .social-links { display: flex; justify-content: center; gap: 15px; margin-bottom: 15px; }
+
+/* --- Formulario de Contacto Sobrio --- */
+.contact-section {
+  max-width: 650px;
+  margin: 60px auto;
+  padding: 0 10px;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.form-group label {
+  font-size: 0.85rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: var(--muted-text);
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 12px 15px;
+  border: 1px solid #e0e0e0;
+  border-radius: 6px;
+  font-family: var(--font-sans);
+  font-size: 0.95rem;
+  background-color: #fafafa;
+  transition: border-color 0.2s, background-color 0.2s;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  outline: none;
+  border-color: #1a1a1a;
+  background-color: #ffffff;
+}
+
+.btn-submit {
+  background-color: #1a1a1a;
+  color: #ffffff;
+  padding: 14px 25px;
+  border: none;
+  border-radius: 6px;
+  font-family: var(--font-sans);
+  font-size: 0.85rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+  align-self: flex-start;
+}
+
+.btn-submit:hover {
+  background-color: #333333;
+}
+
+/* --- Títulos de Sección con Enlace Estilo Revista --- */
+.section-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin: 50px 0 25px;
+}
+
+.section-title {
+  font-family: var(--font-serif);
+  font-size: 2rem;
+  margin: 0;
+}
+
+.section-link {
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  font-weight: 600;
+  color: var(--muted-text);
+}
+
+.section-link:hover {
+  color: var(--text-color);
+}

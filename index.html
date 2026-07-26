@@ -1,12 +1,14 @@
 ---
 layout: default
 ---
+
+<!-- Encabezado Hero -->
 <section class="hero">
   <h1>Pensamientos, historias e ideas.</h1>
   <p>{{ site.tagline }}</p>
 </section>
 
-<!-- Relato Destacado (El último publicado) -->
+<!-- Relato Destacado -->
 {% assign featured_post = site.posts.first %}
 {% if featured_post %}
 <div class="featured-post">
@@ -22,10 +24,13 @@ layout: default
 </div>
 {% endif %}
 
-<!-- Grilla de Relatos Recientes -->
-<h2 style="font-family: var(--font-serif); margin-bottom: 20px;">Relatos Recientes</h2>
+<!-- Sección de Relatos Recientes -->
+<div class="section-header">
+  <h2 class="section-title">Relatos Recientes</h2>
+</div>
+
 <div class="grid-3">
-  {% for post in site.posts offset:1 limit:6 %}
+  {% for post in site.posts offset:1 limit:3 %}
   <article>
     <a href="{{ post.url | relative_url }}">
       <img src="{{ post.image | relative_url }}" class="card-img" alt="{{ post.title }}">
@@ -36,3 +41,47 @@ layout: default
   </article>
   {% endfor %}
 </div>
+
+<!-- GALERÍA INCORPORADA EN EL CUERPO (Sección con fondo oscuro elegante) -->
+<section class="dark-section" style="margin-left: calc(-50vw + 50%); margin-right: calc(-50vw + 50%); width: 100vw; position: relative;">
+  <div class="container">
+    <div class="section-header">
+      <h2 class="section-title" style="color: #ffffff;">Galería de Arte & Conceptos</h2>
+    </div>
+    
+    <div class="gallery-grid">
+      <img src="https://picsum.photos/600/400?random=1" alt="Concept Art 1">
+      <img src="https://picsum.photos/600/400?random=2" alt="Concept Art 2">
+      <img src="https://picsum.photos/600/400?random=3" alt="Concept Art 3">
+      <img src="https://picsum.photos/600/400?random=4" alt="Concept Art 4">
+    </div>
+  </div>
+</section>
+
+<!-- FORMULARIO DE CONTACTO INCORPORADO -->
+<section class="contact-section" id="contacto">
+  <div style="text-align: center; margin-bottom: 30px;">
+    <h2 class="section-title">Contacto</h2>
+    <p style="color: var(--muted-text); margin-top: 5px;">¿Tienes alguna propuesta, comentario sobre mis historias o consulta editorial?</p>
+  </div>
+
+  <!-- Reemplaza "TU_FORM_ID" con la ID gratuita de tu cuenta de Formspree -->
+  <form action="https://formspree.io/f/TU_FORM_ID" method="POST" class="contact-form">
+    <div class="form-group">
+      <label for="name">Nombre</label>
+      <input type="text" id="name" name="name" placeholder="Tu nombre" required>
+    </div>
+
+    <div class="form-group">
+      <label for="email">Correo Electrónico</label>
+      <input type="email" id="email" name="_replyto" placeholder="tu@email.com" required>
+    </div>
+
+    <div class="form-group">
+      <label for="message">Mensaje</label>
+      <textarea id="message" name="message" rows="5" placeholder="Escribe tu mensaje aquí..." required></textarea>
+    </div>
+
+    <button type="submit" class="btn-submit">Enviar Mensaje</button>
+  </form>
+</section>

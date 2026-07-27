@@ -149,3 +149,114 @@ footer { border-top: 1px solid #eee; padding: 40px 0; text-align: center; color:
 .section-link:hover {
   color: var(--text-color);
 }
+
+/* --- REDISEÑO DEL FOOTER --- */
+
+.site-footer {
+  background-color: #12171c; /* Tono oscuro armónico con Ko-fi */
+  color: #c5cbd3;
+  padding: 60px 0 20px 0;
+  margin-top: 80px;
+  border-top: 1px solid #1e262e;
+}
+
+/* Fila 1: Layout con display block / inline-block para compatibilidad limpia */
+.footer-top-row {
+  display: table;
+  width: 100%;
+  table-layout: fixed;
+  padding-bottom: 40px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.footer-col {
+  display: table-cell;
+  vertical-align: top;
+  padding-right: 30px;
+}
+
+.footer-col:last-child {
+  padding-right: 0;
+}
+
+/* Columna 1 */
+.col-about { width: 32%; }
+.footer-title {
+  font-family: var(--font-serif);
+  font-size: 1.8rem;
+  color: #ffffff;
+  margin-bottom: 12px;
+  letter-spacing: 1px;
+}
+.footer-text {
+  font-size: 0.95rem;
+  color: #00aeef; /* Color de acento celeste tomado del botón de Ko-fi */
+  margin-bottom: 15px;
+  font-weight: 600;
+}
+.footer-bio {
+  font-size: 0.9rem;
+  line-height: 1.6;
+  color: #8c9ba5;
+}
+
+/* Columna 2 */
+.col-links { width: 28%; }
+.footer-subtitle {
+  font-family: var(--font-sans);
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  color: #ffffff;
+  margin-bottom: 12px;
+}
+.footer-nav, .footer-social-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.footer-nav li, .footer-social-list li {
+  margin-bottom: 8px;
+}
+.footer-nav a, .footer-social-list a {
+  color: #8c9ba5;
+  font-size: 0.9rem;
+  transition: color 0.2s ease;
+}
+.footer-nav a:hover, .footer-social-list a:hover {
+  color: #00aeef;
+}
+
+/* Columna 3: Ko-fi Widget */
+.col-kofi { width: 40%; }
+.kofi-wrapper {
+  background: #1d262d;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.3);
+  border: 1px solid #2a3640;
+}
+
+/* Fila 2: Derechos reservados centrados */
+.footer-bottom-row {
+  text-align: center;
+  padding-top: 25px;
+  font-size: 0.85rem;
+  color: #63727e;
+}
+
+/* Adaptabilidad a dispositivos móviles */
+@media (max-width: 850px) {
+  .footer-top-row {
+    display: block;
+  }
+  .footer-col {
+    display: block;
+    width: 100% !important;
+    padding-right: 0;
+    margin-bottom: 40px;
+  }
+  .footer-col:last-child {
+    margin-bottom: 0;
+  }
+}

@@ -416,7 +416,7 @@ footer { border-top: 1px solid #eee; padding: 40px 0; text-align: center; color:
 }
 
 /* ==========================================
-   HEADER Y NAVEGACIÓN EN DOS NIVELES
+   HEADER MODERNO Y SLIM (2 NIVELES)
    ========================================== */
 
 .site-header {
@@ -424,29 +424,30 @@ footer { border-top: 1px solid #eee; padding: 40px 0; text-align: center; color:
   position: relative;
 }
 
-/* --- Franja Top Principal --- */
+/* --- 1. Franja Top Principal (Blanca y Centrada) --- */
 .header-top {
-  background-color: #0d1b2a; /* Ajusta al color oscuro de tu tema */
-  padding: 15px 0;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  background-color: #ffffff;
+  padding: 16px 0;
+  border-bottom: 1px solid #e5e7eb;
 }
 
 .header-top-content {
   display: flex;
   align-items: center;
-  justify-content: flex-start;
+  justify-content: center; /* Centra todo el contenido */
+  text-align: center;
 }
 
 .site-branding {
-  display: flex;
+  display: inline-flex;
   align-items: center;
+  justify-content: center;
   gap: 12px;
   text-decoration: none;
-  color: #ffffff;
 }
 
 .header-logo-top {
-  height: 42px; /* Tamaño del logo en la barra principal */
+  height: 32px; /* Logo ajustado y estilizado */
   width: auto;
   object-fit: contain;
   transition: transform 0.2s ease;
@@ -457,16 +458,16 @@ footer { border-top: 1px solid #eee; padding: 40px 0; text-align: center; color:
 }
 
 .site-title {
-  font-size: 1.5rem;
-  font-weight: 700;
-  letter-spacing: 0.5px;
-  color: #ffffff;
+  font-size: 1.4rem;
+  font-weight: 800;
+  letter-spacing: 1.5px;
+  color: #1a1a1a; /* Texto gris oscuro / negro */
 }
 
-/* --- Subbarra de Menú Inferior --- */
+/* --- 2. Subbarra de Menú Inferior (Slim) --- */
 .header-nav-bar {
-  background-color: #1b263b; /* Color de fondo de la subbarra */
-  border-bottom: 2px solid #00aeef; /* Color de acento */
+  background-color: #0f172a; /* Mantiene el tono oscuro elegante */
+  border-bottom: 2px solid #00aeef;
   transition: all 0.3s ease;
   z-index: 999;
   width: 100%;
@@ -476,59 +477,57 @@ footer { border-top: 1px solid #eee; padding: 40px 0; text-align: center; color:
   display: flex;
   align-items: center;
   justify-content: flex-start;
-  height: 44px; /* Altura compacta de la subbarra */
+  height: 32px; /* Altura reducida a la mitad */
 }
 
-/* Logo Sticky (Oculto por defecto en la vista normal) */
+/* Logo Sticky (Aparece al hacer scroll a la izquierda) */
 .sticky-logo-link {
   display: none;
   align-items: center;
-  margin-right: 20px;
+  margin-right: 18px;
 }
 
 .header-logo-sticky {
-  height: 26px; /* Tamaño pequeño adaptado a la subbarra */
+  height: 20px; /* Tamaño compacto adaptado a los 32px de altura */
   width: auto;
-  object-fit: contain;
+  filter: brightness(0) invert(1); /* Pone el logo blanco si es necesario */
 }
 
-/* Menú de Navegación con fuente reducida */
+/* Menú de Navegación Compacto */
 .main-menu {
   display: flex;
   align-items: center;
   list-style: none;
   margin: 0;
   padding: 0;
-  gap: 24px;
+  gap: 22px;
 }
 
 .main-menu a {
-  color: #e0e1dd;
+  color: #cbd5e1;
   text-decoration: none;
-  font-size: 0.85rem; /* Tamaño de fuente más pequeño */
-  font-weight: 500;
-  text-transform: uppercase;
+  font-size: 0.73rem; /* Tamaño de letra más pequeño y legible */
+  font-weight: 600;
   letter-spacing: 0.8px;
-  transition: color 0.2s ease;
-  line-height: 44px;
+  line-height: 32px; /* Alineado verticalmente con la barra */
   display: block;
+  transition: color 0.2s ease;
 }
 
 .main-menu a:hover {
   color: #00aeef;
 }
 
-/* --- ESTADO STICKY (Al hacer Scroll) --- */
+/* --- Estado Sticky (Scroll) --- */
 .header-nav-bar.is-sticky {
   position: fixed;
   top: 0;
   left: 0;
   right: 0;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
-  animation: slideDown 0.3s ease-in-out;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  animation: slideDown 0.25s ease-in-out;
 }
 
-/* Muestra el logo pequeño únicamente cuando la subbarra está fija */
 .header-nav-bar.is-sticky .sticky-logo-link {
   display: flex;
 }
@@ -538,13 +537,23 @@ footer { border-top: 1px solid #eee; padding: 40px 0; text-align: center; color:
   to { transform: translateY(0); }
 }
 
-/* Responsive para dispositivos móviles */
+/* Adaptación Dispositivos Móviles */
 @media (max-width: 768px) {
+  .header-top {
+    padding: 12px 0;
+  }
+  .site-title {
+    font-size: 1.15rem;
+  }
+  .header-logo-top {
+    height: 26px;
+  }
   .main-menu {
-    gap: 12px;
+    gap: 14px;
     overflow-x: auto;
+    white-space: nowrap;
   }
   .main-menu a {
-    font-size: 0.78rem;
+    font-size: 0.70rem;
   }
 }

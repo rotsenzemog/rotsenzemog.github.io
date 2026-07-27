@@ -260,3 +260,54 @@ footer { border-top: 1px solid #eee; padding: 40px 0; text-align: center; color:
     margin-bottom: 0;
   }
 }
+/* --- Formulario de Contacto dentro del Footer --- */
+.footer-contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.footer-contact-form .form-group input,
+.footer-contact-form .form-group textarea {
+  width: 100%;
+  padding: 10px 12px;
+  border: 1px solid #2a3640;
+  border-radius: 6px;
+  font-family: var(--font-sans);
+  font-size: 0.85rem;
+  background-color: #1d262d;
+  color: #ffffff;
+  transition: border-color 0.2s;
+}
+
+.footer-contact-form .form-group input::placeholder,
+.footer-contact-form .form-group textarea::placeholder {
+  color: #63727e;
+}
+
+.footer-contact-form .form-group input:focus,
+.footer-contact-form .form-group textarea:focus {
+  outline: none;
+  border-color: #00aeef;
+  background-color: #222c35;
+}
+
+.btn-submit-footer {
+  background-color: #00aeef;
+  color: #ffffff;
+  padding: 10px 18px;
+  border: none;
+  border-radius: 6px;
+  font-family: var(--font-sans);
+  font-size: 0.8rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+  align-self: flex-start;
+}
+
+.btn-submit-footer:hover {
+  background-color: #0095cc;
+}

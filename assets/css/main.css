@@ -311,3 +311,32 @@ footer { border-top: 1px solid #eee; padding: 40px 0; text-align: center; color:
 .btn-submit-footer:hover {
   background-color: #0095cc;
 }
+
+/* Estilos para los iconos y nombres de RRSS en el Footer */
+.footer-social-list li {
+  margin-bottom: 10px;
+}
+
+.footer-social-list a {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  color: #8c9ba5;
+  font-size: 0.9rem;
+  transition: color 0.2s ease;
+}
+
+.footer-social-list a:hover {
+  color: #00aeef;
+}
+
+.social-icon {
+  width: 18px;
+  height: 18px;
+  flex-shrink: 0;
+  transition: transform 0.2s ease;
+}
+
+.footer-social-list a:hover .social-icon {
+  transform: scale(1.1);
+}

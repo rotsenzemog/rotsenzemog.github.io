@@ -414,3 +414,137 @@ footer { border-top: 1px solid #eee; padding: 40px 0; text-align: center; color:
     max-height: 30px;
   }
 }
+
+/* ==========================================
+   HEADER Y NAVEGACIÓN EN DOS NIVELES
+   ========================================== */
+
+.site-header {
+  width: 100%;
+  position: relative;
+}
+
+/* --- Franja Top Principal --- */
+.header-top {
+  background-color: #0d1b2a; /* Ajusta al color oscuro de tu tema */
+  padding: 15px 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.header-top-content {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.site-branding {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.header-logo-top {
+  height: 42px; /* Tamaño del logo en la barra principal */
+  width: auto;
+  object-fit: contain;
+  transition: transform 0.2s ease;
+}
+
+.site-branding:hover .header-logo-top {
+  transform: scale(1.05);
+}
+
+.site-title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  color: #ffffff;
+}
+
+/* --- Subbarra de Menú Inferior --- */
+.header-nav-bar {
+  background-color: #1b263b; /* Color de fondo de la subbarra */
+  border-bottom: 2px solid #00aeef; /* Color de acento */
+  transition: all 0.3s ease;
+  z-index: 999;
+  width: 100%;
+}
+
+.nav-bar-content {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  height: 44px; /* Altura compacta de la subbarra */
+}
+
+/* Logo Sticky (Oculto por defecto en la vista normal) */
+.sticky-logo-link {
+  display: none;
+  align-items: center;
+  margin-right: 20px;
+}
+
+.header-logo-sticky {
+  height: 26px; /* Tamaño pequeño adaptado a la subbarra */
+  width: auto;
+  object-fit: contain;
+}
+
+/* Menú de Navegación con fuente reducida */
+.main-menu {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  gap: 24px;
+}
+
+.main-menu a {
+  color: #e0e1dd;
+  text-decoration: none;
+  font-size: 0.85rem; /* Tamaño de fuente más pequeño */
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.8px;
+  transition: color 0.2s ease;
+  line-height: 44px;
+  display: block;
+}
+
+.main-menu a:hover {
+  color: #00aeef;
+}
+
+/* --- ESTADO STICKY (Al hacer Scroll) --- */
+.header-nav-bar.is-sticky {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
+  animation: slideDown 0.3s ease-in-out;
+}
+
+/* Muestra el logo pequeño únicamente cuando la subbarra está fija */
+.header-nav-bar.is-sticky .sticky-logo-link {
+  display: flex;
+}
+
+@keyframes slideDown {
+  from { transform: translateY(-100%); }
+  to { transform: translateY(0); }
+}
+
+/* Responsive para dispositivos móviles */
+@media (max-width: 768px) {
+  .main-menu {
+    gap: 12px;
+    overflow-x: auto;
+  }
+  .main-menu a {
+    font-size: 0.78rem;
+  }
+}

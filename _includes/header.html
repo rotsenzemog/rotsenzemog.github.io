@@ -1,9 +1,33 @@
-<header class="container">
-  <div class="site-title"><a href="{{ '/' | relative_url }}">{{ site.title }}</a></div>
-  <nav>
-    <ul>
-      <li><a href="{{ '/' | relative_url }}">Inicio</a></li>
-      <li><a href="{{ '/' | relative_url }}#contacto">Contacto</a></li>
-    </ul>
+<header class="site-header">
+  <!-- 1. FRANJA TOP (Barra Superior Principal) -->
+  <div class="header-top">
+    <div class="container header-top-content">
+      <a href="{{ '/' | relative_url }}" class="site-branding">
+        <img src="{{ '/assets/images/logo-rotsen.svg' | relative_url }}" alt="Rotsen Zemog Logo" class="header-logo-top">
+        <span class="site-title">Rotsen Zemog</span>
+      </a>
+    </div>
+  </div>
+
+  <!-- 2. SUBBARRA DE MENÚ (Queda fija al hacer scroll) -->
+  <nav class="header-nav-bar" id="sticky-nav">
+    <div class="container nav-bar-content">
+      
+      <!-- Logo pequeño que aparece ÚNICAMENTE al hacer scroll -->
+      <a href="{{ '/' | relative_url }}" class="sticky-logo-link" aria-label="Inicio">
+        <img src="{{ '/assets/images/logo-rotsen.svg' | relative_url }}" alt="Rotsen Zemog" class="header-logo-sticky">
+      </a>
+
+      <!-- Menú de Navegación -->
+      <ul class="main-menu">
+        <li><a href="{{ '/' | relative_url }}">Inicio</a></li>
+        <li><a href="{{ '/libros/' | relative_url }}">Libros</a></li>
+        <li><a href="{{ '/relatos/' | relative_url }}">Relatos</a></li>
+        <li><a href="{{ '/blog/' | relative_url }}">Blog</a></li>
+        <li><a href="{{ '/sobre-mi/' | relative_url }}">Sobre mí</a></li>
+        <li><a href="{{ '/contacto/' | relative_url }}">Contacto</a></li>
+      </ul>
+
+    </div>
   </nav>
 </header>

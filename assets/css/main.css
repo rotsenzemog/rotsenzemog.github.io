@@ -11,54 +11,304 @@
   --max-width: 1200px;
 }
 
-* { box-sizing: border-box; margin: 0; padding: 0; }
-body { font-family: var(--font-sans); background: var(--bg-color); color: var(--text-color); line-height: 1.6; }
+/* Reset Global e Inicialización */
+*, *::before, *::after { 
+  box-sizing: border-box; 
+  margin: 0; 
+  padding: 0; 
+}
 
-a { color: inherit; text-decoration: none; }
+html, body {
+  margin: 0 !important;
+  padding: 0 !important;
+  font-family: var(--font-sans); 
+  background: var(--bg-color); 
+  color: var(--text-color); 
+  line-height: 1.6; 
+}
 
-/* Contenedor */
-.container { max-width: var(--max-width); margin: 0 auto; padding: 0 20px; }
+a { 
+  color: inherit; 
+  text-decoration: none; 
+}
 
-/* Header & Nav */
-header { padding: 40px 0 20px; text-align: center; }
-.site-title { font-family: var(--font-serif); font-size: 2.2rem; font-weight: 700; text-transform: uppercase; letter-spacing: 2px; }
-nav ul { display: flex; justify-content: center; gap: 25px; list-style: none; margin-top: 15px; }
-nav a { font-size: 0.9rem; text-transform: uppercase; font-weight: 600; color: var(--muted-text); transition: color 0.2s; }
-nav a:hover { color: var(--text-color); }
+/* Contenedor Principal */
+.container { 
+  max-width: var(--max-width); 
+  margin: 0 auto; 
+  padding: 0 20px; 
+}
 
-/* Hero / Encabezado */
-.hero { text-align: center; margin: 50px 0; }
-.hero h1 { font-family: var(--font-serif); font-size: 3rem; margin-bottom: 10px; font-weight: 800; }
-.hero p { color: var(--muted-text); max-width: 600px; margin: 0 auto; font-size: 1.05rem; }
+/* ==========================================
+   HEADER MODERNO Y SLIM (2 NIVELES)
+   ========================================== */
+
+.site-header {
+  width: 100%;
+  position: relative;
+  margin-top: 0 !important;
+  padding-top: 0 !important;
+}
+
+/* --- 1. Franja Top Principal (Blanca y Centrada) --- */
+.header-top {
+  background-color: #ffffff;
+  padding: 12px 0;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.header-top-content {
+  display: flex;
+  align-items: center;
+  justify-content: center; /* Centra el logo y el nombre */
+  text-align: center;
+}
+
+.site-branding {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 14px;
+  text-decoration: none;
+}
+
+.header-logo-top {
+  height: 48px; /* Altura óptima para balancear con el título */
+  width: auto;
+  object-fit: contain;
+  transition: transform 0.2s ease;
+}
+
+.site-branding:hover .header-logo-top {
+  transform: scale(1.04);
+}
+
+.site-title {
+  font-family: var(--font-serif);
+  font-size: 2.2rem;
+  font-weight: 800;
+  letter-spacing: 2px;
+  color: #1a1a1a;
+  text-transform: uppercase;
+}
+
+/* --- 2. Subbarra de Menú Inferior (Slim y Centrada) --- */
+.header-nav-bar {
+  background-color: #0f172a; /* Tono oscuro elegante */
+  border-bottom: 2px solid #00aeef;
+  transition: all 0.3s ease;
+  z-index: 999;
+  width: 100%;
+}
+
+.nav-bar-content {
+  display: flex;
+  align-items: center;
+  justify-content: center; /* CENTRA EL MENÚ */
+  height: 28px; /* Altura estilizada compacta */
+  position: relative;
+}
+
+/* Logo Sticky (Aparece únicamente al hacer scroll) */
+.sticky-logo-link {
+  display: none;
+  align-items: center;
+  margin-right: 15px;
+}
+
+.header-logo-sticky {
+  height: 18px;
+  width: auto;
+  filter: brightness(0) invert(1);
+}
+
+/* Menú de Navegación */
+.main-menu {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  gap: 24px;
+}
+
+.main-menu a {
+  color: #cbd5e1;
+  text-decoration: none;
+  font-size: 0.68rem; /* Tamaño de letra proporcionado */
+  font-weight: 600;
+  letter-spacing: 1px;
+  line-height: 28px;
+  display: block;
+  text-transform: uppercase;
+  transition: color 0.2s ease;
+}
+
+.main-menu a:hover {
+  color: #00aeef;
+}
+
+/* --- Estado Sticky (Scroll) --- */
+.header-nav-bar.is-sticky {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  animation: slideDown 0.25s ease-in-out;
+}
+
+.header-nav-bar.is-sticky .nav-bar-content {
+  justify-content: space-between; /* Distribuye el logo a la izq y el menú al centro */
+}
+
+.header-nav-bar.is-sticky .sticky-logo-link {
+  display: flex;
+}
+
+@keyframes slideDown {
+  from { transform: translateY(-100%); }
+  to { transform: translateY(0); }
+}
+
+/* ==========================================
+   HERO & CONTENIDO PRINCIPAL
+   ========================================== */
+
+.hero { 
+  text-align: center; 
+  margin: 40px 0; 
+}
+.hero h1 { 
+  font-family: var(--font-serif); 
+  font-size: 2.8rem; 
+  margin-bottom: 10px; 
+  font-weight: 800; 
+}
+.hero p { 
+  color: var(--muted-text); 
+  max-width: 600px; 
+  margin: 0 auto; 
+  font-size: 1.05rem; 
+}
 
 /* Grillas */
-.featured-post { display: grid; grid-template-columns: 1fr; gap: 30px; margin-bottom: 50px; }
-@media(min-width: 768px) { .featured-post { grid-template-columns: 1.2fr 1fr; align-items: center; } }
+.featured-post { 
+  display: grid; 
+  grid-template-columns: 1fr; 
+  gap: 30px; 
+  margin-bottom: 50px; 
+}
+@media(min-width: 768px) { 
+  .featured-post { 
+    grid-template-columns: 1.2fr 1fr; 
+    align-items: center; 
+  } 
+}
 
-.grid-3 { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px; margin-bottom: 60px; }
+.grid-3 { 
+  display: grid; 
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); 
+  gap: 30px; 
+  margin-bottom: 60px; 
+}
 
 /* Tarjetas */
-.card-img { width: 100%; height: 260px; object-fit: cover; border-radius: 8px; margin-bottom: 15px; }
-.featured-img { height: 420px; }
-.category-tag { display: inline-block; background: var(--tag-bg); color: var(--tag-text); font-size: 0.75rem; font-weight: 600; padding: 4px 10px; border-radius: 4px; text-transform: uppercase; margin-bottom: 10px; }
-.card-title { font-family: var(--font-serif); font-size: 1.4rem; line-height: 1.3; margin-bottom: 10px; }
-.card-excerpt { color: var(--muted-text); font-size: 0.95rem; margin-bottom: 15px; }
+.card-img { 
+  width: 100%; 
+  height: 260px; 
+  object-fit: cover; 
+  border-radius: 8px; 
+  margin-bottom: 15px; 
+}
+.featured-img { 
+  height: 420px; 
+}
+.category-tag { 
+  display: inline-block; 
+  background: var(--tag-bg); 
+  color: var(--tag-text); 
+  font-size: 0.75rem; 
+  font-weight: 600; 
+  padding: 4px 10px; 
+  border-radius: 4px; 
+  text-transform: uppercase; 
+  margin-bottom: 10px; 
+}
+.card-title { 
+  font-family: var(--font-serif); 
+  font-size: 1.4rem; 
+  line-height: 1.3; 
+  margin-bottom: 10px; 
+}
+.card-excerpt { 
+  color: var(--muted-text); 
+  font-size: 0.95rem; 
+  margin-bottom: 15px; 
+}
 
-/* Galería de imágenes (para la página de galerías) */
-.gallery-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 20px; margin-top: 30px; }
-.gallery-grid img { width: 100%; height: 250px; object-fit: cover; border-radius: 8px; transition: transform 0.3s; }
-.gallery-grid img:hover { transform: scale(1.02); }
+/* Galería de imágenes */
+.gallery-grid { 
+  display: grid; 
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); 
+  gap: 20px; 
+  margin-top: 30px; 
+}
+.gallery-grid img { 
+  width: 100%; 
+  height: 250px; 
+  object-fit: cover; 
+  border-radius: 8px; 
+  transition: transform 0.3s; 
+}
+.gallery-grid img:hover { 
+  transform: scale(1.02); 
+}
 
-/* Sección Oscura (Inspirada en "Latest Videos" del diseño) */
-.dark-section { background: var(--dark-bg); color: var(--dark-text); padding: 60px 0; margin: 60px 0; }
-.dark-section .card-title { color: #ffffff; }
-.dark-section .card-excerpt { color: #a0aec0; }
+/* Sección Oscura */
+.dark-section { 
+  background: var(--dark-bg); 
+  color: var(--dark-text); 
+  padding: 60px 0; 
+  margin: 60px 0; 
+}
+.dark-section .card-title { 
+  color: #ffffff; 
+}
+.dark-section .card-excerpt { 
+  color: #a0aec0; 
+}
 
-/* Footer */
-footer { border-top: 1px solid #eee; padding: 40px 0; text-align: center; color: var(--muted-text); font-size: 0.9rem; }
-.social-links { display: flex; justify-content: center; gap: 15px; margin-bottom: 15px; }
+/* --- Títulos de Sección --- */
+.section-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin: 50px 0 25px;
+}
 
-/* --- Formulario de Contacto Sobrio --- */
+.section-title {
+  font-family: var(--font-serif);
+  font-size: 2rem;
+  margin: 0;
+}
+
+.section-link {
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  font-weight: 600;
+  color: var(--muted-text);
+}
+
+.section-link:hover {
+  color: var(--text-color);
+}
+
+/* ==========================================
+   FORMULARIO DE CONTACTO
+   ========================================== */
+
 .contact-section {
   max-width: 650px;
   margin: 60px auto;
@@ -125,42 +375,78 @@ footer { border-top: 1px solid #eee; padding: 40px 0; text-align: center; color:
   background-color: #333333;
 }
 
-/* --- Títulos de Sección con Enlace Estilo Revista --- */
-.section-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-end;
-  margin: 50px 0 25px;
+/* ==========================================
+   PLATAFORMAS EN QUE PUBLICO
+   ========================================== */
+
+.publishing-platforms-section {
+  padding: 60px 0 40px;
+  background-color: #fafafa;
+  border-top: 1px solid #eaeaea;
+  text-align: center;
 }
 
-.section-title {
-  font-family: var(--font-serif);
-  font-size: 2rem;
-  margin: 0;
+.platforms-header {
+  margin-bottom: 40px;
 }
 
-.section-link {
-  font-size: 0.85rem;
-  text-transform: uppercase;
-  font-weight: 600;
+.platforms-subtitle {
   color: var(--muted-text);
+  font-size: 0.95rem;
+  margin-top: 6px;
 }
 
-.section-link:hover {
-  color: var(--text-color);
+.platforms-grid {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 35px;
 }
 
-/* --- REDISEÑO DEL FOOTER --- */
+.platform-card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 15px 25px;
+  background-color: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.03);
+  transition: all 0.3s ease;
+  text-decoration: none;
+}
+
+.platform-logo {
+  max-height: 38px;
+  width: auto;
+  object-fit: contain;
+  filter: grayscale(100%) opacity(0.65);
+  transition: filter 0.3s ease, transform 0.3s ease;
+}
+
+.platform-card:hover {
+  border-color: #cbd5e1;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.08);
+  transform: translateY(-3px);
+}
+
+.platform-card:hover .platform-logo {
+  filter: grayscale(0%) opacity(1);
+}
+
+/* ==========================================
+   FOOTER
+   ========================================== */
 
 .site-footer {
-  background-color: #12171c; /* Tono oscuro armónico con Ko-fi */
+  background-color: #12171c;
   color: #c5cbd3;
   padding: 60px 0 20px 0;
   margin-top: 80px;
   border-top: 1px solid #1e262e;
 }
 
-/* Fila 1: Layout con display block / inline-block para compatibilidad limpia */
 .footer-top-row {
   display: table;
   width: 100%;
@@ -179,7 +465,6 @@ footer { border-top: 1px solid #eee; padding: 40px 0; text-align: center; color:
   padding-right: 0;
 }
 
-/* Columna 1 */
 .col-about { width: 32%; }
 .footer-title {
   font-family: var(--font-serif);
@@ -190,7 +475,7 @@ footer { border-top: 1px solid #eee; padding: 40px 0; text-align: center; color:
 }
 .footer-text {
   font-size: 0.95rem;
-  color: #00aeef; /* Color de acento celeste tomado del botón de Ko-fi */
+  color: #00aeef;
   margin-bottom: 15px;
   font-weight: 600;
 }
@@ -200,7 +485,6 @@ footer { border-top: 1px solid #eee; padding: 40px 0; text-align: center; color:
   color: #8c9ba5;
 }
 
-/* Columna 2 */
 .col-links { width: 28%; }
 .footer-subtitle {
   font-family: var(--font-sans);
@@ -210,24 +494,41 @@ footer { border-top: 1px solid #eee; padding: 40px 0; text-align: center; color:
   color: #ffffff;
   margin-bottom: 12px;
 }
+
 .footer-nav, .footer-social-list {
   list-style: none;
   padding: 0;
   margin: 0;
 }
-.footer-nav li, .footer-social-list li {
-  margin-bottom: 8px;
+
+.footer-social-list li {
+  margin-bottom: 10px;
 }
-.footer-nav a, .footer-social-list a {
+
+.footer-social-list a {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
   color: #8c9ba5;
   font-size: 0.9rem;
   transition: color 0.2s ease;
 }
-.footer-nav a:hover, .footer-social-list a:hover {
+
+.footer-social-list a:hover {
   color: #00aeef;
 }
 
-/* Columna 3: Ko-fi Widget */
+.social-icon {
+  width: 18px;
+  height: 18px;
+  flex-shrink: 0;
+  transition: transform 0.2s ease;
+}
+
+.footer-social-list a:hover .social-icon {
+  transform: scale(1.1);
+}
+
 .col-kofi { width: 40%; }
 .kofi-wrapper {
   background: #1d262d;
@@ -237,7 +538,6 @@ footer { border-top: 1px solid #eee; padding: 40px 0; text-align: center; color:
   border: 1px solid #2a3640;
 }
 
-/* Fila 2: Derechos reservados centrados */
 .footer-bottom-row {
   text-align: center;
   padding-top: 25px;
@@ -245,22 +545,7 @@ footer { border-top: 1px solid #eee; padding: 40px 0; text-align: center; color:
   color: #63727e;
 }
 
-/* Adaptabilidad a dispositivos móviles */
-@media (max-width: 850px) {
-  .footer-top-row {
-    display: block;
-  }
-  .footer-col {
-    display: block;
-    width: 100% !important;
-    padding-right: 0;
-    margin-bottom: 40px;
-  }
-  .footer-col:last-child {
-    margin-bottom: 0;
-  }
-}
-/* --- Formulario de Contacto dentro del Footer --- */
+/* Formulario Footer */
 .footer-contact-form {
   display: flex;
   flex-direction: column;
@@ -312,259 +597,67 @@ footer { border-top: 1px solid #eee; padding: 40px 0; text-align: center; color:
   background-color: #0095cc;
 }
 
-/* Estilos para los iconos y nombres de RRSS en el Footer */
-.footer-social-list li {
-  margin-bottom: 10px;
+/* ==========================================
+   ADAPTABILIDAD RESPONSIVE (MÓVILES Y TABLETS)
+   ========================================== */
+
+@media (max-width: 850px) {
+  /* Header Responsive */
+  .header-top {
+    padding: 10px 0;
+  }
+  .header-logo-top {
+    height: 32px;
+  }
+  .site-title {
+    font-size: 1.5rem;
+    letter-spacing: 1px;
+  }
+  
+  .header-nav-bar {
+    height: auto;
+  }
+  .nav-bar-content {
+    height: auto;
+    padding: 4px 10px;
+    justify-content: center !important;
+  }
+  .main-menu {
+    gap: 12px;
+    overflow-x: auto;
+    white-space: nowrap;
+    width: 100%;
+    justify-content: flex-start;
+    padding: 4px 0;
+  }
+  .main-menu a {
+    font-size: 0.65rem;
+  }
+
+  /* Footer Responsive */
+  .footer-top-row {
+    display: block;
+  }
+  .footer-col {
+    display: block;
+    width: 100% !important;
+    padding-right: 0;
+    margin-bottom: 40px;
+  }
+  .footer-col:last-child {
+    margin-bottom: 0;
+  }
 }
 
-.footer-social-list a {
-  display: inline-flex;
-  align-items: center;
-  gap: 10px;
-  color: #8c9ba5;
-  font-size: 0.9rem;
-  transition: color 0.2s ease;
-}
-
-.footer-social-list a:hover {
-  color: #00aeef;
-}
-
-.social-icon {
-  width: 18px;
-  height: 18px;
-  flex-shrink: 0;
-  transition: transform 0.2s ease;
-}
-
-.footer-social-list a:hover .social-icon {
-  transform: scale(1.1);
-}
-
-/* --- SECCIÓN PLATAFORMAS EN QUE PUBLICO --- */
-.publishing-platforms-section {
-  padding: 60px 0 40px;
-  background-color: #fafafa;
-  border-top: 1px solid #eaeaea;
-  text-align: center;
-}
-
-.platforms-header {
-  margin-bottom: 40px;
-}
-
-.platforms-subtitle {
-  color: var(--muted-text);
-  font-size: 0.95rem;
-  margin-top: 6px;
-}
-
-.platforms-grid {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
-  gap: 35px;
-}
-
-.platform-card {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 15px 25px;
-  background-color: #ffffff;
-  border: 1px solid #e2e8f0;
-  border-radius: 10px;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.03);
-  transition: all 0.3s ease;
-  text-decoration: none;
-}
-
-.platform-logo {
-  max-height: 38px;
-  width: auto;
-  object-fit: contain;
-  /* Efecto inicial: escala de grises y ligera transparencia */
-  filter: grayscale(100%) opacity(0.65);
-  transition: filter 0.3s ease, transform 0.3s ease;
-}
-
-/* Efecto al pasar el cursor (Hover) */
-.platform-card:hover {
-  border-color: #cbd5e1;
-  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.08);
-  transform: translateY(-3px);
-}
-
-.platform-card:hover .platform-logo {
-  /* Restaura color original e intensidad */
-  filter: grayscale(0%) opacity(1);
-}
-
-/* Adaptabilidad para teléfonos */
 @media (max-width: 640px) {
   .platforms-grid {
-    gap: 20px;
+    gap: 15px;
   }
   .platform-card {
     width: calc(50% - 10px);
-    padding: 12px 15px;
+    padding: 10px 12px;
   }
   .platform-logo {
-    max-height: 30px;
+    max-height: 28px;
   }
-}
-
-/* ==========================================
-   HEADER MODERNO Y SLIM (2 NIVELES)
-   ========================================== */
-
-.site-header {
-  width: 100%;
-  position: relative;
-}
-
-/* --- 1. Franja Top Principal (Blanca y Centrada) --- */
-.header-top {
-  background-color: #ffffff;
-  padding: 1px 0;
-  border-bottom: 1px solid #e5e7eb;
-}
-
-.header-top-content {
-  display: flex;
-  align-items: center;
-  justify-content: center; /* Centra todo el contenido */
-  text-align: center;
-}
-
-.site-branding {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  gap: 12px;
-  text-decoration: none;
-}
-
-.header-logo-top {
-  height: 60px; /* Logo ajustado y estilizado */
-  width: auto;
-  object-fit: contain;
-  transition: transform 0.2s ease;
-}
-
-.site-branding:hover .header-logo-top {
-  transform: scale(1.05);
-}
-
-.site-title {
-  font-size: 3rem;
-  font-weight: 800;
-  letter-spacing: 1.5px;
-  color: #1a1a1a; /* Texto gris oscuro / negro */
-}
-
-/* --- 2. Subbarra de Menú Inferior (Slim) --- */
-.header-nav-bar {
-  background-color: #0f172a; /* Mantiene el tono oscuro elegante */
-  border-bottom: 2px solid #00aeef;
-  transition: all 0.3s ease;
-  z-index: 999;
-  width: 100%;
-}
-
-.nav-bar-content {
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
-  height: 20px; /* Altura reducida a la mitad */
-}
-
-/* Logo Sticky (Aparece al hacer scroll a la izquierda) */
-.sticky-logo-link {
-  display: none;
-  align-items: center;
-  margin-right: 18px;
-}
-
-.header-logo-sticky {
-  height: 20px; /* Tamaño compacto adaptado a los 32px de altura */
-  width: auto;
-  filter: brightness(0) invert(1); /* Pone el logo blanco si es necesario */
-}
-
-/* Menú de Navegación Compacto */
-.main-menu {
-  display: flex;
-  align-items: center;
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  gap: 22px;
-}
-
-.main-menu a {
-  color: #cbd5e1;
-  text-decoration: none;
-  font-size: 0.53rem; /* Tamaño de letra más pequeño y legible */
-  font-weight: 600;
-  letter-spacing: 0.8px;
-  line-height: 32px; /* Alineado verticalmente con la barra */
-  display: block;
-  transition: color 0.2s ease;
-}
-
-.main-menu a:hover {
-  color: #00aeef;
-}
-
-/* --- Estado Sticky (Scroll) --- */
-.header-nav-bar.is-sticky {
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
-  animation: slideDown 0.25s ease-in-out;
-}
-
-.header-nav-bar.is-sticky .sticky-logo-link {
-  display: flex;
-}
-
-@keyframes slideDown {
-  from { transform: translateY(-100%); }
-  to { transform: translateY(0); }
-}
-
-/* Adaptación Dispositivos Móviles */
-@media (max-width: 768px) {
-  .header-top {
-    padding: 12px 0;
-  }
-  .site-title {
-    font-size: 1.15rem;
-  }
-  .header-logo-top {
-    height: 26px;
-  }
-  .main-menu {
-    gap: 14px;
-    overflow-x: auto;
-    white-space: nowrap;
-  }
-  .main-menu a {
-    font-size: 0.70rem;
-  }
-}
-
-/* Reset global de márgenes y paddings iniciales */
-html, body {
-  margin: 0 !important;
-  padding: 0 !important;
-}
-
-.site-header {
-  margin-top: 0 !important;
-  padding-top: 0 !important;
 }

@@ -61,6 +61,15 @@
     <!-- FILA 2: Una columna centrada para derechos reservados -->
     <div class="footer-bottom-row">
       <p>&copy; {{ 'now' | date: "%Y" }} {{ site.author.name }}. Todos los derechos reservados.</p>
+      <script src='https://storage.ko-fi.com/cdn/scripts/overlay-widget.js'></script>
+      <script>
+        kofiWidgetOverlay.draw('rotsenzemog', {
+          'type': 'floating-chat',
+          'floating-chat.donateButton.text': 'Apollame',
+          'floating-chat.donateButton.background-color': '#00b9fe',
+          'floating-chat.donateButton.text-color': '#fff'
+        });
+      </script>
     </div>
   </div>
 </footer>

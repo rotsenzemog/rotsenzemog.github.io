@@ -4,8 +4,7 @@
     const headerTop = document.querySelector('.header-top');
 
     window.addEventListener('scroll', function() {
-      // Punto donde la franja superior desaparece de la pantalla
-      const triggerHeight = headerTop ? headerTop.offsetHeight : 60;
+      const triggerHeight = headerTop ? headerTop.offsetHeight : 50;
 
       if (window.scrollY > triggerHeight) {
         navBar.classList.add('is-sticky');

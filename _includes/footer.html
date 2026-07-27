@@ -17,7 +17,7 @@
         <h4 class="footer-subtitle">Navegación</h4>
         <ul class="footer-nav">
           <li><a href="{{ '/' | relative_url }}">Inicio</a></li>
-          <li><a href="{{ '/' | relative_url }}#contacto">Contacto</a></li>
+          <li><a href="#contacto">Contacto</a></li>
         </ul>
 
         <h4 class="footer-subtitle" style="margin-top: 25px;">Redes Sociales</h4>
@@ -34,13 +34,26 @@
         </ul>
       </div>
 
-      <!-- Columna 3: Widget de Ko-fi -->
-      <div class="footer-col col-kofi">
-        <h4 class="footer-subtitle">Apoya el Proyecto</h4>
-        <div class="kofi-wrapper">
-          <script src='https://storage.ko-fi.com/cdn/scripts/overlay-widget.js'></script>
-          
-        </div>
+      <!-- Columna 3: Formulario de Contacto (Adaptado al Footer) -->
+      <div class="footer-col col-contact" id="contacto">
+        <h4 class="footer-subtitle">Contacto</h4>
+        <p style="color: #8c9ba5; font-size: 0.85rem; margin-bottom: 15px;">¿Tienes alguna propuesta o consulta editorial?</p>
+
+        <form action="https://formspree.io/f/xojgylqn" method="POST" class="footer-contact-form">
+          <div class="form-group">
+            <input type="text" id="name" name="name" placeholder="Tu nombre" required>
+          </div>
+
+          <div class="form-group">
+            <input type="email" id="email" name="_replyto" placeholder="Tu correo electrónico" required>
+          </div>
+
+          <div class="form-group">
+            <textarea id="message" name="message" rows="3" placeholder="Escribe tu mensaje..." required></textarea>
+          </div>
+
+          <button type="submit" class="btn-submit-footer">Enviar Mensaje</button>
+        </form>
       </div>
 
     </div>
@@ -48,14 +61,6 @@
     <!-- FILA 2: Una columna centrada para derechos reservados -->
     <div class="footer-bottom-row">
       <p>&copy; {{ 'now' | date: "%Y" }} {{ site.author.name }}. Todos los derechos reservados.</p>
-      <script>
-            kofiWidgetOverlay.draw('rotsenzemog', {
-              'type': 'floating-chat',
-              'floating-chat.donateButton.text': 'Apollame',
-              'floating-chat.donateButton.background-color': '#00b9fe',
-              'floating-chat.donateButton.text-color': '#fff'
-            });
-          </script>
     </div>
   </div>
 </footer>

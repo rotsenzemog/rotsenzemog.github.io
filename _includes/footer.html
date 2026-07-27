@@ -1,10 +1,52 @@
-<footer>
+<footer class="site-footer">
   <div class="container">
-    <div class="social-links">
-      <a href="https://twitter.com/{{ site.author.social.twitter }}" target="_blank">Twitter / X</a>
-      <a href="https://github.com/{{ site.author.social.github }}" target="_blank">GitHub</a>
-      <a href="https://instagram.com/{{ site.author.social.instagram }}" target="_blank">Instagram</a>
+    <!-- FILA 1: Tres columnas -->
+    <div class="footer-top-row">
+      
+      <!-- Columna 1: Sobre el Autor / Proyecto -->
+      <div class="footer-col col-about">
+        <h3 class="footer-title">{{ site.title }}</h3>
+        <p class="footer-text">{{ site.tagline }}</p>
+        <p class="footer-bio">
+          Explora historias, universos de ciencia ficción y reflexiones literarias.
+        </p>
+      </div>
+
+      <!-- Columna 2: Enlaces Rápidos y Redes Sociales -->
+      <div class="footer-col col-links">
+        <h4 class="footer-subtitle">Navegación</h4>
+        <ul class="footer-nav">
+          <li><a href="{{ '/' | relative_url }}">Inicio</a></li>
+          <li><a href="{{ '/' | relative_url }}#contacto">Contacto</a></li>
+        </ul>
+
+        <h4 class="footer-subtitle" style="margin-top: 25px;">Redes Sociales</h4>
+        <ul class="footer-social-list">
+          {% if site.author.social.twitter %}
+          <li><a href="https://twitter.com/{{ site.author.social.twitter }}" target="_blank" rel="noopener">Twitter / X</a></li>
+          {% endif %}
+          {% if site.author.social.github %}
+          <li><a href="https://github.com/{{ site.author.social.github }}" target="_blank" rel="noopener">GitHub</a></li>
+          {% endif %}
+          {% if site.author.social.instagram %}
+          <li><a href="https://instagram.com/{{ site.author.social.instagram }}" target="_blank" rel="noopener">Instagram</a></li>
+          {% endif %}
+        </ul>
+      </div>
+
+      <!-- Columna 3: Widget de Ko-fi -->
+      <div class="footer-col col-kofi">
+        <h4 class="footer-subtitle">Apoya el Proyecto</h4>
+        <div class="kofi-wrapper">
+          <iframe id='kofiframe' src='https://ko-fi.com/rotsenzemog/?hidefeed=true&widget=true&embed=true&preview=true' style='border:none;width:100%;padding:0;background:transparent;' height='650' title='rotsenzemog'></iframe>
+        </div>
+      </div>
+
     </div>
-    <p>&copy; {{ 'now' | date: "%Y" }} {{ site.author.name }}. Todos los derechos reservados.</p>
+
+    <!-- FILA 2: Una columna centrada para derechos reservados -->
+    <div class="footer-bottom-row">
+      <p>&copy; {{ 'now' | date: "%Y" }} {{ site.author.name }}. Todos los derechos reservados.</p>
+    </div>
   </div>
 </footer>

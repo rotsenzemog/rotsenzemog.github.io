@@ -477,7 +477,7 @@ footer { border-top: 1px solid #eee; padding: 40px 0; text-align: center; color:
   display: flex;
   align-items: center;
   justify-content: flex-start;
-  height: 32px; /* Altura reducida a la mitad */
+  height: 20px; /* Altura reducida a la mitad */
 }
 
 /* Logo Sticky (Aparece al hacer scroll a la izquierda) */
@@ -506,7 +506,7 @@ footer { border-top: 1px solid #eee; padding: 40px 0; text-align: center; color:
 .main-menu a {
   color: #cbd5e1;
   text-decoration: none;
-  font-size: 0.73rem; /* Tamaño de letra más pequeño y legible */
+  font-size: 0.53rem; /* Tamaño de letra más pequeño y legible */
   font-weight: 600;
   letter-spacing: 0.8px;
   line-height: 32px; /* Alineado verticalmente con la barra */

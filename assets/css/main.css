@@ -557,3 +557,14 @@ footer { border-top: 1px solid #eee; padding: 40px 0; text-align: center; color:
     font-size: 0.70rem;
   }
 }
+
+/* Reset global de márgenes y paddings iniciales */
+html, body {
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+.site-header {
+  margin-top: 0 !important;
+  padding-top: 0 !important;
+}

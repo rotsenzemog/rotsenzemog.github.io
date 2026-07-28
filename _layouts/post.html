@@ -13,23 +13,24 @@ layout: default
   <div class="post-content" style="font-size: 1.1rem; line-height: 1.8;">
     {{ content }}
   </div>
-
-  <!-- Comentarios con Giscus (Gratuito y basado en GitHub Discussions) -->
-  <section style="margin-top: 60px;">
-    <h3>Comentarios</h3>
-    <script src="https://giscus.app/client.js"
-            data-repo="rotsenzemog/rotsenzemog.github.io"
-            data-repo-id="R_kgD... [TUS_DATOS_GISCUS]"
-            data-category="General"
-            data-mapping="pathname"
-            data-strict="0"
-            data-reactions-enabled="1"
-            data-emit-metadata="0"
-            data-input-position="bottom"
-            data-theme="light"
-            data-lang="es"
-            crossorigin="anonymous"
-            async>
+  
+  <!-- Sección de Comentarios Disqus -->
+{% if page.comments != false %}
+  <section class="post-comments" style="margin-top: 50px; padding-top: 30px; border-top: 1px solid #e2e8f0;">
+    <div id="disqus_thread"></div>
+    <script>
+        var disqus_config = function () {
+            this.page.url = '{{ page.url | absolute_url }}';
+            this.page.identifier = '{{ page.id }}';
+        };
+        (function() {
+            var d = document, s = d.createElement('script');
+            s.src = 'https://rotsenzemog-com.disqus.com/embed.js';
+            s.setAttribute('data-timestamp', +new Date());
+            (d.head || d.body).appendChild(s);
+        })();
     </script>
+    <noscript>Por favor habilita JavaScript para ver los <a href="https://disqus.com/?ref_noscript">comentarios cargados por Disqus.</a></noscript>
   </section>
+{% endif %}
 </article>

@@ -706,3 +706,149 @@ a {
 }
 
 /* Los párrafos .footer-text y .footer-bio mantendrán su alineación a la izquierda por defecto */
+
+/* ==========================================
+   SECCIÓN CARRUSEL DE CITAS / FRAGMENTOS
+   ========================================== */
+
+.quotes-section {
+  background-color: #fefce8; /* Fondo ámbar/crema cálido suave (estilo cita/papel) */
+  border-top: 1px solid #fef08a;
+  border-bottom: 1px solid #fef08a;
+  padding: 70px 0;
+  margin: 60px 0;
+  text-align: center;
+  position: relative;
+}
+
+.quotes-carousel-container {
+  max-width: 800px;
+  margin: 0 auto;
+  position: relative;
+  min-height: 220px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.quote-slide {
+  display: none;
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+  flex-direction: column;
+  align-items: center;
+}
+
+.quote-slide.active {
+  display: flex;
+  opacity: 1;
+}
+
+/* Icono de Comillas Clásico */
+.quote-icon {
+  font-family: var(--font-serif);
+  font-size: 4.5rem;
+  line-height: 1;
+  color: #ca8a04; /* Color dorado/miel elegante */
+  margin-bottom: -15px;
+  user-select: none;
+}
+
+/* Texto del fragmento */
+.quote-text {
+  font-family: var(--font-serif);
+  font-size: 1.35rem;
+  font-style: italic;
+  color: #1e293b;
+  line-height: 1.6;
+  max-width: 700px;
+  margin: 0 auto 20px;
+}
+
+/* Línea separadora */
+.quote-divider {
+  width: 60px;
+  height: 2px;
+  background-color: #eab308;
+  margin: 0 auto 18px;
+}
+
+/* Autor y Fuente */
+.quote-author {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.author-name {
+  font-family: var(--font-sans);
+  font-size: 0.85rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: #0f172a;
+}
+
+.author-source {
+  font-size: 0.8rem;
+  font-style: italic;
+  color: #64748b;
+}
+
+/* Botones Flecha (Anterior / Siguiente) */
+.quote-nav {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: transparent;
+  border: none;
+  font-size: 2.5rem;
+  color: #a16207;
+  cursor: pointer;
+  padding: 0 10px;
+  transition: color 0.2s ease, transform 0.2s ease;
+  user-select: none;
+}
+
+.quote-nav:hover {
+  color: #854d0e;
+  transform: translateY(-50%) scale(1.15);
+}
+
+.prev-btn { left: -40px; }
+.next-btn { right: -40px; }
+
+/* Indicadores de Puntos (Dots) */
+.quote-dots {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  margin-top: 25px;
+}
+
+.dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #fde047;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.dot.active, .dot:hover {
+  background-color: #ca8a04;
+  transform: scale(1.2);
+}
+
+/* Adaptación Móvil */
+@media (max-width: 768px) {
+  .quotes-section {
+    padding: 50px 15px;
+  }
+  .quote-text {
+    font-size: 1.1rem;
+    padding: 0 15px;
+  }
+  .prev-btn { left: -10px; }
+  .next-btn { right: -10px; }
+}

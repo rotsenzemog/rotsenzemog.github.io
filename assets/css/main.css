@@ -662,29 +662,6 @@ a {
   }
 }
 
-/* --- Avatar circular del Footer --- */
-.footer-avatar-wrapper {
-  margin-bottom: 16px;
-  display: inline-block;
-}
-
-.footer-avatar-img {
-  width: 90px;
-  height: 90px;
-  object-fit: cover;
-  border-radius: 50%;
-  /* Borde elegante con el azul de acento (#00aeef) */
-  border: 2px solid #00aeef;
-  /* Sombra sutil para destacar sobre el fondo oscuro */
-  box-shadow: 0 4px 12px rgba(0, 174, 239, 0.25);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.footer-avatar-img:hover {
-  transform: scale(1.05);
-  box-shadow: 0 6px 18px rgba(0, 174, 239, 0.4);
-}
-
 /* --- Título del Footer con Logo Integrado --- */
 .footer-title {
   font-family: var(--font-serif);
@@ -704,4 +681,26 @@ a {
   object-fit: contain;
   filter: brightness(0) invert(1); /* Pone el logo completamente blanco */
   flex-shrink: 0;
+}
+
+/* --- Avatar circular centrado únicamente --- */
+.footer-avatar-wrapper {
+  width: 100%;
+  text-align: center; /* Centra la imagen dentro del contenedor de la columna */
+  margin-bottom: 16px;
+}
+
+.footer-avatar-img {
+  width: 90px;
+  height: 90px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 2px solid #00aeef;
+  box-shadow: 0 4px 12px rgba(0, 174, 239, 0.25);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.footer-avatar-img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 18px rgba(0, 174, 239, 0.4);
 }

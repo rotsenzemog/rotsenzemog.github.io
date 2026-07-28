@@ -2,13 +2,19 @@
   <div class="container">
     <!-- FILA 1: Tres columnas -->
     <div class="footer-top-row">
-      
+
      <!-- Columna 1: Sobre el Autor / Proyecto -->
       <div class="footer-col col-about">
         <div class="footer-avatar-wrapper">
-          <img src="{{ '/assets/images/foto-perfil.jpeg' | relative_url }}" alt="Rotsen Zemog" class="footer-avatar-img">
+          <img src="{{ '/assets/images/foto-avatarweb2.jpeg' | relative_url }}" alt="Rotsen Zemog" class="footer-avatar-img">
         </div>
-        <h3 class="footer-title">{{ site.title }}</h3>
+        
+        <!-- Título con el Logo integrado a la izquierda -->
+        <h3 class="footer-title">
+          <img src="{{ '/assets/images/logo-rotsen.svg' | relative_url }}" alt="Logo Rotsen Zemog" class="footer-title-logo">
+          <span>{{ site.title }}</span>
+        </h3>
+      
         <p class="footer-text">Autor literario y aficionado a la ciencia ficción.</p>
         <p class="footer-bio">
           Escribo historias en las que imagino los efectos a futuro de los avances tecnológicos sobre la sociedad y la especie humana.

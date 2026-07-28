@@ -712,9 +712,9 @@ a {
    ========================================== */
 
 .quotes-section {
-  background-color: #fefce8; /* Fondo ámbar/crema cálido suave (estilo cita/papel) */
-  border-top: 1px solid #fef08a;
-  border-bottom: 1px solid #fef08a;
+  background-color: #f0f9ff; /* Fondo azul hielo / celeste suave */
+  border-top: 1px solid #e0f2fe;
+  border-bottom: 1px solid #e0f2fe;
   padding: 70px 0;
   margin: 60px 0;
   text-align: center;
@@ -749,7 +749,7 @@ a {
   font-family: var(--font-serif);
   font-size: 4.5rem;
   line-height: 1;
-  color: #ca8a04; /* Color dorado/miel elegante */
+  color: #00aeef; /* Azul principal de acento */
   margin-bottom: -15px;
   user-select: none;
 }
@@ -759,7 +759,7 @@ a {
   font-family: var(--font-serif);
   font-size: 1.35rem;
   font-style: italic;
-  color: #1e293b;
+  color: #0f172a; /* Texto oscuro elegante */
   line-height: 1.6;
   max-width: 700px;
   margin: 0 auto 20px;
@@ -769,7 +769,7 @@ a {
 .quote-divider {
   width: 60px;
   height: 2px;
-  background-color: #eab308;
+  background-color: #00aeef; /* Azul principal */
   margin: 0 auto 18px;
 }
 
@@ -786,7 +786,7 @@ a {
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 2px;
-  color: #0f172a;
+  color: #0369a1; /* Azul profundo elegante */
 }
 
 .author-source {
@@ -803,7 +803,7 @@ a {
   background: transparent;
   border: none;
   font-size: 2.5rem;
-  color: #a16207;
+  color: #00aeef; /* Azul de acento */
   cursor: pointer;
   padding: 0 10px;
   transition: color 0.2s ease, transform 0.2s ease;
@@ -811,7 +811,7 @@ a {
 }
 
 .quote-nav:hover {
-  color: #854d0e;
+  color: #0284c7; /* Azul más oscuro al pasar el cursor */
   transform: translateY(-50%) scale(1.15);
 }
 
@@ -830,13 +830,13 @@ a {
   width: 10px;
   height: 10px;
   border-radius: 50%;
-  background-color: #fde047;
+  background-color: #bae6fd; /* Azul pastel muy suave */
   cursor: pointer;
   transition: background-color 0.3s ease, transform 0.2s ease;
 }
 
 .dot.active, .dot:hover {
-  background-color: #ca8a04;
+  background-color: #00aeef; /* Azul de acento activo */
   transform: scale(1.2);
 }
 

@@ -17,3 +17,11 @@ markdown: kramdown
 theme: null # Usaremos nuestro propio diseño sobrio
 plugins:
   - jekyll-feed
+
+defaults:
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+      comments: true

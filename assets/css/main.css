@@ -662,31 +662,10 @@ a {
   }
 }
 
-/* --- Título del Footer con Logo Integrado --- */
-.footer-title {
-  font-family: var(--font-serif);
-  font-size: 1.8rem;
-  color: #ffffff;
-  margin-bottom: 12px;
-  letter-spacing: 1px;
-  display: flex;
-  align-items: center;
-  gap: 10px; /* Espacio entre el logo y el texto */
-}
-
-/* Logo al lado del título teñido de blanco */
-.footer-title-logo {
-  height: 28px; /* Ajusta la altura proporcional al texto */
-  width: auto;
-  object-fit: contain;
-  filter: brightness(0) invert(1); /* Pone el logo completamente blanco */
-  flex-shrink: 0;
-}
-
-/* --- Avatar circular centrado únicamente --- */
+/* --- Avatar circular centrado --- */
 .footer-avatar-wrapper {
   width: 100%;
-  text-align: center; /* Centra la imagen dentro del contenedor de la columna */
+  text-align: center;
   margin-bottom: 16px;
 }
 
@@ -704,3 +683,26 @@ a {
   transform: scale(1.05);
   box-shadow: 0 6px 18px rgba(0, 174, 239, 0.4);
 }
+
+/* --- Título con Logo Centrado --- */
+.footer-title {
+  font-family: var(--font-serif);
+  font-size: 1.8rem;
+  color: #ffffff;
+  margin-bottom: 12px;
+  letter-spacing: 1px;
+  display: flex;
+  align-items: center;
+  justify-content: center; /* CENTRA EL TÍTULO Y SU LOGO */
+  gap: 10px;
+}
+
+.footer-title-logo {
+  height: 28px;
+  width: auto;
+  object-fit: contain;
+  filter: brightness(0) invert(1);
+  flex-shrink: 0;
+}
+
+/* Los párrafos .footer-text y .footer-bio mantendrán su alineación a la izquierda por defecto */

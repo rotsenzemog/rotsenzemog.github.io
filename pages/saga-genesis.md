@@ -19,7 +19,7 @@ El nombre Génesis representa tanto el inicio de esta aventura literaria como el
  
 ### La Trilogía Principal
 
-El corazón de la Saga Génesis lo constituirán tres novelas, cuyo desarrollo se encuentra actualmente en curso y que serán accesibles en formato de pago, bien puede ser mediante la suscripción de mi programa de membresías en Ko-fi, por medio de ejemplares impresos o gracias a alguna otra plataforma de publicación online. Estas obras constituyen el núcleo central del universo narrativo, tanto en su trama como en su carga filosófica e incluso en su potencial para la generación de ingresos económicos.
+El corazón de la Saga Génesis lo constituirán tres novelas, cuyo desarrollo se encuentra actualmente en curso y que serán accesibles en formato de pago, aunque aún no tengo bien definido el medio para su distribución; posiblemente se trate tanto de ejemplares impresos como de publicación digital u online. Estas obras constituyen el núcleo central del universo narrativo, tanto en su trama como en su carga filosófica e incluso en su potencial económico.
 
 
 ### BioGénesis: El genoma de la pasión

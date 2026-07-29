@@ -7,9 +7,6 @@ category: ""
 excerpt: "Mi proyecto literario más ambicioso es: La Saga Génesis. Se trata de un universo de ciencia ficción en construcción y expansión, diseñado para conectar múltiples historias en torno a una misma línea argumental."
 ---
 
-La Saga Génesis: El nacimiento de un universo literario 
-
-
 Mi proyecto literario más ambicioso es: La Saga Génesis. Se trata de un universo de ciencia ficción en construcción y expansión, diseñado para conectar múltiples historias en torno a una misma línea argumental. No es solo una trilogía, sino un marco narrativo, en el que cada historia, desde relatos breves hasta novelas completas, forma parte de una visión mayor. Con esta saga, pretendo dar inicio formal a una nueva etapa de mi desarrollo como escritor, con una perspectiva más enfocada, constante y profesional.
 
 Aunque ahora mismo estoy centrado en el desarrollo de este universo, también tengo otras ideas que podrían dar lugar a obras independientes o incluso a nuevas sagas paralelas. Pero hasta el momento, Génesis es mi principal apuesta creativa.

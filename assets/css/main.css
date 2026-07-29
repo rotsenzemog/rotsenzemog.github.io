@@ -1025,7 +1025,7 @@ article > h3:first-child {
   color: #ffffff;           /* Ajusta según el color original de tu texto */
   text-decoration: none;
   font-weight: 600;
-  font-size: 0.9rem;
+  font-size: 0.65rem;
   text-transform: uppercase;
   padding: 12px 0;
   transition: color 0.3s ease;
@@ -1133,4 +1133,19 @@ article > h3:first-child {
     opacity: 1;
     transform: translate(-50%, 0);
   }
+}
+/* ==========================================
+   PUENTE INVISIBLE PARA EL SUBMENÚ (Hover Fix)
+   ========================================== */
+
+/* Crea un área invisible que conecta el botón principal con el submenú */
+.nav-menu li.has-dropdown::after {
+  content: '';
+  position: absolute;
+  top: 100%;
+  left: -20px;
+  right: -20px;
+  height: 20px; /* Cubre el espacio vacío de 8px del margin-top */
+  background: transparent; /* Totalmente invisible */
+  z-index: 999;
 }

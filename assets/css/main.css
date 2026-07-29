@@ -962,7 +962,7 @@ p:last-child {
    ========================================== */
 
 h1, h2, h3, h4, h5, h6 {
-  color: var(--accent-color, #0d6efd); /* Aplica el azul de los detalles de la web */
+  color: var(--accent-color, #00aeef); /* Aplica el azul de los detalles de la web */
   font-family: var(--font-serif);      /* O la tipografía primaria de tus títulos */
   margin-top: 1.8em;                   /* Espacio superior para separarlo del párrafo previo */
   margin-bottom: 0.8em;                /* Espacio inferior antes de su propio párrafo */

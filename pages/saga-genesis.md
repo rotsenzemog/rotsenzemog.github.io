@@ -37,7 +37,7 @@ Las divisiones internas y los enfrentamientos entre facciones de la sociedad bio
 
 ### Las Obras Preludio
 
-Antes de la trilogía, es decir que están ambientadas en el siglo XXI, existen las obras preludio: relatos cortos o medianamente extensos, que construyen el mundo, contextualizan los eventos y siembran las semillas narrativas que florecerán en las novelas principales. Estos textos estarán disponibles en su mayoría de forma gratuita, tras un período exclusivo para miembros suscriptores del nivel básico (Astro) en Ko-fi, que en algunos casos pudiera ser permanente.
+Previo al argumento de la trilogía principal, existe una serie de las obras preludio ambientadas en el siglo XXI. Estos relatos cortos o historias medianamente extensas construyen las bases de este mundo, contextualizan los eventos y siembran las semillas narrativas que florecerán en las novelas de la trilogía. Estos textos estarán disponibles en su mayoría de forma gratuita en mis redes sociales y las diferentes plataformas de publicación de las que dispongo.
 
 ### Enigma en la Sima
 

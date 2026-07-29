@@ -19,13 +19,33 @@
       </a>
 
       <!-- Menú de Navegación -->
-      <ul class="main-menu">
-        <li><a href="{{ '/' | relative_url }}">YO</a></li>
-        <li><a href="{{ '/' | relative_url }}">NOVELAS</a></li>
-        <li><a href="{{ '/' | relative_url }}">RELATOS</a></li>
-        <li><a href="{{ '/' | relative_url }}">RESEÑAS</a></li>
-        <li><a href="{{ '/' | relative_url }}">GALERIA</a></li>
-        <li><a href="{{ '/' | relative_url }}">CONTACTO</a></li>
+      <ul class="nav-menu">
+        <li><a href="{{ '/sobre-mi/' | relative_url }}">Yo</a></li>
+        
+        <!-- Submenú Novelas -->
+        <li class="has-dropdown">
+          <a href="#">Novelas <span class="arrow-down">▾</span></a>
+          <ul class="dropdown-menu">
+            <li><a href="{{ '/biogenesis/' | relative_url }}">BioGénesis</a></li>
+            <li><a href="{{ '/neogenesis/' | relative_url }}">NeoGénesis</a></li>
+            <li><a href="{{ '/progenesis/' | relative_url }}">ProGénesis</a></li>
+          </ul>
+        </li>
+    
+        <li><a href="{{ '/relatos/' | relative_url }}">Relatos</a></li>
+    
+        <!-- Submenú Reseñas -->
+        <li class="has-dropdown">
+          <a href="#">Reseñas <span class="arrow-down">▾</span></a>
+          <ul class="dropdown-menu">
+            <li><a href="{{ '/reseñas/libros/' | relative_url }}">Libros</a></li>
+            <li><a href="{{ '/reseñas/series/' | relative_url }}">Series</a></li>
+            <li><a href="{{ '/reseñas/peliculas/' | relative_url }}">Películas</a></li>
+          </ul>
+        </li>
+    
+        <li><a href="{{ '/galeria/' | relative_url }}">Galería</a></li>
+        <li><a href="{{ '/contacto/' | relative_url }}">Contacto</a></li>
       </ul>
 
     </div>

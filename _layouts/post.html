@@ -4,7 +4,7 @@ layout: default
 <article style="max-width: 750px; margin: 40px auto;">
   <span class="category-tag">{{ page.category }}</span>
   <h1 style="font-family: var(--font-serif); font-size: 2.8rem; margin: 10px 0;">{{ page.title }}</h1>
-  <p style="color: var(--muted-text); margin-bottom: 30px;">Publicado el {{ page.date | date: "%d/%m/%Y" }} por {{ site.author.name }}</p>
+  <p style="color: var(--muted-text); margin-bottom: 30px;">Escrito {{ page.date | date: "%d/%m/%Y" }} por {{ site.author.name }}</p>
   
   {% if page.image %}
     <img src="{{ page.image | relative_url }}" alt="{{ page.title }}" style="width:100%; border-radius:8px; margin-bottom:30px;">

@@ -26,23 +26,30 @@ layout: default
 </div>
 {% endif %}
 
-<!-- Sección de Relatos Recientes -->
-<div class="section-header">
-  <h2 class="section-title">Relatos Recientes</h2>
-</div>
+<!-- Sección de Relatos Recientes (2 filas = 6 artículos) -->
+<section class="recent-posts-section" style="margin-bottom: 50px;">
+  <div class="section-header">
+    <h2 class="section-title">Recientes</h2>
+  </div>
 
-<div class="grid-3">
-  {% for post in site.posts offset:1 limit:3 %}
-  <article>
-    <a href="{{ post.url | relative_url }}">
-      <img src="{{ post.image | relative_url }}" class="card-img" alt="{{ post.title }}">
-    </a>
-    <span class="category-tag">{{ post.category }}</span>
-    <h3 class="card-title"><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h3>
-    <p class="card-excerpt">{{ post.excerpt | strip_html | truncatewords: 15 }}</p>
-  </article>
-  {% endfor %}
-</div>
+  <div class="grid-3">
+    {% for post in site.posts offset:1 limit:6 %}
+    <article class="card">
+      <a href="{{ post.url | relative_url }}">
+        <img src="{{ post.image | relative_url }}" class="card-img" alt="{{ post.title }}">
+      </a>
+      <span class="category-tag">{{ post.category }}</span>
+      <h3 class="card-title"><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h3>
+      <p class="card-excerpt">{{ post.excerpt | strip_html | truncatewords: 15 }}</p>
+    </article>
+    {% endfor %}
+  </div>
+
+  <!-- Botón de "Ver más" hacia el Blog/Archivo completo -->
+  <div style="text-align: center; margin-top: 40px;">
+    <a href="{{ '/blog/' | relative_url }}" class="btn-more">Ver todos los relatos &rarr;</a>
+  </div>
+</section>
 
 <!-- GALERÍA INCORPORADA EN EL CUERPO (Sección con fondo oscuro elegante) -->
 <section class="dark-section" style="margin-left: calc(-50vw + 50%); margin-right: calc(-50vw + 50%); width: 100vw; position: relative;">

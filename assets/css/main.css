@@ -944,3 +944,15 @@ a {
   transform: translateY(-2px);
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
 }
+
+/* Ajustes para párrafos en el contenido general y artículos */
+p, .page-content p, article p {
+  text-align: justify; /* Justifica la alineación del texto */
+  margin-bottom: 1.5em; /* Añade espacio (una línea visual) entre párrafos */
+  line-height: 1.7;    /* Espaciado de línea cómodo para lectura */
+}
+
+/* Evita que el último párrafo dentro de un contenedor tenga margen sobrante */
+p:last-child {
+  margin-bottom: 0;
+}

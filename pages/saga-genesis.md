@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: post
 title: "Guía de lectura del Universo Aethelgard"
 permalink: /saga-genesis/
 image: /assets/images/guia-universo.jpg

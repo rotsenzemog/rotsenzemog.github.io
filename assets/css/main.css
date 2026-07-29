@@ -695,6 +695,7 @@ a {
   align-items: center;
   justify-content: center; /* CENTRA EL TÍTULO Y SU LOGO */
   gap: 10px;
+  margin-top: -10px;
 }
 
 .footer-title-logo {

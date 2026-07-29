@@ -923,3 +923,24 @@ a {
     font-size: 1rem;
   }
 }
+
+/* Botón Ver Más / Paginación */
+.btn-more {
+  display: inline-block;
+  padding: 12px 28px;
+  background-color: transparent;
+  color: var(--text-color, #1e293b);
+  border: 2px solid var(--accent-color, #0f172a);
+  border-radius: 6px;
+  font-family: var(--font-sans);
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.btn-more:hover {
+  background-color: var(--accent-color, #0f172a);
+  color: #ffffff;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}

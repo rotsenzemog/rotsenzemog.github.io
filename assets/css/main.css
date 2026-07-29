@@ -995,36 +995,64 @@ article > h3:first-child {
 }
 
 /* ==========================================
-   SUBMENÚS DESPLEGABLES (DROPDOWN MENU)
+   MENÚ DE NAVEGACIÓN PRINCIPAL (Ajustado)
    ========================================== */
 
-/* Asegurar posición relativa en el ítem contenedor */
-.nav-menu li.has-dropdown {
+/* Contenedor principal del menú */
+.nav-menu {
+  display: flex !important;
+  flex-direction: row !important;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;                /* Espaciado entre elementos principales */
+  list-style: none !important;
+  margin: 0;
+  padding: 0;
+}
+
+/* SOLO para los ítems directos del menú principal (Nivel 1) */
+.nav-menu > li {
   position: relative;
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+  list-style: none !important;
 }
 
-/* Indicador de flechita sutil en el menú principal */
-.arrow-down {
-  font-size: 0.7em;
-  margin-left: 3px;
-  opacity: 0.8;
+/* SOLO para los enlaces directos del menú principal */
+.nav-menu > li > a {
+  display: inline-block;
+  color: #ffffff;           /* Ajusta según el color original de tu texto */
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  padding: 12px 0;
+  transition: color 0.3s ease;
 }
 
-/* Contenedor principal del desplegable */
+.nav-menu > li > a:hover {
+  color: #00aeef;           /* Color de acento al pasar el mouse */
+}
+
+
+/* ==========================================
+   ESTILOS DEL SUBMENÚ DESPLEGABLE (DROPDOWN)
+   ========================================== */
+
 .dropdown-menu {
   display: none;
   position: absolute;
   top: 100%;
   left: 50%;
   transform: translateX(-50%);
-  margin-top: 12px; /* Espacio para el triángulo */
+  margin-top: 8px;
   width: 170px;
-  padding: 0;
-  list-style: none;
-  background-color: #0b0f19; /* Tono oscuro alineado con el header */
-  border-radius: 10px;       /* Esquinas redondeadas como la referencia */
+  padding: 0 !important;
+  list-style: none !important;
+  background-color: #0b0f19;
+  border-radius: 10px;
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
-  overflow: visible;         /* Permite ver el triángulo superior */
   z-index: 1000;
 }
 
@@ -1039,10 +1067,19 @@ article > h3:first-child {
   height: 0;
   border-left: 8px solid transparent;
   border-right: 8px solid transparent;
-  border-bottom: 8px solid #1e293b; /* Color coincidente con la primera opción */
+  border-bottom: 8px solid #1e293b;
 }
 
-/* Enlaces internos del submenú */
+/* Ítems del submenú */
+.dropdown-menu li {
+  display: block !important;
+  width: 100%;
+  margin: 0 !important;
+  padding: 0 !important;
+  list-style: none !important;
+}
+
+/* Enlaces del submenú */
 .dropdown-menu li a {
   display: block;
   padding: 12px 16px;
@@ -1051,19 +1088,20 @@ article > h3:first-child {
   color: #e2e8f0;
   text-decoration: none;
   text-align: center;
+  text-transform: none;      /* Mantiene mayúsculas y minúsculas normales */
   transition: background 0.2s ease, color 0.2s ease;
 }
 
-/* Intercalado de colores estilo la referencia (Filas impares y pares) */
+/* Colores intercalados */
 .dropdown-menu li:nth-child(odd) a {
-  background-color: #1e293b; /* Azul grisáceo medio */
+  background-color: #1e293b;
 }
 
 .dropdown-menu li:nth-child(even) a {
-  background-color: #0f172a; /* Azul noche más oscuro */
+  background-color: #0f172a;
 }
 
-/* Bordes redondeados en la primera y última opción para no sobresalir del contenedor */
+/* Bordes redondeados en esquinas externas */
 .dropdown-menu li:first-child a {
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
@@ -1074,19 +1112,18 @@ article > h3:first-child {
   border-bottom-right-radius: 10px;
 }
 
-/* Estado Hover sobre cada item del submenú */
+/* Hover en el submenú */
 .dropdown-menu li a:hover {
-  background-color: #00aeef !important; /* Azul acento principal */
+  background-color: #00aeef !important;
   color: #ffffff;
 }
 
-/* Mostrar el submenú al pasar el cursor (Hover) */
-.nav-menu li.has-dropdown:hover .dropdown-menu {
+/* Mostrar desplegable al pasar el cursor sobre la opción padre */
+.nav-menu li.has-dropdown:hover > .dropdown-menu {
   display: block;
   animation: fadeInDown 0.25s ease-out;
 }
 
-/* Animación sutil de aparición */
 @keyframes fadeInDown {
   from {
     opacity: 0;

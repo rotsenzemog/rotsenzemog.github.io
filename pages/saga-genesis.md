@@ -1,22 +1,51 @@
 ---
 layout: post
-title: "Guía de lectura del Universo Aethelgard"
+title: "La Saga Génesis: El nacimiento de un universo literario"
 permalink: /saga-genesis/
-image: /assets/images/guia-universo.jpg
-category: "ESPECIAL"
-excerpt: "Explora la cronología completa de los relatos y obras publicadas en el orden recomendado de lectura."
+image: https://storage.ko-fi.com/cdn/useruploads/display/84054556-5b1a-43d1-9ee5-a27373144159_saga-genesis.png
+category: ""
+excerpt: "Mi proyecto literario más ambicioso es: La Saga Génesis. Se trata de un universo de ciencia ficción en construcción y expansión, diseñado para conectar múltiples historias en torno a una misma línea argumental."
 ---
 
-Aquí va el contenido extenso de tu página especial...
+La Saga Génesis: El nacimiento de un universo literario 
 
-Texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto.
+Mi proyecto literario más ambicioso es: La Saga Génesis. Se trata de un universo de ciencia ficción en construcción y expansión, diseñado para conectar múltiples historias en torno a una misma línea argumental. No es solo una trilogía, sino un marco narrativo, en el que cada historia, desde relatos breves hasta novelas completas, forma parte de una visión mayor. Con esta saga, pretendo dar inicio formal a una nueva etapa de mi desarrollo como escritor, con una perspectiva más enfocada, constante y profesional.
 
-Texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto.
+Aunque ahora mismo estoy centrado en el desarrollo de este universo, también tengo otras ideas que podrían dar lugar a obras independientes o incluso a nuevas sagas paralelas. Pero hasta el momento, Génesis es mi principal apuesta creativa.
  
-### I.  Texto texto texto
+### ¿Por qué “Génesis”?
 
-Texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto.
+El nombre Génesis representa tanto el inicio de esta aventura literaria como el núcleo temático que abordan sus historias, este no es otro que la concepción de un ser vivo y la evolución de la especie humana. Esto a través de conceptos como la ingeniería genética, la eugenesia, la clonación y la ectogénesis. Por lo tanto, este universo explora los límites de lo humano, sus transformaciones y sus dilemas más profundos.
  
-### II.  Texto texto texto
+### La Trilogía Principal
 
-Texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto.
+El corazón de la Saga Génesis lo constituirán tres novelas, cuyo desarrollo se encuentra actualmente en curso y que serán accesibles en formato de pago, bien puede ser mediante la suscripción de mi programa de membresías en Ko-fi, por medio de ejemplares impresos o gracias a alguna otra plataforma de publicación online. Estas obras constituyen el núcleo central del universo narrativo, tanto en su trama como en su carga filosófica e incluso en su potencial para la generación de ingresos económicos.
+
+### BioGénesis: El genoma de la pasión
+
+A inicios del siglo XXII, la humanidad enfrenta una amenaza sin precedentes: un virus letal llamado Némesis, que impide el intercambio de material genético entre los infectados. En este contexto, una joven pareja lucha por su amor en medio de un mundo fracturado por la guerra entre Occidente, que apuesta por la ingeniería genética para preservar la vida biológica, y el Imperio Oriental, que ha implementado la conversión cibernética de sus ciudadanos como forma de trascendencia.
+
+### NeoGénesis: Nación en evolución
+
+Veinte años después, la megalópolis de la vida biológica se ha convertido en el último bastión para el resguardo de la humanidad. Allí, los jóvenes son seres asexuales creados artificialmente con capacidades extraordinarias. Un muchacho, nacido de forma natural, guarda en secreto su verdadero origen, pero la búsqueda que emprende para comprender su verdadera identidad lo enfrenta contra el orden establecido y lo convierte en la mayor esperanza para el destino de la raza humana.
+
+### ProGénesis: Muerte a la extinción
+
+Las divisiones internas y los enfrentamientos entre facciones de la sociedad biológica desestabilizan al régimen de la metrópoli y quiebran el equilibrio de poder que hasta entonces había contenido el avance de la Guerra Suprema. Aprovechando el momento crítico, el Imperio Oriental lanza su ofensiva definitiva, con el propósito de erradicar a la humanidad orgánica de una vez por todas. Entonces un grito de guerra surge como un mantra para la supervivencia: "Muerte a la extinción".
+
+### Las Obras Preludio
+
+Antes de la trilogía, es decir que están ambientadas en el siglo XXI, existen las obras preludio: relatos cortos o medianamente extensos, que construyen el mundo, contextualizan los eventos y siembran las semillas narrativas que florecerán en las novelas principales. Estos textos estarán disponibles en su mayoría de forma gratuita, tras un período exclusivo para miembros suscriptores del nivel básico (Astro) en Ko-fi, que en algunos casos pudiera ser permanente.
+
+
+### Enigma en la Sima
+
+Un grupo de exploradores se adentra en la enigmática Sima Humboldt, en el corazón del tepuy Sarisariñama, para investigar la desaparición de una expedición anterior. Lo que descubren en su interior podría acelerar el avance de la ciencia y la tecnología durante los años venideros.
+
+### La sombra de Némesis
+
+En un mundo colapsado por una pandemia devastadora, dos jóvenes desconocidos deben colaborar para sobrevivir. Los infectados no solo mueren: se transforman en psicópatas violentos y necrófilos. Entre la locura y la desolación, nace un vinculo irrompible entre ellos.
+
+### El sacrificio de la musa
+
+Un reconocido artista plástico recibe una oferta para salvar su vida: convertirse en un cyborg. Pero como pintor clásico y naturalista, teme que la conversión digital de su conciencia destruya su capacidad creativa. ¿Puede el arte sobrevivir a la inmortalidad artificial?

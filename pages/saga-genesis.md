@@ -39,11 +39,11 @@ Las divisiones internas y los enfrentamientos entre facciones de la sociedad bio
 
 Previo al argumento de la trilogía principal, existe una serie de las obras preludio ambientadas en el siglo XXI. Estos relatos cortos o historias medianamente extensas construyen las bases de este mundo, contextualizan los eventos y siembran las semillas narrativas que florecerán en las novelas de la trilogía. Estos textos estarán disponibles en su mayoría de forma gratuita en mis redes sociales y las diferentes plataformas de publicación de las que dispongo.
 
-### Enigma en la Sima
+### Enigma en la sima
 
 Un grupo de exploradores se adentra en la enigmática Sima Humboldt, en el corazón del tepuy Sarisariñama, para investigar la desaparición de una expedición anterior. Lo que descubren en su interior podría acelerar el avance de la ciencia y la tecnología durante los años venideros.
 
-### La sombra de Némesis
+### Al acecho de Némesis
 
 En un mundo colapsado por una pandemia devastadora, dos jóvenes desconocidos deben colaborar para sobrevivir. Los infectados no solo mueren: se transforman en psicópatas violentos y necrófilos. Entre la locura y la desolación, nace un vinculo irrompible entre ellos.
 

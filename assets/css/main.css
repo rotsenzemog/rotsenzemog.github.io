@@ -956,3 +956,24 @@ p, .page-content p, article p {
 p:last-child {
   margin-bottom: 0;
 }
+
+/* ==========================================
+   ESTILOS DE TÍTULOS Y SUBTÍTULOS (H1, H2, H3, H4)
+   ========================================== */
+
+h1, h2, h3, h4, h5, h6 {
+  color: var(--accent-color, #0d6efd); /* Aplica el azul de los detalles de la web */
+  font-family: var(--font-serif);      /* O la tipografía primaria de tus títulos */
+  margin-top: 1.8em;                   /* Espacio superior para separarlo del párrafo previo */
+  margin-bottom: 0.8em;                /* Espacio inferior antes de su propio párrafo */
+  line-height: 1.3;
+}
+
+/* Evita que el primer título/subtítulo de una página quede con demasiado espacio arriba */
+.page-content > h1:first-child,
+.page-content > h2:first-child,
+.page-content > h3:first-child,
+article > h2:first-child,
+article > h3:first-child {
+  margin-top: 0;
+}

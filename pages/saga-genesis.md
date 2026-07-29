@@ -9,17 +9,21 @@ excerpt: "Mi proyecto literario más ambicioso es: La Saga Génesis. Se trata de
 
 La Saga Génesis: El nacimiento de un universo literario 
 
+
 Mi proyecto literario más ambicioso es: La Saga Génesis. Se trata de un universo de ciencia ficción en construcción y expansión, diseñado para conectar múltiples historias en torno a una misma línea argumental. No es solo una trilogía, sino un marco narrativo, en el que cada historia, desde relatos breves hasta novelas completas, forma parte de una visión mayor. Con esta saga, pretendo dar inicio formal a una nueva etapa de mi desarrollo como escritor, con una perspectiva más enfocada, constante y profesional.
 
 Aunque ahora mismo estoy centrado en el desarrollo de este universo, también tengo otras ideas que podrían dar lugar a obras independientes o incluso a nuevas sagas paralelas. Pero hasta el momento, Génesis es mi principal apuesta creativa.
+
  
 ### ¿Por qué “Génesis”?
 
 El nombre Génesis representa tanto el inicio de esta aventura literaria como el núcleo temático que abordan sus historias, este no es otro que la concepción de un ser vivo y la evolución de la especie humana. Esto a través de conceptos como la ingeniería genética, la eugenesia, la clonación y la ectogénesis. Por lo tanto, este universo explora los límites de lo humano, sus transformaciones y sus dilemas más profundos.
+
  
 ### La Trilogía Principal
 
 El corazón de la Saga Génesis lo constituirán tres novelas, cuyo desarrollo se encuentra actualmente en curso y que serán accesibles en formato de pago, bien puede ser mediante la suscripción de mi programa de membresías en Ko-fi, por medio de ejemplares impresos o gracias a alguna otra plataforma de publicación online. Estas obras constituyen el núcleo central del universo narrativo, tanto en su trama como en su carga filosófica e incluso en su potencial para la generación de ingresos económicos.
+
 
 ### BioGénesis: El genoma de la pasión
 
@@ -33,10 +37,10 @@ Veinte años después, la megalópolis de la vida biológica se ha convertido en
 
 Las divisiones internas y los enfrentamientos entre facciones de la sociedad biológica desestabilizan al régimen de la metrópoli y quiebran el equilibrio de poder que hasta entonces había contenido el avance de la Guerra Suprema. Aprovechando el momento crítico, el Imperio Oriental lanza su ofensiva definitiva, con el propósito de erradicar a la humanidad orgánica de una vez por todas. Entonces un grito de guerra surge como un mantra para la supervivencia: "Muerte a la extinción".
 
+
 ### Las Obras Preludio
 
 Antes de la trilogía, es decir que están ambientadas en el siglo XXI, existen las obras preludio: relatos cortos o medianamente extensos, que construyen el mundo, contextualizan los eventos y siembran las semillas narrativas que florecerán en las novelas principales. Estos textos estarán disponibles en su mayoría de forma gratuita, tras un período exclusivo para miembros suscriptores del nivel básico (Astro) en Ko-fi, que en algunos casos pudiera ser permanente.
-
 
 ### Enigma en la Sima
 

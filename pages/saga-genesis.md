@@ -14,7 +14,7 @@ Aunque ahora mismo estoy centrado en el desarrollo de este universo, también te
  
 ### ¿Por qué “Génesis”?
 
-El nombre Génesis representa tanto el inicio de esta aventura literaria como el núcleo temático que abordan sus historias, este no es otro que la concepción de un ser vivo y la evolución de la especie humana. Esto a través de conceptos como la ingeniería genética, la eugenesia, la clonación y la ectogénesis. Por lo tanto, este universo explora los límites de lo humano, sus transformaciones y sus dilemas más profundos.
+El nombre Génesis representa tanto el inicio de esta aventura literaria como el núcleo temático que abordan sus historias; esa línea argumental a la que me refiero se fundamenta en dos temas entrelazados, la concepción de una nueva vida y la constante evolución de la especie humana. Abordo estos conceptos a través de disciplinas tecnológicas como la ingeniería genética, la eugenesia, la clonación, la ectogénesis, la biónica y la cibernética. Por lo tanto, este universo explora los límites de lo humano, sus transformaciones y sus dilemas existenciales más profundos.
 
  
 ### La Trilogía Principal

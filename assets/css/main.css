@@ -1445,3 +1445,11 @@ article > h3:first-child {
   padding: 0;
   color: #64748b !important;
 }
+
+/* Reduce el margen inferior del título para pegarlo al texto introductorio */
+.grid-4 .card-title {
+  margin-top: 6px !important;
+  margin-bottom: 4px !important; /* <--- Controla la distancia con el extracto */
+  font-size: 1.1rem !important;
+  line-height: 1.25 !important;
+}

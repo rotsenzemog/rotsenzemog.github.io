@@ -4,7 +4,7 @@ title: "Blog & Relatos"
 permalink: /blog/
 ---
 
-<div class="container" style="padding-top: 40px; padding-bottom: 60px;">
+<div class="container" style="padding-top: 10px; padding-bottom: 60px;">
   
   <div class="section-header" style="text-align: center; margin-bottom: 30px;">
     <h1 class="section-title">Todos los relatos y publicaciones</h1>

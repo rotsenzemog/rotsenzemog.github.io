@@ -7,7 +7,7 @@ permalink: /blog/
 <div class="container" style="padding-top: 10px; padding-bottom: 60px;">
   
   <div class="section-header" style="text-align: center; margin-bottom: 30px;">
-    <h1 class="section-title">Todos los relatos y publicaciones</h1>
+    <h1 class="section-title">Mi blog</h1>
     <p style="color: var(--muted-text); margin-top: 8px;">Explora el catálogo completo de obras, reseñas y artículos.</p>
   </div>
 

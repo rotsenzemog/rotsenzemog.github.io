@@ -1212,7 +1212,7 @@ article > h3:first-child {
 
 /* Reducción del margen superior del encabezado */
 .section-header {
-  margin-top: 0 !important;
+  /* margin-top: 0 !important; */
   margin-bottom: 20px !important;
 }
 

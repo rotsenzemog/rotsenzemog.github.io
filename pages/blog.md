@@ -36,7 +36,7 @@ permalink: /blog/
         <img src="{{ post.image | relative_url }}" class="card-img" alt="{{ post.title }}">
       </a>
       <span class="category-tag">{{ post.category }}</span>
-      <h2 class="card-title" style="font-size: 1.1rem; line-height: 1.3;">
+      <h2 class="card-title">
         <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
       </h2>
       <p class="card-excerpt">{{ post.excerpt | strip_html | truncatewords: 12 }}</p>

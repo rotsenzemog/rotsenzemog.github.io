@@ -1269,13 +1269,15 @@ article > h3:first-child {
 
 /* ==========================================
    TARJETAS DE BLOG (GRID 4) FIX ESTRUCTURAL
-   ========================================== */
+   ========================================= */
 
-/* Contenedor principal de cada tarjeta */
+/* Forzamos a la tarjeta a mantenerse vertical contra estilos en línea */
 .grid-4 article.card,
-.grid-4 .card {
+.grid-4 .card,
+.grid-4 article.card.post-item {
   display: flex !important;
   flex-direction: column !important;
+  justify-content: flex-start !important;
   align-items: flex-start !important;
   background-color: transparent !important;
   border: none !important;
@@ -1299,7 +1301,7 @@ article > h3:first-child {
   height: 180px !important;
   border-radius: 8px !important;
   overflow: hidden !important;
-  flex: 0 0 180px !important; /* Fuerza una altura fija inmune a scripts */
+  flex: 0 0 180px !important;
   margin-bottom: 8px !important;
 }
 
@@ -1318,23 +1320,24 @@ article > h3:first-child {
   flex: 0 0 auto !important;
 }
 
-/* Título de la Tarjeta (Anti-salto / Strict Height) */
+/* Título de la Tarjeta (Anulación total del contenedor gigante) */
 .grid-4 .card-title,
-.grid-4 h2.card-title {
+.grid-4 h2.card-title,
+.grid-4 article h2.card-title {
   display: block !important;
   width: 100% !important;
   height: auto !important;
   min-height: 0 !important;
-  max-height: none !important;
+  max-height: fit-content !important;
   margin: 4px 0 6px 0 !important;
   padding: 0 !important;
   font-size: 1.15rem !important;
   line-height: 1.25 !important;
   font-family: var(--font-serif) !important;
-  flex: 0 0 auto !important; /* Bloquea expansión no deseada */
+  flex: 0 0 auto !important;
 }
 
-/* Enlace dentro del título */
+/* Enlace del título */
 .grid-4 .card-title a,
 .grid-4 .card-title a.keychainify-checked {
   display: inline !important;
@@ -1361,7 +1364,7 @@ article > h3:first-child {
 
 /* Fecha / Pie de Tarjeta */
 .grid-4 small {
-  margin-top: auto !important; /* Empuja la fecha al final */
+  margin-top: auto !important;
   color: #64748b !important;
   font-size: 0.78rem !important;
   flex: 0 0 auto !important;

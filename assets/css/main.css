@@ -1449,6 +1449,7 @@ article > h3:first-child {
 
 /* Reduce el margen inferior del título para pegarlo al texto introductorio */
 .grid-4 .card-title {
+  flex: none !important;
   margin-top: 6px !important;
   margin-bottom: 4px !important; /* <--- Controla la distancia con el extracto */
   font-size: 1.1rem !important;

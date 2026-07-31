@@ -1385,9 +1385,9 @@ article > h3:first-child {
   
   background-color: #00aeef !important; /* Color azul secundario */
   color: #ffffff !important;
-  padding: 50px 20px !important;
+  padding: 1px 20px 50px 20px !important;
   margin-top: 60px;
-  margin-bottom: 0;
+  margin-bottom: 50px;
   text-align: center;
   box-sizing: border-box;
 }

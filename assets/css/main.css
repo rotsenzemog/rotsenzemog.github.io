@@ -1268,13 +1268,13 @@ article > h3:first-child {
 }
 
 /* ==========================================
-   TARJETAS DE BLOG (GRID 4) FIX ESTRUCTURAL
-   ========================================= */
+   TARJETAS DE BLOG (GRID 4) FIX ESTRUCTURAL DEFINITIVO
+   ========================================== */
 
-/* Forzamos a la tarjeta a mantenerse vertical contra estilos en línea */
+/* Contenedor principal de cada tarjeta */
+.grid-4 article,
 .grid-4 article.card,
-.grid-4 .card,
-.grid-4 article.card.post-item {
+.grid-4 .card {
   display: flex !important;
   flex-direction: column !important;
   justify-content: flex-start !important;
@@ -1288,47 +1288,43 @@ article > h3:first-child {
   transition: transform 0.2s ease;
 }
 
-.grid-4 article.card:hover,
+.grid-4 article:hover,
 .grid-4 .card:hover {
   transform: translateY(-4px);
 }
 
-/* Enlace/Contenedor de la Imagen */
-.grid-4 .card > a:first-child,
-.grid-4 .card a.keychainify-checked:first-child {
+/* 1. IMAGEN (Regla estricta dirigida solo al contenedor/tag de la IMAGEN) */
+.grid-4 article > a:has(.card-img),
+.grid-4 .card > a:has(.card-img),
+.grid-4 .card-img {
   display: block !important;
   width: 100% !important;
   height: 180px !important;
+  max-height: 180px !important;
   border-radius: 8px !important;
   overflow: hidden !important;
   flex: 0 0 180px !important;
   margin-bottom: 8px !important;
-}
-
-.grid-4 .card-img {
-  width: 100% !important;
-  height: 100% !important;
   object-fit: cover !important;
-  display: block !important;
 }
 
-/* Etiqueta de Categoría */
+/* 2. ETIQUETA DE CATEGORÍA */
 .grid-4 .category-tag {
   display: inline-block !important;
   align-self: flex-start !important;
   margin: 4px 0 6px 0 !important;
   flex: 0 0 auto !important;
+  height: auto !important;
 }
 
-/* Título de la Tarjeta (Anulación total del contenedor gigante) */
-.grid-4 .card-title,
+/* 3. TÍTULO DE LA TARJETA (Inmune a la altura de la imagen) */
 .grid-4 h2.card-title,
-.grid-4 article h2.card-title {
+.grid-4 .card-title {
   display: block !important;
   width: 100% !important;
   height: auto !important;
   min-height: 0 !important;
-  max-height: fit-content !important;
+  max-height: none !important;
   margin: 4px 0 6px 0 !important;
   padding: 0 !important;
   font-size: 1.15rem !important;
@@ -1337,10 +1333,13 @@ article > h3:first-child {
   flex: 0 0 auto !important;
 }
 
-/* Enlace del título */
-.grid-4 .card-title a,
-.grid-4 .card-title a.keychainify-checked {
+/* Enlaces DENTRO del título (Remueve los 180px por completo) */
+.grid-4 h2.card-title a,
+.grid-4 .card-title a {
   display: inline !important;
+  height: auto !important;
+  max-height: none !important;
+  flex: none !important;
   color: #0f172a !important;
   text-decoration: none !important;
   margin: 0 !important;
@@ -1351,7 +1350,7 @@ article > h3:first-child {
   color: #00aeef !important;
 }
 
-/* Extracto / Texto */
+/* 4. EXTRACTO / TEXTO */
 .grid-4 .card-excerpt,
 .grid-4 p.card-excerpt {
   margin: 4px 0 12px 0 !important;
@@ -1360,12 +1359,14 @@ article > h3:first-child {
   line-height: 1.5 !important;
   text-align: left !important;
   flex: 0 0 auto !important;
+  height: auto !important;
 }
 
-/* Fecha / Pie de Tarjeta */
+/* 5. FECHA / PIE DE TARJETA */
 .grid-4 small {
   margin-top: auto !important;
   color: #64748b !important;
   font-size: 0.78rem !important;
   flex: 0 0 auto !important;
+  height: auto !important;
 }

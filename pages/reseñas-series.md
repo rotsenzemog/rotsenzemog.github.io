@@ -7,7 +7,7 @@ permalink: /reseñas/series/
 <div class="container" style="padding-top: 10px; padding-bottom: 60px;">
   
   <div class="section-header" style="text-align: center; margin-bottom: 30px;">
-    <h1 class="section-title">Reseñas de Seriess</h1>
+    <h1 class="section-title">Reseñas de Series</h1>
     <p style="color: var(--muted-text); margin-top: 8px;">Explora mis críticas y análisis de obras televisivas.</p>
   </div>
 

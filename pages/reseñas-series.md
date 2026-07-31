@@ -1,0 +1,142 @@
+---
+layout: default
+title: "Reseñas de Series de TV"
+permalink: /reseñas/series/
+---
+
+<div class="container" style="padding-top: 10px; padding-bottom: 60px;">
+  
+  <div class="section-header" style="text-align: center; margin-bottom: 30px;">
+    <h1 class="section-title">Reseñas de Seriess</h1>
+    <p style="color: var(--muted-text); margin-top: 8px;">Explora mis críticas y análisis de obras televisivas.</p>
+  </div>
+
+  <!-- BARRA DE HERRAMIENTAS: BÚSQUEDA Y ORDEN -->
+  <div class="blog-tools">
+    <div class="search-box">
+      <input type="text" id="searchInput" placeholder="Buscar por título o contenido..." onkeyup="filterPosts()">
+    </div>
+    <div class="sort-box">
+      <label for="sortOrder">Ordenar:</label>
+      <select id="sortOrder" onchange="sortPosts()">
+        <option value="desc">Más recientes primero</option>
+        <option value="asc">Más antiguos primero</option>
+      </select>
+    </div>
+  </div>
+
+  <!-- GRID DE 4 COLUMNAS (Filtrado por etiquetas en Liquid) -->
+  <div id="postsGrid" class="grid-4">
+    {% for post in site.posts %}
+      {% if post.tags contains 'reseña' and post.tags contains 'serie' %}
+      <article class="card post-item" 
+               data-title="{{ post.title | downcase }}" 
+               data-excerpt="{{ post.excerpt | strip_html | downcase }}"
+               data-date="{{ post.date | date: '%Y%m%d%H%M%S' }}">
+        <a href="{{ post.url | relative_url }}">
+          <img src="{{ post.image | relative_url }}" class="card-img" alt="{{ post.title }}">
+        </a>
+        <span class="category-tag">{{ post.category }}</span>
+        <h2 class="card-title">
+          <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
+        </h2>
+        <p class="card-excerpt">{{ post.excerpt | strip_html | truncatewords: 12 }}</p>
+        <small style="color: var(--muted-text); display: block; margin-top: auto;">{{ post.date | date: "%d %b %Y" }}</small>
+      </article>
+      {% endif %}
+    {% endfor %}
+  </div>
+
+  <p id="noResults" style="display: none; text-align: center; color: var(--muted-text); margin: 40px 0;">
+    No se encontraron publicaciones que coincidan con tu búsqueda.
+  </p>
+
+  <!-- CONTROLES DE PAGINACIÓN JS -->
+  <div class="pagination-container">
+    <button id="prevBtn" onclick="changePage(-1)" class="btn-pagination">&laquo; Anteriores</button>
+    <span id="pageIndicator" style="color: var(--muted-text); font-weight: 600;"></span>
+    <button id="nextBtn" onclick="changePage(1)" class="btn-pagination">Siguientes &raquo;</button>
+  </div>
+
+</div>
+
+<!-- LÓGICA DE INTERACTIVIDAD EN JAVASCRIPT -->
+<script>
+  const POSTS_PER_PAGE = 12; // 4 columnas x 3 filas
+  let currentPage = 1;
+  let visiblePosts = [];
+
+  const grid = document.getElementById('postsGrid');
+  const allPosts = Array.from(document.querySelectorAll('.post-item'));
+
+  function updatePagination() {
+    visiblePosts = allPosts.filter(post => post.style.display !== 'none' && !post.dataset.filtered);
+    
+    const totalPages = Math.ceil(visiblePosts.length / POSTS_PER_PAGE) || 1;
+    if (currentPage > totalPages) currentPage = totalPages;
+    if (currentPage < 1) currentPage = 1;
+
+    // Ocultar/Mostrar según la página activa
+    visiblePosts.forEach((post, index) => {
+      const start = (currentPage - 1) * POSTS_PER_PAGE;
+      const end = start + POSTS_PER_PAGE;
+      if (index >= start && index < end) {
+        post.style.display = 'flex';
+      } else {
+        post.style.display = 'none';
+      }
+    });
+
+    // Actualizar indicador y botones
+    document.getElementById('pageIndicator').innerText = `Página ${currentPage} de ${totalPages}`;
+    document.getElementById('prevBtn').disabled = (currentPage === 1);
+    document.getElementById('nextBtn').disabled = (currentPage === totalPages);
+
+    // Mensaje si no hay resultados
+    document.getElementById('noResults').style.display = visiblePosts.length === 0 ? 'block' : 'none';
+  }
+
+  function filterPosts() {
+    const query = document.getElementById('searchInput').value.toLowerCase();
+    
+    allPosts.forEach(post => {
+      const title = post.dataset.title;
+      const excerpt = post.dataset.excerpt;
+      
+      if (title.includes(query) || excerpt.includes(query)) {
+        delete post.dataset.filtered;
+      } else {
+        post.dataset.filtered = "true";
+        post.style.display = 'none';
+      }
+    });
+
+    currentPage = 1;
+    updatePagination();
+  }
+
+  function sortPosts() {
+    const order = document.getElementById('sortOrder').value;
+    
+    allPosts.sort((a, b) => {
+      const dateA = parseInt(a.dataset.date);
+      const dateB = parseInt(b.dataset.date);
+      return order === 'asc' ? dateA - dateB : dateB - dateA;
+    });
+
+    // Reordenar elementos dentro del contenedor DOM
+    allPosts.forEach(post => grid.appendChild(post));
+    updatePagination();
+  }
+
+  function changePage(direction) {
+    currentPage += direction;
+    updatePagination();
+    window.scrollTo({ top: grid.offsetTop - 100, behavior: 'smooth' });
+  }
+
+  // Inicialización al cargar la página
+  document.addEventListener("DOMContentLoaded", () => {
+    sortPosts();
+  });
+</script>

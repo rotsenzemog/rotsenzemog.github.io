@@ -2,6 +2,8 @@ backend:
   name: git-gateway
   branch: main # O el nombre de tu rama principal (master/main)
 
+site_url: https://marvelous-meringue-028d74.netlify.app
+
 # Configuración de carpetas de imágenes
 media_folder: "assets/images/uploads" # Dónde guardará las imágenes físicamente
 public_folder: "/assets/images/uploads" # La URL con la que se cargarán en la web

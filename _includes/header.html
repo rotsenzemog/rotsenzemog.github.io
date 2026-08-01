@@ -20,7 +20,7 @@
 
       <!-- Menú de Navegación -->
       <ul class="nav-menu">
-        <li><a href="{{ '/sobre-mi/' | relative_url }}">Yo</a></li>
+        <li><a href="{{ '/yo/' | relative_url }}">Yo</a></li>
         
         <!-- Submenú Novelas -->
         <li class="has-dropdown">
@@ -33,22 +33,18 @@
           </ul>  
           -->
         </li>
-
-        <li><a href="{{ '/galeria/' | relative_url }}">Lore</a></li>
-    
-        <!-- Submenú Reseñas -->
+        <li><a href="{{ '/lore/' | relative_url }}">Lore</a></li>
+        <li><a href="{{ '/bitácora/' | relative_url }}">Bitácora</a></li>
         <li class="has-dropdown">
           <a href="#">Reseñas <span class="arrow-down">▾</span></a>
           <ul class="dropdown-menu">
+            <!-- Submenú Reseñas -->
             <li><a href="{{ '/reseñas/libros/' | relative_url }}">Libros</a></li>
             <li><a href="{{ '/reseñas/series/' | relative_url }}">Series</a></li>
             <li><a href="{{ '/reseñas/peliculas/' | relative_url }}">Películas</a></li>
           </ul>
         </li>
-
         <li><a href="{{ '/nexo/' | relative_url }}">Nexo</a></li>
-    
-        <li><a href="{{ '/tienda/' | relative_url }}">Tienda</a></li>
       </ul>
 
     </div>

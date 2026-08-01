@@ -1,7 +1,7 @@
 ---
 layout: default
 title: "Nexo: Novedades del panorama Csi-fi"
-permalink: /nexos/
+permalink: /nexo/
 ---
 
 <div class="container" style="padding-top: 20px; padding-bottom: 60px;">

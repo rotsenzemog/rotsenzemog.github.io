@@ -17,20 +17,34 @@ permalink: /nexo/
     {% for item in nexos_ordenados %}
       <article class="news-item">
         
-        <!-- COLUMNA IZQUIERDA: Imagen -->
+        <!-- COLUMNA IZQUIERDA: Imagen o Favicon de respaldo -->
         <div class="news-col-left">
           <a href="{{ item.link_url }}" target="_blank" rel="noopener noreferrer">
-            <img src="{{ item.image_url }}" alt="{{ item.title }}" class="news-img">
+            {% if item.image_url and item.image_url != "" %}
+              <!-- Imagen personalizada o externa con bypass anti-hotlink -->
+              <img src="{{ item.image_url }}" alt="{{ item.title }}" class="news-img" referrerpolicy="no-referrer">
+            {% else %}
+              <!-- Respaldo: Muestra el logo/favicon del sitio externo automáticamente -->
+              <div class="news-favicon-box">
+                <img src="https://www.google.com/s2/favicons?domain={{ item.link_url }}&sz=128" alt="Fuente" class="news-favicon-img">
+              </div>
+            {% endif %}
           </a>
         </div>
 
-        <!-- COLUMNA CENTRO: Título + Comentario -->
+        <!-- COLUMNA CENTRO: Fuente + Título + Comentario -->
         <div class="news-col-center">
+          
+          {% if item.source %}
+            <span class="news-source-badge">{{ item.source }}</span>
+          {% endif %}
+
           <h2 class="news-title">
             <a href="{{ item.link_url }}" target="_blank" rel="noopener noreferrer">
               {{ item.title }} <span class="external-icon">↗</span>
             </a>
           </h2>
+          
           <div class="news-comment">
             {{ item.content | markdownify }}
           </div>

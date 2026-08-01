@@ -1,6 +1,6 @@
 ---
 layout: default
-title: "Nexo: Novedades del panorama Csi-fi"
+title: "Nexo: Novedades del panorama Sci-fi"
 permalink: /nexo/
 ---
 
@@ -11,13 +11,13 @@ permalink: /nexo/
     <p style="color: var(--muted-text); margin-top: 8px;">Enlaces de interés y mis comentarios.</p>
   </div>
 
-  <!-- CONTENEDOR DE LA LISTA EN 1 SOLA COLUMNA -->
+  <!-- CONTENEDOR DE LA LISTA EN 1 COLUMNA -->
   <div class="news-feed">
-    {% assign noticias_ordenadas = site.noticias | sort: 'date' | reverse %}
-    {% for item in noticias_ordenadas %}
+    {% assign nexos_ordenados = site.nexos | sort: 'date' | reverse %}
+    {% for item in nexos_ordenados %}
       <article class="news-item">
         
-        <!-- COLUMNA IZQUIERDA: Imagen con enlace -->
+        <!-- COLUMNA IZQUIERDA: Imagen -->
         <div class="news-col-left">
           <a href="{{ item.link_url }}" target="_blank" rel="noopener noreferrer">
             <img src="{{ item.image_url }}" alt="{{ item.title }}" class="news-img">

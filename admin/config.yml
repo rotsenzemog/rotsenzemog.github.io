@@ -9,7 +9,7 @@ media_folder: "assets/images/uploads" # Dónde guardará las imágenes físicame
 public_folder: "/assets/images/uploads" # La URL con la que se cargarán en la web
 
 collections:
-  # CONFIGURACIÓN PARA TUS NEXOS
+  # CONFIGURACIÓN PARA TUS NEXOS 
   - name: "nexos"
     label: "Nexos (Sci-Fi Links)"
     folder: "_nexos"

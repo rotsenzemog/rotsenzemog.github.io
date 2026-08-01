@@ -1,0 +1,36 @@
+backend:
+  name: git-gateway
+  branch: main # O el nombre de tu rama principal (master/main)
+
+# Configuración de carpetas de imágenes
+media_folder: "assets/images/uploads" # Dónde guardará las imágenes físicamente
+public_folder: "/assets/images/uploads" # La URL con la que se cargarán en la web
+
+collections:
+  # CONFIGURACIÓN PARA TUS NEXOS
+  - name: "nexos"
+    label: "Nexos (Sci-Fi Links)"
+    folder: "_nexos"
+    create: true
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    fields:
+      - { label: "Título de la Noticia", name: "title", widget: "string" }
+      - { label: "Fecha de publicación", name: "date", widget: "datetime" }
+      - { label: "URL de la Noticia Original", name: "link_url", widget: "string" }
+      - { label: "Nombre de la Fuente (ej: Xataka)", name: "source", widget: "string", required: false }
+      - { label: "Imagen destacada", name: "image_url", widget: "image", required: false }
+      - { label: "Tu Comentario / Opinión", name: "body", widget: "markdown" }
+
+  # CONFIGURACIÓN PARA TUS ARTÍCULOS DE BLOG
+  - name: "posts"
+    label: "Artículos del Blog"
+    folder: "_posts"
+    create: true
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    fields:
+      - { label: "Título del Artículo", name: "title", widget: "string" }
+      - { label: "Fecha", name: "date", widget: "datetime" }
+      - { label: "Categoría Principal", name: "category", widget: "string" }
+      - { label: "Etiquetas (Tags)", name: "tags", widget: "list", required: false }
+      - { label: "Imagen de Portada", name: "image", widget: "image", required: false }
+      - { label: "Contenido del Artículo", name: "body", widget: "markdown" }

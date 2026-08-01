@@ -7,7 +7,7 @@ permalink: /nexo/
 <div class="container" style="padding-top: 20px; padding-bottom: 60px;">
 
   <div class="section-header" style="text-align: center; margin-bottom: 40px;">
-    <h1 class="section-title">Nexo: Novedades del panorama Csi-fi</h1>
+    <h1 class="section-title">Nexo: Novedades del panorama Sci-fi</h1>
     <p style="color: var(--muted-text); margin-top: 8px;">Enlaces de interés y mis comentarios.</p>
   </div>
 

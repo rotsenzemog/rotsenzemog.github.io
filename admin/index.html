@@ -8,14 +8,19 @@
     <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
   </head>
   <body>
+    <!-- Script de Decap CMS -->
+    <script src="https://unpkg.com/decap-cms@^3.0.0/dist/decap-cms.js"></script>
+
     <script>
-      // Forzar la URL de Netlify ANTES de la inicialización
       if (window.netlifyIdentity) {
-        window.netlifyIdentity.setUrl("https://marvelous-meringue-028d74.netlify.app");
+        window.netlifyIdentity.on("init", user => {
+          if (!user) {
+            window.netlifyIdentity.on("login", () => {
+              document.location.reload();
+            });
+          }
+        });
       }
     </script>
-    
-    <!-- Carga de Decap CMS -->
-    <script src="https://unpkg.com/decap-cms@^3.0.0/dist/decap-cms.js"></script>
   </body>
 </html>

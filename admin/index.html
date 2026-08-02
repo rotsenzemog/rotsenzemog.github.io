@@ -17,12 +17,10 @@
         APIUrl: "https://marvelous-meringue-028d74.netlify.app/.netlify/identity"
       });
 
-      window.netlifyIdentity.on("init", function(user) {
-        if (!user) {
-          window.netlifyIdentity.on("login", function() {
-            document.location.href = "/admin/";
-          });
-        }
+      window.netlifyIdentity.on("login", function() {
+        // Cierra el cuadro emergente de login y recarga el CMS sin redirecciones rotas
+        window.netlifyIdentity.close();
+        document.location.reload();
       });
     }
   </script>

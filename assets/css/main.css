@@ -1377,92 +1377,93 @@ article > h3:first-child {
 
 <!-- ESTILOS CSS DE LA SECCIÓN -->
 
-  .newsletter-section {
-    background: linear-gradient(135deg, #0284c7 0%, #0369a1 100%);
-    padding: 4rem 1.5rem;
-    color: #ffffff;
-    text-align: center;
-    border-radius: 0; /* Sin bordes encajonados */
-  }
+  /* Tu regla de romper contenedor y expandir a 100vw */
+.newsletter-section {
+  width: 100vw !important;
+  position: relative;
+  left: 50%;
+  right: 50%;
+  margin-left: -50vw;
+  margin-right: -50vw; /* Rompe el contenedor y se extiende de borde a borde */
+  
+  background-color: #00aeef !important; /* Color azul secundario */
+  color: #ffffff !important;
+  padding: 40px 20px 50px 20px !important;
+  margin-top: 60px;
+  margin-bottom: 50px;
+  text-align: center;
+  box-sizing: border-box;
+}
 
-  .newsletter-container {
-    max-width: 600px;
-    margin: 0 auto;
-  }
+.newsletter-container {
+  max-width: 700px;
+  margin: 0 auto;
+}
 
-  .newsletter-icon img {
-    width: 60px;
-    height: 60px;
-    border-radius: 50%;
-    margin-bottom: 1rem;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
-  }
+.newsletter-section h2 {
+  color: #ffffff !important;
+  font-family: var(--font-serif);
+  font-size: 1.8rem;
+  margin-bottom: 10px;
+}
 
-  .newsletter-section h2 {
-    font-size: 2rem;
-    font-weight: 700;
-    margin-bottom: 0.5rem;
-    color: #ffffff;
-  }
+.newsletter-section p {
+  color: #f1f5f9 !important;
+  font-size: 1rem;
+  margin-bottom: 25px;
+  line-height: 1.5;
+}
 
-  .newsletter-section p {
-    font-size: 1.1rem;
-    color: #e0f2fe;
-    margin-bottom: 2rem;
-    line-height: 1.5;
-  }
+/* ESTILOS DEL NUEVO FORMULARIO NATIVO */
+.newsletter-form .input-group {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  max-width: 500px;
+  margin: 0 auto 15px;
+}
 
-  /* Contenedor del Input + Botón integrados */
+@media (min-width: 520px) {
   .newsletter-form .input-group {
-    display: flex;
-    flex-direction: column;
-    gap: 0.5rem;
-    max-width: 480px;
-    margin: 0 auto 1rem;
-  }
-
-  @media (min-width: 520px) {
-    .newsletter-form .input-group {
-      flex-direction: row;
-      background: #ffffff;
-      padding: 4px;
-      border-radius: 50px;
-      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
-    }
-  }
-
-  .newsletter-form input[type="email"] {
-    flex: 1;
-    border: none;
-    padding: 0.85rem 1.25rem;
-    font-size: 1rem;
-    outline: none;
+    flex-direction: row;
+    background: #ffffff;
+    padding: 5px;
     border-radius: 50px;
-    color: #1e293b;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15); /* Tu sombra elegante */
   }
+}
 
-  .newsletter-form button {
-    background-color: #0f172a;
-    color: #ffffff;
-    border: none;
-    padding: 0.85rem 1.75rem;
-    font-size: 1rem;
-    font-weight: 600;
-    border-radius: 50px;
-    cursor: pointer;
-    transition: all 0.2s ease;
-  }
+.newsletter-form input[type="email"] {
+  flex: 1;
+  border: none;
+  padding: 12px 20px;
+  font-size: 1rem;
+  outline: none;
+  border-radius: 50px;
+  color: #1e293b;
+}
 
-  .newsletter-form button:hover {
-    background-color: #1e293b;
-    transform: translateY(-1px);
-  }
+.newsletter-form button {
+  background-color: #0f172a; /* Oscuro elegante para contraste con el azul */
+  color: #ffffff;
+  border: none;
+  padding: 12px 25px;
+  font-size: 1rem;
+  font-weight: 600;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
 
-  .newsletter-disclaimer {
-    font-size: 0.85rem;
-    color: #bae6fd;
-    display: block;
-  }
+.newsletter-form button:hover {
+  background-color: #1e293b;
+}
+
+.newsletter-disclaimer {
+  font-size: 0.82rem;
+  color: #e0f2fe;
+  display: block;
+}
 
 /* ==========================================
    AGREGADOR DE NOTICIAS (LINKLOG)

@@ -4,19 +4,15 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Content Manager</title>
-    <!-- Widget de Netlify Identity -->
+    <!-- 1. Cargar Widget de Netlify Identity -->
     <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
   </head>
   <body>
-    <!-- Script de Decap CMS -->
-    <script src="https://unpkg.com/decap-cms@^3.0.0/dist/decap-cms.js"></script>
-
     <script>
-      // 1. Apuntar manualmente al servidor de Netlify que tiene Git Gateway
-      window.netlifyIdentity.setUrl("https://marvelous-meringue-028d74.netlify.app");
-
-      // 2. Controlar el refresco al iniciar sesión
+      // 2. Apuntar PRIMERO al servidor de Netlify ANTES de cargar Decap
       if (window.netlifyIdentity) {
+        window.netlifyIdentity.setUrl("https://marvelous-meringue-028d74.netlify.app");
+        
         window.netlifyIdentity.on("init", user => {
           if (!user) {
             window.netlifyIdentity.on("login", () => {
@@ -26,5 +22,8 @@
         });
       }
     </script>
+
+    <!-- 3. Cargar Decap CMS AL FINAL -->
+    <script src="https://unpkg.com/decap-cms@^3.0.0/dist/decap-cms.js"></script>
   </body>
 </html>

@@ -1,9 +1,8 @@
 backend:
-  name: git-gateway
+  name: github
+  repo: rotsenzemog/rotsenzemog.github.io
   branch: main
-  site_url: https://marvelous-meringue-028d74.netlify.app
-
-display_url: https://rotsenzemog.github.io
+  base_url: https://decap-oauth-provider-node.vercel.app
 
 # Configuración de carpetas de imágenes
 media_folder: "assets/images/uploads"

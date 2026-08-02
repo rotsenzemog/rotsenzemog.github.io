@@ -2,8 +2,7 @@ backend:
   name: github
   repo: rotsenzemog/rotsenzemog.github.io
   branch: main
-  base_url: https://decap-bridge.sunciti.net
-  auth_endpoint: /auth
+  base_url: https://decap-oauth.sunciti.net
 
 # Configuración de carpetas de imágenes
 media_folder: "assets/images/uploads"

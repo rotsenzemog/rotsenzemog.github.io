@@ -12,7 +12,10 @@
     <script src="https://unpkg.com/decap-cms@^3.0.0/dist/decap-cms.js"></script>
 
     <script>
-      // Forzar la conexión a tu app de Netlify si no está autenticado
+      // 1. Apuntar manualmente al servidor de Netlify que tiene Git Gateway
+      window.netlifyIdentity.setUrl("https://marvelous-meringue-028d74.netlify.app");
+
+      // 2. Controlar el refresco al iniciar sesión
       if (window.netlifyIdentity) {
         window.netlifyIdentity.on("init", user => {
           if (!user) {

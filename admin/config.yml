@@ -1,8 +1,7 @@
 backend:
-  name: github
-  repo: rotsenzemog/rotsenzemog.github.io
+  name: git-gateway
   branch: main
-  base_url: https://marvelous-meringue-028d74.netlify.app
+  site_url: https://marvelous-meringue-028d74.netlify.app
 
 display_url: https://rotsenzemog.github.io
 

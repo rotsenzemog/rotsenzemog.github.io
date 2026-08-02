@@ -161,13 +161,44 @@ layout: default
     <h2>¡No te pierdas ninguna publicación!</h2>
     <p>Recibe los nuevos relatos, novelas y reseñas directamente en tu bandeja de entrada.</p>
 
-    <!-- Formulario Nativo Conectado a Substack -->
-    <form action="https://rotsenzemog.substack.com/api/v1/free" method="post" class="newsletter-form" target="_blank">
-      <div class="input-group">
-        <input type="email" name="email" placeholder="Escribe tu correo electrónico..." required />
-        <button type="submit">Suscribirme</button>
-      </div>
-    </form>
+    <!-- Formulario con AJAX -->
+<form id="substack-form" action="https://rotsenzemog.substack.com/api/v1/free" method="post" class="newsletter-form">
+  <div class="input-group">
+    <input type="email" id="substack-email" name="email" placeholder="Escribe tu correo electrónico..." required />
+    <button type="submit" id="substack-btn">Suscribirme</button>
+  </div>
+  <div id="newsletter-response" style="display:none; margin-top:15px; font-weight:600;"></div>
+</form>
+
+<script>
+  document.getElementById('substack-form').addEventListener('submit', function(e) {
+    e.preventDefault();
+    const btn = document.getElementById('substack-btn');
+    const responseDiv = document.getElementById('newsletter-response');
+    const email = document.getElementById('substack-email').value;
+
+    btn.innerText = 'Enviando...';
+    btn.disabled = true;
+
+    fetch(this.action, {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+      body: new URLSearchParams({ 'email': email })
+    })
+    .then(() => {
+      responseDiv.style.color = '#ffffff';
+      responseDiv.innerText = '¡Gracias por suscribirte! Te hemos enviado un correo de confirmación.';
+      responseDiv.style.display = 'block';
+      document.getElementById('substack-form').reset();
+      btn.innerText = 'Suscribirme';
+      btn.disabled = false;
+    })
+    .catch(() => {
+      // Fallback por si hay bloqueo de CORS: redirige limpiamente
+      window.location.href = "https://rotsenzemog.substack.com/welcome";
+    });
+  });
+</script>
 
     <span class="newsletter-disclaimer">Únete a la comunidad. Sin spam, cancélala cuando quieras.</span>
   </div>

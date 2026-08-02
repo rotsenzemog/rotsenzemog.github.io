@@ -150,15 +150,26 @@ layout: default
   </div>
 </section>
 
-<!-- SECCIÓN DE SUSCRIPCIÓN FULL-WIDTH -->
+<!-- SECCIÓN DE SUSCRIPCIÓN REDISEÑADA -->
 <section class="newsletter-section">
   <div class="newsletter-container">
+    <div class="newsletter-icon">
+      <!-- Tu logo o un icono elegante -->
+      <img src="https://rotsenzemog.github.io/assets/images/logo.png" alt="RotsenZemog Logo" onerror="this.style.display='none'">
+    </div>
+    
     <h2>¡No te pierdas ninguna publicación!</h2>
     <p>Recibe los nuevos relatos, novelas y reseñas directamente en tu bandeja de entrada.</p>
 
-    <div class="substack-embed-wrapper">
-      <iframe src="https://rotsenzemog.substack.com/embed?transparent=1&light=1" width="480" height="320" style="border: 0; background: transparent" frameborder="0" scrolling="no"></iframe>
-    </div>
+    <!-- Formulario Nativo Conectado a Substack -->
+    <form action="https://rotsenzemog.substack.com/api/v1/free" method="post" class="newsletter-form" target="_blank">
+      <div class="input-group">
+        <input type="email" name="email" placeholder="Escribe tu correo electrónico..." required />
+        <button type="submit">Suscribirme</button>
+      </div>
+    </form>
+
+    <span class="newsletter-disclaimer">Únete a la comunidad. Sin spam, cancélala cuando quieras.</span>
   </div>
 </section>
 

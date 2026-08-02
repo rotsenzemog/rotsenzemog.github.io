@@ -1,16 +1,70 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
   <head>
     <meta charset="utf-8" />
-    <title>Redirigiendo al Administrador...</title>
-    <!-- Redirección por Meta HTML -->
-    <meta http-equiv="refresh" content="0; url=https://marvelous-meringue-028d74.netlify.app/admin/" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Acceso al Panel de Control</title>
+    <style>
+      body {
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+        background-color: #0f172a;
+        color: #f8fafc;
+      }
+      .card {
+        background: #1e293b;
+        padding: 2.5rem;
+        border-radius: 12px;
+        box-shadow: 0 10px 25px rgba(0,0,0,0.5);
+        text-align: center;
+        max-width: 400px;
+        border: 1px solid #334155;
+      }
+      h1 { font-size: 1.5rem; margin-bottom: 1rem; color: #38bdf8; }
+      p { color: #94a3b8; font-size: 0.95rem; line-height: 1.5; margin-bottom: 1.5rem; }
+      .btn {
+        display: block;
+        width: 100%;
+        padding: 0.75rem 1rem;
+        margin-bottom: 0.75rem;
+        border-radius: 6px;
+        text-decoration: none;
+        font-weight: 600;
+        box-sizing: border-box;
+      }
+      .btn-primary { background-color: #0284c7; color: #ffffff; }
+      .btn-primary:hover { background-color: #0369a1; }
+      .btn-secondary { background-color: transparent; color: #94a3b8; border: 1px solid #475569; }
+      .btn-secondary:hover { background-color: #334155; color: #fff; }
+    </style>
   </head>
   <body>
+    <div class="card">
+      <h1>Panel de Administración</h1>
+      <p>Para gestionar el contenido de forma segura sin errores de autenticación, accede directamente a la app de Netlify.</p>
+      
+      <!-- Botón que abre el CMS en una pestaña nueva -->
+      <a href="https://marvelous-meringue-028d74.netlify.app/admin/" target="_blank" class="btn btn-primary">
+        Abrir Decap CMS ↗
+      </a>
+      
+      <!-- Botón para volver a la página principal -->
+      <a href="/" class="btn btn-secondary">
+        Volver a la Web Principal
+      </a>
+    </div>
+
     <script>
-      // Redirección por JavaScript
-      window.location.href = "https://marvelous-meringue-028d74.netlify.app/admin/";
+      // Intenta redirigir la pestaña principal a la Home al hacer clic en el botón del CMS
+      document.querySelector('.btn-primary').addEventListener('click', function() {
+        setTimeout(function() {
+          window.location.href = "/";
+        }, 500);
+      });
     </script>
-    <p>Redirigiendo a Decap CMS... Si no te redirige automáticamente, <a href="https://marvelous-meringue-028d74.netlify.app/admin/">haz clic aquí</a>.</p>
   </body>
 </html>

@@ -1375,57 +1375,8 @@ article > h3:first-child {
    SECCIÓN DE SUSCRIPCIÓN (FULL WIDTH & AZUL)
    ========================================== */
 
-.newsletter-section {
-  width: 100vw !important;
-  position: relative;
-  left: 50%;
-  right: 50%;
-  margin-left: -50vw;
-  margin-right: -50vw; /* Rompe el contenedor y se extiende de borde a borde */
-  
-  background-color: #00aeef !important; /* Color azul secundario */
-  color: #ffffff !important;
-  padding: 1px 20px 50px 20px !important;
-  margin-top: 60px;
-  margin-bottom: 50px;
-  text-align: center;
-  box-sizing: border-box;
-}
-
-.newsletter-container {
-  max-width: 700px;
-  margin: 0 auto;
-}
-
-.newsletter-section h2 {
-  color: #ffffff !important;
-  font-family: var(--font-serif);
-  font-size: 1.8rem;
-  margin-bottom: 10px;
-}
-
-.newsletter-section p {
-  color: #f1f5f9 !important;
-  font-size: 1rem;
-  margin-bottom: 25px;
-  line-height: 1.5;
-}
-
-/* Envoltorio y estilo del iframe de Substack */
-.substack-embed-wrapper {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.substack-embed-wrapper iframe {
-  max-width: 100%;
-  border-radius: 12px !important; /* Bordes suaves */
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2) !important; /* Sombra elegante */
-}
-
 <!-- ESTILOS CSS DE LA SECCIÓN -->
-<style>
+
   .newsletter-section {
     background: linear-gradient(135deg, #0284c7 0%, #0369a1 100%);
     padding: 4rem 1.5rem;

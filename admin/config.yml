@@ -1,6 +1,7 @@
 backend:
   name: git-gateway
   branch: main # O el nombre de tu rama principal (master/main)
+  site_domain: marvelous-meringue-028d74.netlify.app
 
 display_url: https://rotsenzemog.github.io
 site_url: https://marvelous-meringue-028d74.netlify.app

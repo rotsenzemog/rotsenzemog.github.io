@@ -1,7 +1,8 @@
 backend:
   name: github
   repo: rotsenzemog/rotsenzemog.github.io
-  branch: main # o la rama que uses
+  branch: main
+  base_url: https://marvelous-meringue-028d74.netlify.app
 
 display_url: https://rotsenzemog.github.io
 

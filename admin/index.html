@@ -4,7 +4,7 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Panel de Administración - Decap CMS</title>
-  <!-- Script de Netlify Identity -->
+  <!-- Widget de Netlify Identity -->
   <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
 </head>
 <body>
@@ -12,11 +12,15 @@
   <script src="https://unpkg.com/decap-cms@^3.0.0/dist/decap-cms.js"></script>
 
   <script>
-    // Le indicamos al widget la dirección real de tu proyecto en Netlify
     if (window.netlifyIdentity) {
-      window.netlifyIdentity.on("init", user => {
+      // Inicializar conectando a la API de Netlify
+      window.netlifyIdentity.init({
+        APIUrl: "https://marvelous-meringue-028d74.netlify.app/.netlify/identity"
+      });
+
+      window.netlifyIdentity.on("init", function(user) {
         if (!user) {
-          window.netlifyIdentity.on("login", () => {
+          window.netlifyIdentity.on("login", function() {
             document.location.href = "/admin/";
           });
         }

@@ -2,25 +2,15 @@
 <html>
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Content Manager</title>
-    <!-- Script de Netlify Identity -->
-    <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+    <title>Redirigiendo al Administrador...</title>
+    <!-- Redirección por Meta HTML -->
+    <meta http-equiv="refresh" content="0; url=https://marvelous-meringue-028d74.netlify.app/admin/" />
   </head>
   <body>
-    <!-- Script de Decap CMS -->
-    <script src="https://unpkg.com/decap-cms@^3.0.0/dist/decap-cms.js"></script>
-
     <script>
-      if (window.netlifyIdentity) {
-        window.netlifyIdentity.on("init", user => {
-          if (!user) {
-            window.netlifyIdentity.on("login", () => {
-              document.location.reload();
-            });
-          }
-        });
-      }
+      // Redirección por JavaScript
+      window.location.href = "https://marvelous-meringue-028d74.netlify.app/admin/";
     </script>
+    <p>Redirigiendo a Decap CMS... Si no te redirige automáticamente, <a href="https://marvelous-meringue-028d74.netlify.app/admin/">haz clic aquí</a>.</p>
   </body>
 </html>

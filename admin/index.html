@@ -4,9 +4,18 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Content Manager</title>
+    <!-- Script de Netlify Identity -->
+    <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
   </head>
   <body>
-    <!-- Script de Decap CMS -->
+    <script>
+      // Forzar la URL de Netlify ANTES de la inicialización
+      if (window.netlifyIdentity) {
+        window.netlifyIdentity.setUrl("https://marvelous-meringue-028d74.netlify.app");
+      }
+    </script>
+    
+    <!-- Carga de Decap CMS -->
     <script src="https://unpkg.com/decap-cms@^3.0.0/dist/decap-cms.js"></script>
   </body>
 </html>

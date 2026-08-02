@@ -4,16 +4,15 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Panel de Administración - Decap CMS</title>
-  <!-- Widget de Netlify Identity -->
+  
+  <!-- 1. Cargar Widget de Netlify Identity -->
   <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
 </head>
 <body>
-  <!-- Carga de Decap CMS -->
-  <script src="https://unpkg.com/decap-cms@^3.0.0/dist/decap-cms.js"></script>
 
+  <!-- 2. Configurar la URL del Backend de Netlify ANTES del CMS -->
   <script>
     if (window.netlifyIdentity) {
-      // Inicializar conectando a la API de Netlify
       window.netlifyIdentity.init({
         APIUrl: "https://marvelous-meringue-028d74.netlify.app/.netlify/identity"
       });
@@ -27,5 +26,9 @@
       });
     }
   </script>
+
+  <!-- 3. Cargar Decap CMS al final -->
+  <script src="https://unpkg.com/decap-cms@^3.0.0/dist/decap-cms.js"></script>
+
 </body>
 </html>

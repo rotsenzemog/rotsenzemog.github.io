@@ -1,10 +1,9 @@
 backend:
-  name: git-gateway
-  branch: main # O el nombre de tu rama principal (master/main)
-  site_domain: marvelous-meringue-028d74.netlify.app
+  name: github
+  repo: rotsenzemog/rotsenzemog.github.io
+  branch: main # o la rama que uses
 
 display_url: https://rotsenzemog.github.io
-site_url: https://marvelous-meringue-028d74.netlify.app
 
 # Configuración de carpetas de imágenes
 media_folder: "assets/images/uploads" # Dónde guardará las imágenes físicamente

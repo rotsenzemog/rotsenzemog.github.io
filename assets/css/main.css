@@ -1375,8 +1375,6 @@ article > h3:first-child {
    SECCIÓN DE SUSCRIPCIÓN (FULL WIDTH & AZUL)
    ========================================== */
 
-<!-- ESTILOS CSS DE LA SECCIÓN -->
-
   /* Tu regla de romper contenedor y expandir a 100vw */
 .newsletter-section {
   width: 100vw !important;

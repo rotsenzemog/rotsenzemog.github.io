@@ -1424,6 +1424,95 @@ article > h3:first-child {
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2) !important; /* Sombra elegante */
 }
 
+<!-- ESTILOS CSS DE LA SECCIÓN -->
+<style>
+  .newsletter-section {
+    background: linear-gradient(135deg, #0284c7 0%, #0369a1 100%);
+    padding: 4rem 1.5rem;
+    color: #ffffff;
+    text-align: center;
+    border-radius: 0; /* Sin bordes encajonados */
+  }
+
+  .newsletter-container {
+    max-width: 600px;
+    margin: 0 auto;
+  }
+
+  .newsletter-icon img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    margin-bottom: 1rem;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+  }
+
+  .newsletter-section h2 {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+    color: #ffffff;
+  }
+
+  .newsletter-section p {
+    font-size: 1.1rem;
+    color: #e0f2fe;
+    margin-bottom: 2rem;
+    line-height: 1.5;
+  }
+
+  /* Contenedor del Input + Botón integrados */
+  .newsletter-form .input-group {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    max-width: 480px;
+    margin: 0 auto 1rem;
+  }
+
+  @media (min-width: 520px) {
+    .newsletter-form .input-group {
+      flex-direction: row;
+      background: #ffffff;
+      padding: 4px;
+      border-radius: 50px;
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+    }
+  }
+
+  .newsletter-form input[type="email"] {
+    flex: 1;
+    border: none;
+    padding: 0.85rem 1.25rem;
+    font-size: 1rem;
+    outline: none;
+    border-radius: 50px;
+    color: #1e293b;
+  }
+
+  .newsletter-form button {
+    background-color: #0f172a;
+    color: #ffffff;
+    border: none;
+    padding: 0.85rem 1.75rem;
+    font-size: 1rem;
+    font-weight: 600;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+  }
+
+  .newsletter-form button:hover {
+    background-color: #1e293b;
+    transform: translateY(-1px);
+  }
+
+  .newsletter-disclaimer {
+    font-size: 0.85rem;
+    color: #bae6fd;
+    display: block;
+  }
+
 /* ==========================================
    AGREGADOR DE NOTICIAS (LINKLOG)
    ========================================== */

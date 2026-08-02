@@ -1,32 +1,27 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Panel de Administración - Decap CMS</title>
-  
-  <!-- 1. Cargar Widget de Netlify Identity -->
-  <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
-</head>
-<body>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Content Manager</title>
+    <!-- Widget de Netlify Identity -->
+    <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+  </head>
+  <body>
+    <!-- Script de Decap CMS -->
+    <script src="https://unpkg.com/decap-cms@^3.0.0/dist/decap-cms.js"></script>
 
-  <!-- 2. Configurar la URL del Backend de Netlify ANTES del CMS -->
-  <script>
-    if (window.netlifyIdentity) {
-      window.netlifyIdentity.init({
-        APIUrl: "https://marvelous-meringue-028d74.netlify.app/.netlify/identity"
-      });
-
-      window.netlifyIdentity.on("login", function() {
-        // Cierra el cuadro emergente de login y recarga el CMS sin redirecciones rotas
-        window.netlifyIdentity.close();
-        document.location.reload();
-      });
-    }
-  </script>
-
-  <!-- 3. Cargar Decap CMS al final -->
-  <script src="https://unpkg.com/decap-cms@^3.0.0/dist/decap-cms.js"></script>
-
-</body>
+    <script>
+      // Forzar la conexión a tu app de Netlify si no está autenticado
+      if (window.netlifyIdentity) {
+        window.netlifyIdentity.on("init", user => {
+          if (!user) {
+            window.netlifyIdentity.on("login", () => {
+              document.location.reload();
+            });
+          }
+        });
+      }
+    </script>
+  </body>
 </html>

@@ -7,6 +7,21 @@
   padding: 60px 0 30px;
   margin-top: 80px;
   border-top: 3px solid var(--accent-color);
+  width: 100%;
+  box-sizing: border-box;
+
+  /* --- CONTROL DE ICONOS (Evita el icono gigante de Instagram/Socials) --- */
+  svg, 
+  img.social-icon, 
+  .social-icon svg {
+    width: 24px !important;
+    height: 24px !important;
+    max-width: 24px !important;
+    max-height: 24px !important;
+    fill: currentColor;
+    display: inline-block;
+    vertical-align: middle;
+  }
 }
 
 .footer-content {
@@ -24,8 +39,10 @@
 }
 
 .footer-avatar-img {
-  width: 90px;
-  height: 90px;
+  width: 90px !important;
+  height: 90px !important;
+  max-width: 90px !important;
+  max-height: 90px !important;
   object-fit: cover;
   border-radius: 50%;
   border: 2px solid var(--accent-color);
@@ -52,7 +69,8 @@
 }
 
 .footer-title-logo {
-  height: 28px;
+  height: 28px !important;
+  max-height: 28px !important;
   width: auto;
   object-fit: contain;
   filter: brightness(0) invert(1);
@@ -65,6 +83,28 @@
   line-height: 1.6;
 }
 
+/* Redes Sociales del Footer */
+.social-links, 
+.footer-socials {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+  margin-top: 15px;
+
+  a {
+    color: #94a3b8;
+    transition: color 0.2s ease, transform 0.2s ease;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    &:hover {
+      color: var(--accent-color);
+      transform: translateY(-2px);
+    }
+  }
+}
+
 /* Formularios y Botones del Footer */
 .footer-newsletter input[type="email"] {
   width: 100%;
@@ -75,6 +115,7 @@
   color: #ffffff;
   margin-bottom: 10px;
   outline: none;
+  box-sizing: border-box;
 
   &:focus {
     border-color: var(--accent-color);
@@ -113,6 +154,11 @@
   &:hover {
     background-color: #e04b48;
     transform: translateY(-2px);
+  }
+
+  img, svg {
+    width: 20px !important;
+    height: 20px !important;
   }
 }
 

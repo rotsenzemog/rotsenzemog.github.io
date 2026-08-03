@@ -1,5 +1,4 @@
 ---
-# El Front Matter obligatorio le indica a Jekyll que debe procesar este Sass a CSS
 ---
 
 @import "variables";
@@ -7,3 +6,5 @@
 @import "components";
 @import "cards";
 @import "footer";
+
+# El Front Matter obligatorio le indica a Jekyll que debe procesar este Sass a CSS

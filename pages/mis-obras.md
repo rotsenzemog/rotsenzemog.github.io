@@ -1,14 +1,14 @@
 ---
 layout: default
 title: "Obras propias"
-permalink: /obras/
+permalink: /mis-obras/
 ---
 
 <div class="container" style="padding-top: 10px; padding-bottom: 60px;">
   
   <div class="section-header" style="text-align: center; margin-bottom: 30px;">
-    <h1 class="section-title">Obras literarias propias</h1>
-    <p style="color: var(--muted-text); margin-top: 8px;">Textos e historias de mi propia autoría.</p>
+    <h1 class="section-title">Obras de mi propia autoría</h1>
+    <p style="color: var(--muted-text); margin-top: 8px;">Textos o historias originales escritas por mi.</p>
   </div>
 
   <!-- BARRA DE HERRAMIENTAS: BÚSQUEDA Y ORDEN -->
@@ -28,7 +28,7 @@ permalink: /obras/
   <!-- GRID DE 4 COLUMNAS (Filtrado por etiquetas en Liquid) -->
   <div id="postsGrid" class="grid-4">
     {% for post in site.posts %}
-      {% if post.tags contains 'novela' or post.tags contains 'relato' or post.tags contains 'poema' %}
+      {% if post.category == 'Obra Propia' %}
       <article class="card post-item" 
                data-title="{{ post.title | downcase }}" 
                data-excerpt="{{ post.excerpt | strip_html | downcase }}"

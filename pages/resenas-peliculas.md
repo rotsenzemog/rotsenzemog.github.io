@@ -7,8 +7,8 @@ permalink: /reseñas/peliculas/
 <div class="container" style="padding-top: 10px; padding-bottom: 60px;">
   
   <div class="section-header" style="text-align: center; margin-bottom: 30px;">
-    <h1 class="section-title">Reseñas de Películas</h1>
-    <p style="color: var(--muted-text); margin-top: 8px;">Explora nuestras críticas y análisis del séptimo arte.</p>
+    <h1 class="section-title">Reseñas de Peliculas</h1>
+    <p style="color: var(--muted-text); margin-top: 8px;">Explora mis críticas y análisis de obras cinematograficas.</p>
   </div>
 
   <!-- BARRA DE HERRAMIENTAS: BÚSQUEDA Y ORDEN -->
@@ -28,7 +28,7 @@ permalink: /reseñas/peliculas/
   <!-- GRID DE 4 COLUMNAS (Filtrado por etiquetas en Liquid) -->
   <div id="postsGrid" class="grid-4">
     {% for post in site.posts %}
-      {% if post.tags contains 'reseña' and post.tags contains 'película' %}
+      {% if post.category == 'Reseña' and post.tags contains 'Pelicula' %}
       <article class="card post-item" 
                data-title="{{ post.title | downcase }}" 
                data-excerpt="{{ post.excerpt | strip_html | downcase }}"

@@ -1225,6 +1225,28 @@ article > h3:first-child {
 /* ==========================================
    ESTILOS DE BLOG: GRID 4 COLUMNAS, BUSCADOR Y PAGINACIÓN
    ========================================== */
+
+/* CONTENEDOR PRINCIPAL GRID 4 COLUMNAS */
+.grid-4 {
+  display: grid !important;
+  grid-template-columns: repeat(4, 1fr) !important;
+  gap: 24px !important;
+  width: 100% !important;
+}
+
+/* Adaptación responsive para móviles y tablets */
+@media (max-width: 1024px) {
+  .grid-4 {
+    grid-template-columns: repeat(2, 1fr) !important;
+  }
+}
+
+@media (max-width: 640px) {
+  .grid-4 {
+    grid-template-columns: 1fr !important;
+  }
+}
+
 /* ==========================================
    TARJETAS DE BLOG (GRID 4) FIX ESTRUCTURAL DEFINITIVO
    ========================================== */
@@ -1251,19 +1273,26 @@ article > h3:first-child {
   transform: translateY(-4px);
 }
 
-/* 1. IMAGEN (Regla estricta dirigida solo al contenedor/tag de la IMAGEN) */
-.grid-4 article > a:has(.card-img),
-.grid-4 .card > a:has(.card-img),
-.grid-4 .card-img {
+/* 1. IMAGEN DE LA TARJETA */
+.grid-4 article > a,
+.grid-4 .card > a {
+  display: block !important;
+  width: 100% !important;
+  height: 180px !important;
+  margin-bottom: 8px !important;
+  border-radius: 8px !important;
+  overflow: hidden !important;
+}
+
+.grid-4 .card-img,
+.grid-4 article img {
   display: block !important;
   width: 100% !important;
   height: 180px !important;
   max-height: 180px !important;
-  border-radius: 8px !important;
-  overflow: hidden !important;
-  flex: 0 0 180px !important;
-  margin-bottom: 8px !important;
   object-fit: cover !important;
+  object-position: center !important;
+  border-radius: 8px !important;
 }
 
 /* 2. ETIQUETA DE CATEGORÍA */
@@ -1275,7 +1304,7 @@ article > h3:first-child {
   height: auto !important;
 }
 
-/* 3. TÍTULO DE LA TARJETA (Inmune a la altura de la imagen) */
+/* 3. TÍTULO DE LA TARJETA */
 .grid-4 h2.card-title,
 .grid-4 .card-title {
   display: block !important;
@@ -1291,7 +1320,7 @@ article > h3:first-child {
   flex: 0 0 auto !important;
 }
 
-/* Enlaces DENTRO del título (Remueve los 180px por completo) */
+/* Enlaces DENTRO del título */
 .grid-4 h2.card-title a,
 .grid-4 .card-title a {
   display: inline !important;
@@ -1328,7 +1357,8 @@ article > h3:first-child {
   flex: 0 0 auto !important;
   height: auto !important;
 }
-/* Paginador inferior */
+
+/* PAGINADOR INFERIOR */
 .pagination-container {
   margin-top: 50px;
   display: flex;

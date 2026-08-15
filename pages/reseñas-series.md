@@ -28,7 +28,7 @@ permalink: /reseñas/series/
   <!-- GRID DE 4 COLUMNAS (Filtrado por etiquetas en Liquid) -->
   <div id="postsGrid" class="grid-4">
     {% for post in site.posts %}
-      {% if post.tags contains 'reseña' and post.tags contains 'serie' %}
+      {% if post.category == 'Reseña' and post.tags contains 'Serie' %}
       <article class="card post-item" 
                data-title="{{ post.title | downcase }}" 
                data-excerpt="{{ post.excerpt | strip_html | downcase }}"

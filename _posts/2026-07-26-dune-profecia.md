@@ -2,6 +2,11 @@
 layout: post
 title: "Reseña de Duna: La Profecía - Primera Temporada"
 category: "Reseña"
+tags:
+  - Ciencia Ficción
+  - Series
+  - HBO Max
+  - Duna
 image: "assets/images/posts/dune-profecia.webp"
 ---
 

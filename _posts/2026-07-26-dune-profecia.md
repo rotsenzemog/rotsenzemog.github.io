@@ -2,7 +2,7 @@
 layout: post
 title: "Reseña de Duna: La Profecía - Primera Temporada"
 category: "Reseña"
-image: "https://storage.ko-fi.com/cdn/useruploads/display/228b0fa5-2882-4148-9333-3bb8c7929f64.png"
+image: "assets/images/posts/dune-profecia.webp"
 ---
 
 Aunque la obra pertenece al mismo universo audiovisual y se basa al igual que los largometrajes en la saga de libros escritos por Frank Herbert, esta está ambientada aproximadamente 10.000 años antes de los hechos narrados en la novela original, donde la trama gira en torno al personaje de Paul Atreides. Por lo tanto, aunque sí que se hace referencia directa a las casas Atreides y Harkonnen, presentando los orígenes de su rivalidad, no debemos esperar ver a los mismos personajes que ya conocemos de la pantalla grande, pues en este caso el rol protagónico recae sobre las hermanas Valya y Tula Harkonnen, así como en menor medida, sobre la familia real perteneciente a la Casa Corrino.

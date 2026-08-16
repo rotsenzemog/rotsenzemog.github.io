@@ -65,8 +65,8 @@ permalink: /yo/
 
   <!-- 9. REALIDAD Y RESISTENCIA -->
   <div class="yo-card tall">
-    <h3>Anclaje a la Tierra</h3>
-    <p>Soy profesor universitario reconvertido debido a la crisis en Venezuela. Vivo en la planta alta de la casa de mis padres, cuidando de ellos y de mi familia. La literatura la escribo a escondidas de mi entorno cercano, esperando mostrarles los frutos cuando el proyecto sea una realidad sólida.</p>
+    <h3>Los 40 son los nuevos 30</h3>
+    <p>Tengo una edad que quizá no sea la mejor para iniciarse en una actividad como la litera, aunque hoy en día la madurez sí se consigue combinar correctamente con la motivación y la pasión; puede ser un gran momento para explorar nuevos horizontes y eso es precisamente lo que pretendo, descubrir mi lado artístico.</p>
   </div>
 
   <!-- 10. EL CAMINO DE SALIDA -->

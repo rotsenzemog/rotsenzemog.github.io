@@ -34,9 +34,10 @@ permalink: /yo/
 
   <!-- 4. LA DISLEXIA Y EL ORIGEN -->
   <div class="yo-card tall">
-    <h3>La Inseparable Compañera</h3>
-    <p>Nací sietemesino y desde niño mantengo una relación compleja con la lectoescritura. En mi infancia no existían los diagnósticos de psicopedagogía; solo era "malo para el castellano". Acomodar las letras requiere un esfuerzo consciente: mi mirada salta de renglón e invierto el orden de los caracteres involuntariamente.</p>
-    <p>Lejos de ser una excusa, es el motor que me exige revisar cada palabra con lupa antes de compartirla.</p>
+    <h3>Una innata acompañante</h3>
+    <p>Desde niño mantengo una relación compleja con la lectoescritura. En mi infancia no eran habituales en mi país o ciudad los diagnósticos de psicopedagogía, así que yo solo era "malo para la escritura". Siempre me costó mucho el área de Castellano y Literatura; los errores ortográficos han sido un continuo dolor de cabeza durante toda mi formación académica, incluida la universitaria.</p>
+    <p>La velocidad con la que leo tampoco es mi fortaleza; mi enfoque salta de renglón e invierto el orden de los caracteres involuntariamente, haciéndome perder el hilo de la lectura. Por eso no veo películas ni series subtituladas ni canto con karaoke, ya que pierdo el ritmo.</p>
+    <p>Lejos de esto ser una excusa, mi posible condición de dislexia es un estímulo que me exige revisar cada palabra con lupa antes de compartirla al mundo.</p>
   </div>
 
   <!-- 5. CITA EN CABECERA -->

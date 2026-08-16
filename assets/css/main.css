@@ -394,58 +394,92 @@ a {
 }
 
 /* ==========================================
-   SECCIÓN DE SUSCRIPCIÓN (FULL WIDTH & AZUL)
+   ESTILOS DEL FORMULARIO DE SUSCRIPCIÓN
    ========================================== */
 
-.newsletter-section {
-  width: 100vw !important;
-  position: relative;
-  left: 50%;
-  right: 50%;
-  margin-left: -50vw;
-  margin-right: -50vw; /* Rompe el contenedor y se extiende de borde a borde */
-  
-  background-color: #00aeef !important; /* Color azul secundario */
-  color: #ffffff !important;
-  padding: 50px 20px !important;
-  margin-top: 60px;
-  margin-bottom: 0;
-  text-align: center;
-  box-sizing: border-box;
+.newsletter-form {
+  max-width: 500px;
+  margin: 0 auto 15px auto;
 }
 
-.newsletter-container {
-  max-width: 700px;
-  margin: 0 auto;
-}
-
-.newsletter-section h2 {
-  color: #ffffff !important;
-  font-family: var(--font-serif);
-  font-size: 1.8rem;
-  margin-bottom: 10px;
-}
-
-.newsletter-section p {
-  color: #f1f5f9 !important;
-  font-size: 1rem;
-  margin-bottom: 25px;
-  line-height: 1.5;
-}
-
-/* Envoltorio y estilo del iframe de Substack */
-.substack-embed-wrapper {
+.newsletter-form .input-group {
   display: flex;
+  gap: 10px;
   justify-content: center;
   align-items: center;
 }
 
-.substack-embed-wrapper iframe {
-  max-width: 100%;
-  border-radius: 12px !important; /* Bordes suaves */
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2) !important; /* Sombra elegante */
+/* Campo de entrada de correo */
+#substack-email {
+  flex: 1;
+  padding: 14px 18px;
+  font-size: 0.95rem;
+  border: 2px solid transparent;
+  border-radius: 8px;
+  outline: none;
+  background-color: #ffffff;
+  color: #0f172a;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: all 0.2s ease;
 }
 
+#substack-email::placeholder {
+  color: #94a3b8;
+}
+
+#substack-email:focus {
+  border-color: #0f172a;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Botón de envío */
+#substack-btn {
+  padding: 14px 24px;
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: #ffffff;
+  background-color: #0f172a; /* Azul oscuro/negro para contraste alto */
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  transition: all 0.2s ease;
+  white-space: nowrap;
+}
+
+#substack-btn:hover:not(:disabled) {
+  background-color: #1e293b;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.25);
+}
+
+#substack-btn:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+/* Texto de disclaimer */
+.newsletter-disclaimer {
+  display: block;
+  font-size: 0.8rem;
+  color: #e2e8f0;
+  opacity: 0.9;
+  margin-top: 10px;
+}
+
+/* Adaptación para pantallas móviles */
+@media (max-width: 520px) {
+  .newsletter-form .input-group {
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  #substack-email,
+  #substack-btn {
+    width: 100%;
+    box-sizing: border-box;
+  }
+}
 /* ==========================================
    PLATAFORMAS EN QUE PUBLICO
    ========================================== */

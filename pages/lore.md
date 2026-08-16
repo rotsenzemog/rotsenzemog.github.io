@@ -1,7 +1,7 @@
 ---
 layout: default
 title: "Lore"
-permalink: /Lore/
+permalink: /lore/
 ---
 
 <div class="container" style="padding-top: 10px; padding-bottom: 60px;">

@@ -1025,9 +1025,10 @@ a {
   /* Imagen de fondo con overlay */
   background: 
     linear-gradient(rgba(11, 15, 25, 0.75), rgba(11, 15, 25, 0.85)),
-    url('../images/hero-banner.png') no-repeat center center / cover;
+    url('../images/hero-banner.webp') no-repeat center center / cover;
     
   color: #ffffff;
+  background-size: cover;
 }
 
 .hero-content {

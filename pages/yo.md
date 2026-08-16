@@ -47,8 +47,8 @@ permalink: /yo/
 
   <!-- 6. PRIMEROS ESCRITOS -->
   <div class="yo-card">
-    <h3>Fuerza 5 y los Cuadernos Ocultos</h3>
-    <p>En mi adolescencia escribí a lápiz una historia sobre héroes adolescentes llamada <em>Fuerza 5</em>. La vergüenza por mis errores ortográficos me hizo esconderla y abandonar la literatura durante años, leyendo periódicos únicamente en privado.</p>
+    <h3>Antecedente autoral</h3>
+    <p>De joven escribí a lápiz una historia sobre héroes adolescentes; recuerdo que la llamé Fuerza 5. La vergüenza por mis errores ortográficos me hizo esconderla y abandonar la literatura durante años;  por lo que solo leía esporádicamente y en privado historias breves..</p>
   </div>
 
   <!-- 7. EL PENSAMIENTO DISRUPTIVO -->

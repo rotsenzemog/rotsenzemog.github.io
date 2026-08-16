@@ -36,7 +36,7 @@ permalink: /yo/
   <div class="yo-card tall">
     <h3>Una innata acompañante</h3>
     <p>Desde niño mantengo una relación compleja con la lectoescritura. En mi infancia no eran habituales en mi país o ciudad los diagnósticos de psicopedagogía, así que yo solo era "malo para la escritura". Siempre me costó mucho el área de Castellano y Literatura; los errores ortográficos han sido un continuo dolor de cabeza durante toda mi formación académica, incluida la universitaria.</p>
-    <p>La velocidad con la que leo tampoco es mi fortaleza; mi enfoque salta de renglón e invierto el orden de los caracteres involuntariamente, haciéndome perder el hilo de la lectura. Por eso no veo películas ni series subtituladas ni canto con karaoke, ya que pierdo el ritmo.</p>
+    <p>La velocidad con la que leo tampoco es mi fortaleza; mi enfoque visual salta de renglón e invierto el orden de los caracteres involuntariamente, haciéndome perder el hilo de la lectura. Por eso no veo películas ni series subtituladas ni canto con karaoke, ya que pierdo el ritmo.</p>
     <p>Lejos de esto ser una excusa, mi posible condición de dislexia es un estímulo que me exige revisar cada palabra con lupa antes de compartirla al mundo.</p>
   </div>
 
@@ -54,7 +54,7 @@ permalink: /yo/
   <!-- 7. EL PENSAMIENTO DISRUPTIVO -->
   <div class="yo-card highlight">
     <h3>Pensar "Fuera de la Caja"</h3>
-    <p>Mentes brillantes como Einstein, Jobs o Spielberg compartieron este mismo rasgo neurológico. La dislexia dificulta la norma lineal, pero impulsa un pensamiento holístico y profundamente visual: la semilla perfecta para concebir relatos e imaginar lo que aún no existe.</p>
+    <p>Es grato pensar que mentes brillantes como Einstein, Jobs o Spielberg compartieron este mismo rasgo neurológico que creo tener y, aunque en ningún modo pretendo posicionarme a la altura intelectual de estos gigantes, resulta útil saber que esto a ellos no les impidió el desarrollo de sus capacidades. La dislexia dificulta la norma lineal en que se percibe el contexto, pero impulsa un pensamiento holístico y favorece la creatividad de forma sistémica: un superpoder para concebir universos ficticios e imaginar tecnologías futuras.</p>
   </div>
 
   <!-- 8. EL PROCESO DE EDICIÓN -->

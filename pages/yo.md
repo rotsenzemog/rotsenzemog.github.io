@@ -42,7 +42,7 @@ permalink: /yo/
 
   <!-- 5. CITA EN CABECERA -->
   <div class="yo-card quote-card">
-    <blockquote>"Mi memoria olvida reglas simples de ortografía al día siguiente, pero reconstruye mundos enteros de ficción en un instante."</blockquote>
+    <blockquote>"Tengo un cerebro caprichoso. Mi memoria olvida reglas simples de ortografía y eventos cotidianos del día a día, pero mi imaginación construye algoritmos complejos, mundos distópicos y personajes profundos."</blockquote>
   </div>
 
   <!-- 6. PRIMEROS ESCRITOS -->

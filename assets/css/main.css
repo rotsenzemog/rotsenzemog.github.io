@@ -1683,7 +1683,7 @@ article > h3:first-child {
   font-family: var(--font-serif);
   font-size: 1.15rem;
   font-style: italic;
-  color: #38bdf8;
+  color: #fff;
   margin: 0;
   line-height: 1.5;
   text-align: center;

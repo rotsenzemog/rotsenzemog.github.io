@@ -5,8 +5,8 @@ permalink: /yo/
 ---
 
 <div class="yo-hero">
-  <h1 class="yo-title">Pinceladas de mi historia</h1>
-  <p class="yo-subtitle">Fragmentos de una batalla silenciosa y un destino reescrito.</p>
+  <h1 class="yo-title">Líneas de mi historia</h1>
+  <p class="yo-subtitle">Fragmentos de un camino silencioso y en continua reescritura.</p>
 </div>
 
 <!-- MOSAICO TIPO MASAICO (GRID DINÁMICO) -->

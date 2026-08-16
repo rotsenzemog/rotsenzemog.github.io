@@ -21,9 +21,9 @@ permalink: /yo/
   <!-- 2. SILUETA ENIGMÁTICA -->
   <div class="yo-card photo-card">
     <div class="photo-wrapper">
-      <img src="/assets/images/rotse-sombra.webp" alt="Silueta Rotsen Zemog" onerror="this.src='https://picsum.photos/400/500?grayscale'">
+      <img src="/assets/images/rotsen.webp" alt="Rotsen Zemog" onerror="this.src='https://picsum.photos/400/500?grayscale'">
     </div>
-    <span class="photo-caption">El código reemplaza al rostro. Un perfil en penumbra.</span>
+    <span class="photo-caption">No cuento anécdotas, narro acontecimientos que aún no han sido presenciados.</span>
   </div>
 
   <!-- 3. INGENIERÍA Y LETRAS -->

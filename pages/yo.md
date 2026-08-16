@@ -59,8 +59,8 @@ permalink: /yo/
 
   <!-- 8. EL PROCESO DE EDICIÓN -->
   <div class="yo-card">
-    <h3>La Tecnología como Muleta</h3>
-    <p>Escribir para mí implica investigar la misma palabra varias veces al día. Los correctores automatizados no deciden por sí solos; el proceso de pulir un texto toma el doble de tiempo, pero la informática se ha convertido en mi mejor aliada para presentar obras limpias.</p>
+    <h3>La tecnología como aliada</h3>
+    <p>Escribir para mí implica revisar exhaustivamente cada palabra para minimizar la presencia de errores. Desde que comencé años atrás a redactar contenido para sitios web, los correctores ortográficos automatizados han sido mis grandes aliados y facilitadores de esta labor. Anteriormente, el proceso de pulir un texto tomaba el doble de tiempo, pero con la aparición de la inteligencia artificial todo se ha vuelto más sencillo.</p>
   </div>
 
   <!-- 9. REALIDAD Y RESISTENCIA -->

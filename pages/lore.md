@@ -1,7 +1,7 @@
 ---
 layout: default
-title: "Obras propias"
-permalink: /mis-obras/
+title: "Lore"
+permalink: /Lore/
 ---
 
 <div class="container" style="padding-top: 10px; padding-bottom: 60px;">

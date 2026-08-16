@@ -28,8 +28,8 @@ permalink: /yo/
 
   <!-- 3. INGENIERÍA Y LETRAS -->
   <div class="yo-card">
-    <h3>Sistemas y Lenguaje</h3>
-    <p>De profesión soy Ingeniero de Sistemas y me desempeño en el área informática. Mi mente vive en la lógica rigurosa de los algoritmos y las matemáticas, pero mi espíritu necesitaba el desahogo de la ciencia ficción y la creación de historias.</p>
+    <h3>Fanático de la sci-fi</h3>
+    <p>Siempre la ciencia ficción ha sido mi género favorito; las películas de las sagas Volver al futuro, Terminator y Matrix fueron mis principales focos de interés en el aspecto narrativo durante mi juventud. Luego, aunque nunca he sido un muy asiduo lector, descubrí las obras de Isaac Asimov, principalmente la saga Fundación, y mi gusto por la literatura comenzó a prosperar. </p>
   </div>
 
   <!-- 4. LA DISLEXIA Y EL ORIGEN -->

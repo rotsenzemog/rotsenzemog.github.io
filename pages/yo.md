@@ -71,8 +71,8 @@ permalink: /yo/
 
   <!-- 10. EL CAMINO DE SALIDA -->
   <div class="yo-card">
-    <h3>El Giro a los 40</h3>
-    <p>Tras años trabajando como escritor fantasma para terceros, decidí reclamar mi propia voz. La dislexia y los recursos limitados son obstáculos en la carretera, no el destino final.</p>
+    <h3>Soy venezolano</h3>
+    <p>Uno de los principales sellos que intento imprimirles a mis escritos es un enfoque venezolano y latinoamericanista de la ciencia ficción; el mundo está ya cansado de ver a las naves de las invasiones extraterrestres aterrizar en Nueva York, las cepas de los virus zombis infectar a la población de Londres, las hordas de robots rebeldes tomar Washington y los asteroides supermasivos impactar en Tokio. Mis historias, en su mayoría, se ubican en nuestra parte del planeta y con personajes como nosotros.</p>
   </div>
 
 </div>

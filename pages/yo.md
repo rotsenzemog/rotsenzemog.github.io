@@ -1,0 +1,77 @@
+---
+layout: default
+title: "Yo"
+permalink: /yo/
+---
+
+<div class="yo-hero">
+  <h1 class="yo-title">Rotsen Zemog</h1>
+  <p class="yo-subtitle">Fragmentos de una batalla silenciosa y un destino reescrito.</p>
+</div>
+
+<!-- MOSAICO TIPO MASAICO (GRID DINÁMICO) -->
+<div class="yo-grid">
+
+  <!-- 1. EL SEUDÓNIMO -->
+  <div class="yo-card highlight">
+    <h3>El Reflejo en el Espejo</h3>
+    <p>Rotsen Zemog es la inversión exacta de mi nombre real. Un giro de 180 grados para abrazar una faceta artística que postergué durante cuatro décadas. Detrás del seudónimo no hay un misterio vacío, sino la decisión de mirar el mundo desde el ángulo opuesto.</p>
+  </div>
+
+  <!-- 2. SILUETA ENIGMÁTICA -->
+  <div class="yo-card photo-card">
+    <div class="photo-wrapper">
+      <img src="/assets/images/rotse-sombra.webp" alt="Silueta Rotsen Zemog" onerror="this.src='https://picsum.photos/400/500?grayscale'">
+    </div>
+    <span class="photo-caption">El código reemplaza al rostro. Un perfil en penumbra.</span>
+  </div>
+
+  <!-- 3. INGENIERÍA Y LETRAS -->
+  <div class="yo-card">
+    <h3>Sistemas y Lenguaje</h3>
+    <p>De profesión soy Ingeniero de Sistemas y me desempeño en el área informática. Mi mente vive en la lógica rigurosa de los algoritmos y las matemáticas, pero mi espíritu necesitaba el desahogo de la ciencia ficción y la creación de historias.</p>
+  </div>
+
+  <!-- 4. LA DISLEXIA Y EL ORIGEN -->
+  <div class="yo-card tall">
+    <h3>La Inseparable Compañera</h3>
+    <p>Nací sietemesino y desde niño mantengo una relación compleja con la lectoescritura. En mi infancia no existían los diagnósticos de psicopedagogía; solo era "malo para el castellano". Acomodar las letras requiere un esfuerzo consciente: mi mirada salta de renglón e invierto el orden de los caracteres involuntariamente.</p>
+    <p>Lejos de ser una excusa, es el motor que me exige revisar cada palabra con lupa antes de compartirla.</p>
+  </div>
+
+  <!-- 5. CITA EN CABECERA -->
+  <div class="yo-card quote-card">
+    <blockquote>"Mi memoria olvida reglas simples de ortografía al día siguiente, pero reconstruye mundos enteros de ficción en un instante."</blockquote>
+  </div>
+
+  <!-- 6. PRIMEROS ESCRITOS -->
+  <div class="yo-card">
+    <h3>Fuerza 5 y los Cuadernos Ocultos</h3>
+    <p>En mi adolescencia escribí a lápiz una historia sobre héroes adolescentes llamada <em>Fuerza 5</em>. La vergüenza por mis errores ortográficos me hizo esconderla y abandonar la literatura durante años, leyendo periódicos únicamente en privado.</p>
+  </div>
+
+  <!-- 7. EL PENSAMIENTO DISRUPTIVO -->
+  <div class="yo-card highlight">
+    <h3>Pensar "Fuera de la Caja"</h3>
+    <p>Mentes brillantes como Einstein, Jobs o Spielberg compartieron este mismo rasgo neurológico. La dislexia dificulta la norma lineal, pero impulsa un pensamiento holístico y profundamente visual: la semilla perfecta para concebir relatos e imaginar lo que aún no existe.</p>
+  </div>
+
+  <!-- 8. EL PROCESO DE EDICIÓN -->
+  <div class="yo-card">
+    <h3>La Tecnología como Muleta</h3>
+    <p>Escribir para mí implica investigar la misma palabra varias veces al día. Los correctores automatizados no deciden por sí solos; el proceso de pulir un texto toma el doble de tiempo, pero la informática se ha convertido en mi mejor aliada para presentar obras limpias.</p>
+  </div>
+
+  <!-- 9. REALIDAD Y RESISTENCIA -->
+  <div class="yo-card tall">
+    <h3>Anclaje a la Tierra</h3>
+    <p>Soy profesor universitario reconvertido debido a la crisis en Venezuela. Vivo en la planta alta de la casa de mis padres, cuidando de ellos y de mi familia. La literatura la escribo a escondidas de mi entorno cercano, esperando mostrarles los frutos cuando el proyecto sea una realidad sólida.</p>
+  </div>
+
+  <!-- 10. EL CAMINO DE SALIDA -->
+  <div class="yo-card">
+    <h3>El Giro a los 40</h3>
+    <p>Tras años trabajando como escritor fantasma para terceros, decidí reclamar mi propia voz. La dislexia y los recursos limitados son obstáculos en la carretera, no el destino final.</p>
+  </div>
+
+</div>

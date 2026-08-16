@@ -14,8 +14,8 @@ permalink: /yo/
 
   <!-- 1. EL SEUDÓNIMO -->
   <div class="yo-card highlight">
-    <h3>El Reflejo en el Espejo</h3>
-    <p>Rotsen Zemog es la inversión exacta de mi nombre real. Un giro de 180 grados para abrazar una faceta artística que postergué durante cuatro décadas. Detrás del seudónimo no hay un misterio vacío, sino la decisión de mirar el mundo desde el ángulo opuesto.</p>
+    <h3>Reflejo en el espejo</h3>
+    <p>El seudónimo, Rotsen Zemog, es una especie de identidad alterna que existe en una dimensión paralela o digital, donde no me dedico a escribir código informático, sino prosa literaria. Un alter ego que representa el giro de 180 grados que podría aplicar a la ocupación u oficio que ejerzo, desde lo técnico hacia lo artístico, explorando una parte de mí que he suprimido durante cuatro décadas. No se trata de una máscara, sino de un visor que me permite darle una mirada al mundo desde un ángulo opuesto al que siempre he estado observando.</p>
   </div>
 
   <!-- 2. SILUETA ENIGMÁTICA -->

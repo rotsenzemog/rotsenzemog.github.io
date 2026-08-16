@@ -477,7 +477,7 @@ a {
   font-size: 0.95rem;
   font-weight: 700;
   color: #00aeef !important; /* Texto en el mismo azul que el fondo */
-  background-color: #ffffff !important; /* Fondo blanco */
+  background-color: #0f172a !important; /* Fondo blanco */
   border: 2px solid #ffffff !important;
   border-radius: 8px;
   cursor: pointer;

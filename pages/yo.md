@@ -5,7 +5,7 @@ permalink: /yo/
 ---
 
 <div class="yo-hero">
-  <h1 class="yo-title">Líneas de mi historia</h1>
+  <h1 class="yo-title">Líneas biográficas</h1>
   <p class="yo-subtitle">Fragmentos de un camino silencioso y en continua reescritura.</p>
 </div>
 

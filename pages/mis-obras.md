@@ -5,7 +5,7 @@ permalink: /mis-obras/
 ---
 
 <div class="container" style="padding-top: 10px; padding-bottom: 60px;">
-  
+
   <div class="section-header" style="text-align: center; margin-bottom: 30px;">
     <h1 class="section-title">Obras de mi propia autoría</h1>
     <p style="color: var(--muted-text); margin-top: 8px;">Textos o historias originales de mi creación.</p>
@@ -25,7 +25,7 @@ permalink: /mis-obras/
     </div>
   </div>
 
-  <!-- GRID DE 4 COLUMNAS (Filtrado por etiquetas en Liquid) -->
+  <!-- GRID DE 4 COLUMNAS -->
   <div id="postsGrid" class="grid-4">
     {% for post in site.posts %}
       {% if post.category == 'Obra propia' %}

@@ -7,7 +7,7 @@ image: "assets/images/posts/Enigma-en-la-Sima.webp"
 
 ### MISTERIOSO SUCESO: DESAPARECEN EXPLORADORES EN CAVERNA DEL TEPUY SARISARIÑAMA
 
-El Correo de la Verdad — Redacción Automatizada por IA
+El Correo de la Verdad — Redacción Autogenerada
 
 Caracas, 17 de septiembre de 2037 — La sombra de la incertidumbre se cierne sobre la cima del tepuy Sarisariñama. La desaparición de los exploradores Iván Marcano, Miguel Oliveros, Maritza Gálvez y Henry McMillan, aventurados en la inmensidad de la Sima Humboldt el pasado 10 de febrero, ha desatado una ola de conjeturas y preguntas sin respuesta.
 

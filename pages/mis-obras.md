@@ -28,7 +28,7 @@ permalink: /mis-obras/
   <!-- GRID DE 4 COLUMNAS (Filtrado por etiquetas en Liquid) -->
   <div id="postsGrid" class="grid-4">
     {% for post in site.posts %}
-      {% if post.category == 'Obra Propia' %}
+      {% if post.category == 'Obra propia' %}
       <article class="card post-item" 
                data-title="{{ post.title | downcase }}" 
                data-excerpt="{{ post.excerpt | strip_html | downcase }}"

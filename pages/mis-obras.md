@@ -8,7 +8,7 @@ permalink: /mis-obras/
   
   <div class="section-header" style="text-align: center; margin-bottom: 30px;">
     <h1 class="section-title">Obras de mi propia autoría</h1>
-    <p style="color: var(--muted-text); margin-top: 8px;">Textos o historias originales escritas por mi.</p>
+    <p style="color: var(--muted-text); margin-top: 8px;">Textos o historias originales de mi creación.</p>
   </div>
 
   <!-- BARRA DE HERRAMIENTAS: BÚSQUEDA Y ORDEN -->

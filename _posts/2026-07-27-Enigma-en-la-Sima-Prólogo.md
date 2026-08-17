@@ -2,7 +2,7 @@
 layout: post
 title: "Génesis: Enigma en la Sima - Prólogo"
 category: "Obra propia"
-image: "https://picsum.photos/800/500?random=10"
+image: "assets/images/posts/Enigma-en-la-Sima.webp"
 ---
 
 ### MISTERIOSO SUCESO: DESAPARECEN EXPLORADORES EN CAVERNA DEL TEPUY SARISARIÑAMA

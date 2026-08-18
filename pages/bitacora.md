@@ -36,6 +36,9 @@ permalink: /bitacora/
         <img src="{{ post.image | relative_url }}" class="card-img" alt="{{ post.title }}">
       </a>
       <span class="category-tag">{{ post.category }}</span>
+      {% for tag in featured_post.tags %}
+        <span class="post-tag">{{ tag }}</span>
+      {% endfor %}
       <h2 class="card-title">
         <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
       </h2>

@@ -4,6 +4,9 @@
 
 /* Cabecera íntima */
 .yo-hero {
+  display: flex;
+  flex-direction: column; /* Fuerza la disposición vertical (uno debajo de otro) */
+  align-items: center;    /* Centra ambos elementos horizontalmente */
   text-align: center;
   padding: 40px 20px 20px 20px;
   max-width: 700px;
@@ -11,6 +14,8 @@
 }
 
 .yo-title {
+  display: block;          /* Ocupa el 100% del ancho disponible */
+  width: 100%;
   font-family: var(--font-serif);
   font-size: 2.8rem;
   color: #00aeef;
@@ -20,6 +25,8 @@
 }
 
 .yo-subtitle {
+  display: block;          /* Se posiciona inmediatamente en la línea siguiente */
+  width: 100%;
   font-size: 1.1rem;
   color: #64748b;
   font-style: italic;
@@ -141,5 +148,9 @@
 @media (max-width: 600px) {
   .yo-grid {
     column-count: 1;
+  }
+  
+  .yo-title {
+    font-size: 2.2rem; /* Tamaño optimizado para pantallas de móvil */
   }
 }

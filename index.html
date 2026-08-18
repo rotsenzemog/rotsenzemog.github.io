@@ -18,10 +18,16 @@ layout: default
     <img src="{{ featured_post.image | relative_url }}" class="card-img featured-img" alt="{{ featured_post.title }}">
   </a>
   <div>
-    <span class="category-tag">{{ featured_post.category }}</span>
-    {% for tag in featured_post.tags %}
-        <span class="post-tags">{{ tag }}</span>
+    <!-- CONTENEDOR DE CATEGORÍA Y ETIQUETAS -->
+    <div class="tags-container">
+      {% if featured_post.category %}
+        <span class="category-tag">{{ featured_post.category }}</span>
+      {% endif %}
+      {% for tag in featured_post.tags %}
+        <span class="post-tag">{{ tag }}</span>
       {% endfor %}
+    </div>
+
     <h2 class="card-title" style="font-size: 2rem;"><a href="{{ featured_post.url | relative_url }}">{{ featured_post.title }}</a></h2>
     <p class="card-excerpt">{{ featured_post.excerpt | strip_html | truncatewords: 25 }}</p>
     <small style="color: var(--muted-text);">{{ featured_post.date | date: "%d %b %Y" }}</small>
@@ -41,10 +47,17 @@ layout: default
       <a href="{{ post.url | relative_url }}">
         <img src="{{ post.image | relative_url }}" class="card-img" alt="{{ post.title }}">
       </a>
-      <span class="category-tag">{{ post.category }}</span>
-      {% for tag in featured_post.tags %}
-        <span class="post-tag">{{ tag }}</span>
-      {% endfor %}
+      
+      <!-- CONTENEDOR DE CATEGORÍA Y ETIQUETAS -->
+      <div class="tags-container">
+        {% if post.category %}
+          <span class="category-tag">{{ post.category }}</span>
+        {% endif %}
+        {% for tag in post.tags %}
+          <span class="post-tag">{{ tag }}</span>
+        {% endfor %}
+      </div>
+
       <h3 class="card-title"><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h3>
       <p class="card-excerpt">{{ post.excerpt | strip_html | truncatewords: 15 }}</p>
     </article>

@@ -35,10 +35,18 @@ permalink: /bitacora/
       <a href="{{ post.url | relative_url }}">
         <img src="{{ post.image | relative_url }}" class="card-img" alt="{{ post.title }}">
       </a>
-      <span class="category-tag">{{ post.category }}</span>
-      {% for tag in featured_post.tags %}
-        <span class="post-tag">{{ tag }}</span>
-      {% endfor %}
+      
+      <!-- CONTENEDOR DE CATEGORÍA Y ETIQUETAS -->
+      <div class="tags-container">
+        {% if post.category %}
+          <span class="category-tag">{{ post.category }}</span>
+        {% endif %}
+        
+        {% for tag in post.tags %}
+          <span class="post-tag">{{ tag }}</span>
+        {% endfor %}
+      </div>
+
       <h2 class="card-title">
         <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
       </h2>

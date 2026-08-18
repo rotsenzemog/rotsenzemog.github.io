@@ -1,0 +1,128 @@
+/* ==========================================
+   SECCIÓN DE SUSCRIPCIÓN (FULL WIDTH & AZUL)
+   ========================================== */
+
+.newsletter-section {
+  width: 100vw !important;
+  position: relative;
+  left: 50%;
+  right: 50%;
+  margin-left: -50vw;
+  margin-right: -50vw; /* Extiende el fondo de borde a borde */
+  
+  background-color: #00aeef !important; /* Fondo azul cyan */
+  color: #ffffff !important;
+  padding: 55px 20px !important;
+  margin-top: 60px;
+  margin-bottom: 60px;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+.newsletter-container {
+  max-width: 680px;
+  margin: 0 auto;
+}
+
+.newsletter-section h2 {
+  color: #ffffff !important;
+  font-family: var(--font-serif);
+  font-size: 2rem;
+  margin-bottom: 10px;
+  font-weight: 700;
+}
+
+.newsletter-section p {
+  color: #f8fafc !important;
+  font-size: 1.05rem;
+  margin-bottom: 28px;
+  line-height: 1.5;
+}
+
+/* FORMULARIO DE SUSCRIPCIÓN */
+
+.newsletter-form {
+  max-width: 520px;
+  margin: 0 auto 15px auto;
+}
+
+.newsletter-form .input-group {
+  display: flex;
+  gap: 12px;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Campo de entrada de correo */
+#substack-email {
+  flex: 1;
+  padding: 14px 20px;
+  font-size: 0.95rem;
+  border: 2px solid transparent;
+  border-radius: 8px;
+  outline: none;
+  background-color: #ffffff;
+  color: #0f172a;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.12);
+  transition: all 0.2s ease;
+}
+
+#substack-email::placeholder {
+  color: #94a3b8;
+}
+
+#substack-email:focus {
+  border-color: #0f172a;
+  box-shadow: 0 4px 18px rgba(0, 0, 0, 0.2);
+}
+
+/* Botón estilo blanco moderno */
+#substack-btn {
+  padding: 14px 26px;
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: #00aeef !important; /* Texto en el mismo azul que el fondo */
+  background-color: #0f172a !important; /* Fondo blanco */
+  border: 2px solid #ffffff !important;
+  border-radius: 8px;
+  cursor: pointer;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.15);
+  transition: all 0.2s ease;
+  white-space: nowrap;
+}
+
+#substack-btn:hover:not(:disabled) {
+  background-color: #0f172a !important; /* Cambia a oscuro elegante en hover */
+  color: #ffffff !important;
+  border-color: #0f172a !important;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.25);
+}
+
+#substack-btn:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+}
+
+/* Texto de aclaración */
+.newsletter-disclaimer {
+  display: block;
+  font-size: 0.82rem;
+  color: #f1f5f9;
+  opacity: 0.9;
+  margin-top: 12px;
+}
+
+/* Adaptación responsive para móviles */
+@media (max-width: 520px) {
+  .newsletter-form .input-group {
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  #substack-email,
+  #substack-btn {
+    width: 100%;
+    box-sizing: border-box;
+  }
+}

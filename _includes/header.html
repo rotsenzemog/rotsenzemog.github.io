@@ -52,18 +52,19 @@
     const navMenu = document.getElementById('navMenu');
     const dropdownToggle = document.getElementById('dropdownToggle');
 
-    // Alternar menú hamburguesa
-    menuToggle.addEventListener('click', () => {
-      menuToggle.classList.toggle('active');
-      navMenu.classList.toggle('active');
-    });
+    if (menuToggle && navMenu) {
+      menuToggle.addEventListener('click', () => {
+        navMenu.classList.toggle('active');
+      });
+    }
 
-    // Desplegar submenú Reseñas en móvil
-    dropdownToggle.addEventListener('click', (e) => {
-      if (window.innerWidth <= 768) {
-        e.preventDefault();
-        dropdownToggle.parentElement.classList.toggle('open');
-      }
-    });
+    if (dropdownToggle) {
+      dropdownToggle.addEventListener('click', (e) => {
+        if (window.innerWidth <= 768) {
+          e.preventDefault();
+          dropdownToggle.parentElement.classList.toggle('open');
+        }
+      });
+    }
   });
 </script>

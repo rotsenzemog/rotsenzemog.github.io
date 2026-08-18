@@ -1,5 +1,5 @@
 /* ==========================================
-   HEADER MODERNO Y SLIM (2 NIVELES)
+   HEADER Y NAVEGACIÓN (DESKTOP & MOBILE)
    ========================================== */
 
 .site-header {
@@ -9,7 +9,7 @@
   padding-top: 0 !important;
 }
 
-/* --- 1. Franja Top Principal (Blanca y Centrada) --- */
+/* --- 1. Franja Top Principal --- */
 .header-top {
   background-color: #ffffff;
   padding: 12px 0;
@@ -19,7 +19,7 @@
 .header-top-content {
   display: flex;
   align-items: center;
-  justify-content: center; /* Centra el logo y el nombre */
+  justify-content: center;
   text-align: center;
 }
 
@@ -32,7 +32,7 @@
 }
 
 .header-logo-top {
-  height: 48px; /* Altura óptima para balancear con el título */
+  height: 48px;
   width: auto;
   object-fit: contain;
   transition: transform 0.2s ease;
@@ -51,24 +51,25 @@
   text-transform: uppercase;
 }
 
-/* --- 2. Subbarra de Menú Inferior (Slim y Centrada) --- */
+/* --- 2. Subbarra de Menú Inferior --- */
 .header-nav-bar {
-  background-color: #0f172a; /* Tono oscuro elegante */
+  background-color: #0f172a;
   border-bottom: 2px solid #00aeef;
   transition: all 0.3s ease;
   z-index: 999;
   width: 100%;
+  position: relative;
 }
 
 .nav-bar-content {
   display: flex;
   align-items: center;
-  justify-content: center; /* CENTRA EL MENÚ */
-  height: 28px; /* Altura estilizada compacta */
+  justify-content: center;
+  min-height: 40px;
   position: relative;
 }
 
-/* Logo Sticky (Aparece únicamente al hacer scroll) */
+/* Logo Sticky (Scroll) */
 .sticky-logo-link {
   display: none;
   align-items: center;
@@ -76,39 +77,12 @@
 }
 
 .header-logo-sticky {
-  height: 18px;
+  height: 22px;
   width: auto;
   filter: brightness(0) invert(1);
 }
 
-/* Menú de Navegación */
-.main-menu {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  gap: 24px;
-}
-
-.main-menu a {
-  color: #cbd5e1;
-  text-decoration: none;
-  font-size: 0.68rem; /* Tamaño de letra proporcionado */
-  font-weight: 600;
-  letter-spacing: 1px;
-  line-height: 28px;
-  display: block;
-  text-transform: uppercase;
-  transition: color 0.2s ease;
-}
-
-.main-menu a:hover {
-  color: #00aeef;
-}
-
-/* --- Estado Sticky (Scroll) --- */
+/* Estado Sticky */
 .header-nav-bar.is-sticky {
   position: fixed;
   top: 0;
@@ -119,7 +93,7 @@
 }
 
 .header-nav-bar.is-sticky .nav-bar-content {
-  justify-content: space-between; /* Distribuye el logo a la izq y el menú al centro */
+  justify-content: space-between;
 }
 
 .header-nav-bar.is-sticky .sticky-logo-link {
@@ -131,188 +105,125 @@
   to { transform: translateY(0); }
 }
 
-/* Corrección de clase HTML/CSS */
-.nav-menu {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  gap: 24px;
-}
-
-.nav-menu a {
-  color: #cbd5e1;
-  text-decoration: none;
-  font-size: 0.68rem;
-  font-weight: 600;
-  letter-spacing: 1px;
-  line-height: 28px;
-  display: block;
-  text-transform: uppercase;
-  transition: color 0.2s ease;
-}
-
-.nav-menu a:hover {
-  color: #00aeef;
-}
-
-/* Submenú desplegable en Escritorio */
-.has-dropdown {
-  position: relative;
-}
-
-.dropdown-menu {
+/* Botón Hamburguesa (Oculto en Escritorio) */
+.mobile-menu-toggle {
   display: none;
-  position: absolute;
-  top: 100%;
-  left: 0;
-  background-color: #0f172a;
-  list-style: none;
-  padding: 8px 0;
-  margin: 0;
-  min-width: 140px;
-  border: 1px solid #1e293b;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
 }
 
-.has-dropdown:hover .dropdown-menu {
-  display: block;
-}
+/* --- 3. Menú Principal (Escritorio > 768px) --- */
+@media (min-width: 769px) {
+  .nav-menu {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
 
-.dropdown-menu a {
-  padding: 6px 16px;
-  font-size: 0.65rem;
-}
+  .nav-menu > li {
+    position: relative;
+    display: inline-block;
+  }
 
-/* ==========================================
-   MENÚ DE NAVEGACIÓN PRINCIPAL (Ajustado)
-   ========================================== */
+  .nav-menu > li > a {
+    display: inline-block;
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    padding: 10px 0;
+    transition: color 0.3s ease;
+  }
 
-/* Contenedor principal del menú */
-.nav-menu {
-  display: flex !important;
-  flex-direction: row !important;
-  justify-content: center;
-  align-items: center;
-  gap: 30px;                /* Espaciado entre elementos principales */
-  list-style: none !important;
-  margin: 0;
-  padding: 0;
-}
+  .nav-menu > li > a:hover {
+    color: #00aeef;
+  }
 
-/* SOLO para los ítems directos del menú principal (Nivel 1) */
-.nav-menu > li {
-  position: relative;
-  display: inline-block;
-  margin: 0;
-  padding: 0;
-  list-style: none !important;
-}
+  /* Submenú Desplegable Desktop */
+  .has-dropdown {
+    position: relative;
+  }
 
-/* SOLO para los enlaces directos del menú principal */
-.nav-menu > li > a {
-  display: inline-block;
-  color: #ffffff;           /* Ajusta según el color original de tu texto */
-  text-decoration: none;
-  font-weight: 600;
-  font-size: 0.65rem;
-  text-transform: uppercase;
-  padding: 12px 0;
-  transition: color 0.3s ease;
-}
+  .dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-top: 8px;
+    width: 170px;
+    padding: 0;
+    list-style: none;
+    background-color: #0b0f19;
+    border-radius: 10px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+    z-index: 1000;
+  }
 
-.nav-menu > li > a:hover {
-  color: #00aeef;           /* Color de acento al pasar el mouse */
-}
+  .dropdown-menu::before {
+    content: '';
+    position: absolute;
+    top: -8px;
+    left: 50%;
+    transform: translateX(-50%);
+    border-left: 8px solid transparent;
+    border-right: 8px solid transparent;
+    border-bottom: 8px solid #1e293b;
+  }
 
-/* ==========================================
-   ESTILOS DEL SUBMENÚ DESPLEGABLE (DROPDOWN)
-   ========================================== */
+  .dropdown-menu li {
+    display: block;
+    width: 100%;
+  }
 
-.dropdown-menu {
-  display: none;
-  position: absolute;
-  top: 100%;
-  left: 50%;
-  transform: translateX(-50%);
-  margin-top: 8px;
-  width: 170px;
-  padding: 0 !important;
-  list-style: none !important;
-  background-color: #0b0f19;
-  border-radius: 10px;
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
-  z-index: 1000;
-}
+  .dropdown-menu li a {
+    display: block;
+    padding: 12px 16px;
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: #e2e8f0;
+    text-decoration: none;
+    text-align: center;
+    transition: background 0.2s ease, color 0.2s ease;
+  }
 
-/* Triángulo indicador en la parte superior */
-.dropdown-menu::before {
-  content: '';
-  position: absolute;
-  top: -8px;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 0;
-  height: 0;
-  border-left: 8px solid transparent;
-  border-right: 8px solid transparent;
-  border-bottom: 8px solid #1e293b;
-}
+  .dropdown-menu li:nth-child(odd) a { background-color: #1e293b; }
+  .dropdown-menu li:nth-child(even) a { background-color: #0f172a; }
 
-/* Ítems del submenú */
-.dropdown-menu li {
-  display: block !important;
-  width: 100%;
-  margin: 0 !important;
-  padding: 0 !important;
-  list-style: none !important;
-}
+  .dropdown-menu li:first-child a {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+  }
 
-/* Enlaces del submenú */
-.dropdown-menu li a {
-  display: block;
-  padding: 12px 16px;
-  font-size: 0.85rem;
-  font-weight: 600;
-  color: #e2e8f0;
-  text-decoration: none;
-  text-align: center;
-  text-transform: none;      /* Mantiene mayúsculas y minúsculas normales */
-  transition: background 0.2s ease, color 0.2s ease;
-}
+  .dropdown-menu li:last-child a {
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+  }
 
-/* Colores intercalados */
-.dropdown-menu li:nth-child(odd) a {
-  background-color: #1e293b;
-}
+  .dropdown-menu li a:hover {
+    background-color: #00aeef !important;
+    color: #ffffff;
+  }
 
-.dropdown-menu li:nth-child(even) a {
-  background-color: #0f172a;
-}
+  .nav-menu li.has-dropdown:hover > .dropdown-menu {
+    display: block;
+    animation: fadeInDown 0.25s ease-out;
+  }
 
-/* Bordes redondeados en esquinas externas */
-.dropdown-menu li:first-child a {
-  border-top-left-radius: 10px;
-  border-top-right-radius: 10px;
-}
-
-.dropdown-menu li:last-child a {
-  border-bottom-left-radius: 10px;
-  border-bottom-right-radius: 10px;
-}
-
-/* Hover en el submenú */
-.dropdown-menu li a:hover {
-  background-color: #00aeef !important;
-  color: #ffffff;
-}
-
-/* Mostrar desplegable al pasar el cursor sobre la opción padre */
-.nav-menu li.has-dropdown:hover > .dropdown-menu {
-  display: block;
-  animation: fadeInDown 0.25s ease-out;
+  .nav-menu li.has-dropdown::after {
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: -20px;
+    right: -20px;
+    height: 20px;
+    background: transparent;
+    z-index: 999;
+  }
 }
 
 @keyframes fadeInDown {
@@ -326,52 +237,26 @@
   }
 }
 
-/* ==========================================
-   PUENTE INVISIBLE PARA EL SUBMENÚ (Hover Fix)
-   ========================================== */
-
-/* Crea un área invisible que conecta el botón principal con el submenú */
-.nav-menu li.has-dropdown::after {
-  content: '';
-  position: absolute;
-  top: 100%;
-  left: -20px;
-  right: -20px;
-  height: 20px; /* Cubre el espacio vacío de 8px del margin-top */
-  background: transparent; /* Totalmente invisible */
-  z-index: 999;
-}
-
-/* ==========================================
-   ADAPTACIÓN RESPONSIVA MÓVIL (≤ 768px) DEL MENU
-   ========================================== */
+/* --- 4. Adaptación Móvil (≤ 768px) --- */
 @media (max-width: 768px) {
-  
-  /* Ajuste de cabecera blanca */
   .header-top {
     padding: 8px 0;
   }
-  
+
   .site-branding {
     gap: 8px;
   }
-  
+
   .header-logo-top {
-    height: 28px;
+    height: 32px;
   }
-  
+
   .site-title {
-    font-size: 1.2rem;
+    font-size: 1.3rem;
     letter-spacing: 1px;
   }
 
-  /* Subbarra e íconos */
-  .header-nav-bar {
-    height: 40px;
-  }
-
   .nav-bar-content {
-    height: 40px;
     justify-content: space-between;
     padding: 0 15px;
   }
@@ -385,8 +270,8 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    width: 22px;
-    height: 16px;
+    width: 24px;
+    height: 18px;
     background: transparent;
     border: none;
     cursor: pointer;
@@ -401,61 +286,87 @@
     transition: all 0.3s ease;
   }
 
-  /* Animación icono 'X' al abrir */
+  /* Icono 'X' al abrir */
   .mobile-menu-toggle.active span:nth-child(1) {
-    transform: translateY(7px) rotate(45deg);
+    transform: translateY(8px) rotate(45deg);
   }
   .mobile-menu-toggle.active span:nth-child(2) {
     opacity: 0;
   }
   .mobile-menu-toggle.active span:nth-child(3) {
-    transform: translateY(-7px) rotate(-45deg);
+    transform: translateY(-8px) rotate(-45deg);
   }
 
-  /* Menú desplegable vertical */
+  /* Menú desplegable desplegado verticalmente */
   .nav-menu {
     display: none;
     position: absolute;
-    top: 40px;
+    top: 100%;
     left: 0;
     right: 0;
     background-color: #0f172a;
     flex-direction: column;
     align-items: stretch;
     gap: 0;
-    padding: 10px 0;
+    padding: 8px 0;
     border-bottom: 2px solid #00aeef;
-    box-shadow: 0 10px 15px rgba(0,0,0,0.4);
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.4);
+    list-style: none;
+    margin: 0;
+    z-index: 1000;
   }
 
   .nav-menu.active {
     display: flex;
   }
 
-  .nav-menu a {
-    font-size: 0.85rem;
-    padding: 10px 20px;
-    line-height: 1.2;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+  .nav-menu > li {
+    width: 100%;
   }
 
-  /* Submenú en móvil */
+  .nav-menu a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 0.85rem;
+    font-weight: 600;
+    padding: 12px 20px;
+    display: block;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+    text-transform: uppercase;
+  }
+
+  .nav-menu a:hover {
+    color: #00aeef;
+  }
+
+  /* Submenú dentro de Móvil */
   .dropdown-menu {
-    position: static;
     display: none;
+    position: static;
+    transform: none;
     background-color: #070d19;
-    padding-left: 15px;
-    border: none;
+    padding: 0;
+    border-radius: 0;
     box-shadow: none;
+    list-style: none;
+  }
+
+  .dropdown-menu::before {
+    display: none;
+  }
+
+  .dropdown-menu li a {
+    padding-left: 35px;
+    font-size: 0.8rem;
+    color: #94a3b8;
+    background-color: transparent !important;
+  }
+
+  .dropdown-menu li a:hover {
+    color: #00aeef !important;
   }
 
   .has-dropdown.open .dropdown-menu {
     display: block;
-  }
-}
-
-@media (min-width: 769px) {
-  .mobile-menu-toggle {
-    display: none;
   }
 }

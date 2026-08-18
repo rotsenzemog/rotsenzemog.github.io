@@ -2,6 +2,11 @@
 layout: post
 title: "Génesis: Enigma en la Sima - Prólogo"
 category: "Obra propia"
+tags:
+  - Ciencia Ficción
+  - Novela Corta
+  - Saga Génesis
+  - Literatura
 image: "assets/images/posts/Enigma-en-la-Sima.webp"
 ---
 

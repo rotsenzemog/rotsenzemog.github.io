@@ -1,0 +1,145 @@
+/* ==========================================
+   SECCIÓN CARRUSEL DE CITAS / FRAGMENTOS
+   ========================================== */
+
+.quotes-section {
+  background-color: #f0f9ff; /* Fondo azul hielo / celeste suave */
+  border-top: 1px solid #e0f2fe;
+  border-bottom: 1px solid #e0f2fe;
+  padding: 70px 0;
+  margin: 60px 0;
+  text-align: center;
+  position: relative;
+}
+
+.quotes-carousel-container {
+  max-width: 800px;
+  margin: 0 auto;
+  position: relative;
+  min-height: 220px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.quote-slide {
+  display: none;
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+  flex-direction: column;
+  align-items: center;
+}
+
+.quote-slide.active {
+  display: flex;
+  opacity: 1;
+}
+
+/* Icono de Comillas Clásico */
+.quote-icon {
+  font-family: var(--font-serif);
+  font-size: 4.5rem;
+  line-height: 1;
+  color: #00aeef; /* Azul principal de acento */
+  margin-bottom: -15px;
+  user-select: none;
+}
+
+/* Texto del fragmento */
+.quote-text {
+  font-family: var(--font-serif);
+  font-size: 1.35rem;
+  font-style: italic;
+  color: #0f172a; /* Texto oscuro elegante */
+  line-height: 1.6;
+  max-width: 700px;
+  margin: 0 auto 20px;
+}
+
+/* Línea separadora */
+.quote-divider {
+  width: 60px;
+  height: 2px;
+  background-color: #00aeef; /* Azul principal */
+  margin: 0 auto 18px;
+}
+
+/* Autor y Fuente */
+.quote-author {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.author-name {
+  font-family: var(--font-sans);
+  font-size: 0.85rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: #0369a1; /* Azul profundo elegante */
+}
+
+.author-source {
+  font-size: 0.8rem;
+  font-style: italic;
+  color: #64748b;
+}
+
+/* Botones Flecha (Anterior / Siguiente) */
+.quote-nav {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: transparent;
+  border: none;
+  font-size: 2.5rem;
+  color: #00aeef; /* Azul de acento */
+  cursor: pointer;
+  padding: 0 10px;
+  transition: color 0.2s ease, transform 0.2s ease;
+  user-select: none;
+}
+
+.quote-nav:hover {
+  color: #0284c7; /* Azul más oscuro al pasar el cursor */
+  transform: translateY(-50%) scale(1.15);
+}
+
+.prev-btn { left: -40px; }
+.next-btn { right: -40px; }
+
+/* Indicadores de Puntos (Dots) */
+.quote-dots {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  margin-top: 25px;
+}
+
+.dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #bae6fd; /* Azul pastel muy suave */
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.dot.active, .dot:hover {
+  background-color: #00aeef; /* Azul de acento activo */
+  transform: scale(1.2);
+}
+
+/* Adaptación Móvil */
+@media (max-width: 768px) {
+  .quotes-section {
+    padding: 50px 15px;
+  }
+  .quote-text {
+    font-size: 1.1rem;
+    padding: 0 15px;
+  }
+  .prev-btn { left: -10px; }
+  .next-btn { right: -10px; }
+}

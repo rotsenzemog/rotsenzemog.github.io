@@ -77,3 +77,30 @@ article > h2:first-child,
 article > h3:first-child {
   margin-top: 0;
 }
+
+/* ==========================================
+   JUSTIFICADO EXCLUSIVO PARA CUERPOS DE TEXTO / LECTURA
+   ========================================== */
+
+/* Solo justifica párrafos dentro de artículos, páginas y el carrusel de lectura */
+.page-content p,
+.post-content p,
+article p,
+.custom-page-text p {
+  text-align: justify;
+  margin-bottom: 1.5em;
+  line-height: 1.7;
+}
+
+/* Restablece la alineación centrada explícita para subtítulos de secciones específicas */
+.platforms-subtitle,
+.section-header p,
+.hero-banner p {
+  text-align: center !important;
+}
+
+/* Mantiene el texto del footer alineado según su estructura */
+.footer-text, 
+.footer-bio {
+  text-align: left;
+}

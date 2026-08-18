@@ -1,0 +1,231 @@
+/* ==========================================
+   FOOTER
+   ========================================== */
+
+.site-footer {
+  background-color: #12171c;
+  color: #c5cbd3;
+  padding: 60px 0 20px 0;
+  margin-top: 80px;
+  border-top: 1px solid #1e262e;
+}
+
+.footer-top-row {
+  display: table;
+  width: 100%;
+  table-layout: fixed;
+  padding-bottom: 40px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.footer-col {
+  display: table-cell;
+  vertical-align: top;
+  padding-right: 30px;
+}
+
+.footer-col:last-child {
+  padding-right: 0;
+}
+
+.col-about { width: 32%; }
+.footer-title {
+  font-family: var(--font-serif);
+  font-size: 1.8rem;
+  color: #ffffff;
+  margin-bottom: 12px;
+  letter-spacing: 1px;
+}
+.footer-text {
+  font-size: 0.95rem;
+  color: #00aeef;
+  margin-bottom: 15px;
+  font-weight: 600;
+}
+.footer-bio {
+  font-size: 0.9rem;
+  line-height: 1.6;
+  color: #8c9ba5;
+}
+
+.col-links { width: 28%; }
+.footer-subtitle {
+  font-family: var(--font-sans);
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  color: #ffffff;
+  margin-bottom: 12px;
+}
+
+.footer-nav, .footer-social-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-social-list li {
+  margin-bottom: 10px;
+}
+
+.footer-social-list a {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  color: #8c9ba5;
+  font-size: 0.9rem;
+  transition: color 0.2s ease;
+}
+
+.footer-social-list a:hover {
+  color: #00aeef;
+}
+
+.social-icon {
+  width: 18px;
+  height: 18px;
+  flex-shrink: 0;
+  transition: transform 0.2s ease;
+}
+
+.footer-social-list a:hover .social-icon {
+  transform: scale(1.1);
+}
+
+.col-kofi { width: 40%; }
+.kofi-wrapper {
+  background: #1d262d;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.3);
+  border: 1px solid #2a3640;
+}
+
+.footer-bottom-row {
+  text-align: center;
+  padding-top: 25px;
+  font-size: 0.85rem;
+  color: #63727e;
+}
+
+/* Formulario Footer */
+.footer-contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.footer-contact-form .form-group input,
+.footer-contact-form .form-group textarea {
+  width: 100%;
+  padding: 10px 12px;
+  border: 1px solid #2a3640;
+  border-radius: 6px;
+  font-family: var(--font-sans);
+  font-size: 0.85rem;
+  background-color: #1d262d;
+  color: #ffffff;
+  transition: border-color 0.2s;
+}
+
+.footer-contact-form .form-group input::placeholder,
+.footer-contact-form .form-group textarea::placeholder {
+  color: #63727e;
+}
+
+.footer-contact-form .form-group input:focus,
+.footer-contact-form .form-group textarea:focus {
+  outline: none;
+  border-color: #00aeef;
+  background-color: #222c35;
+}
+
+.btn-submit-footer {
+  background-color: #00aeef;
+  color: #ffffff;
+  padding: 10px 18px;
+  border: none;
+  border-radius: 6px;
+  font-family: var(--font-sans);
+  font-size: 0.8rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+  align-self: flex-start;
+}
+
+.btn-submit-footer:hover {
+  background-color: #0095cc;
+}
+
+/* ==========================================
+   FORMULARIO DE CONTACTO
+   ========================================== */
+
+.contact-section {
+  max-width: 650px;
+  margin: 60px auto;
+  padding: 0 10px;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.form-group label {
+  font-size: 0.85rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: var(--muted-text);
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 12px 15px;
+  border: 1px solid #e0e0e0;
+  border-radius: 6px;
+  font-family: var(--font-sans);
+  font-size: 0.95rem;
+  background-color: #fafafa;
+  transition: border-color 0.2s, background-color 0.2s;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  outline: none;
+  border-color: #1a1a1a;
+  background-color: #ffffff;
+}
+
+.btn-submit {
+  background-color: #1a1a1a;
+  color: #ffffff;
+  padding: 14px 25px;
+  border: none;
+  border-radius: 6px;
+  font-family: var(--font-sans);
+  font-size: 0.85rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+  align-self: flex-start;
+}
+
+.btn-submit:hover {
+  background-color: #333333;
+}

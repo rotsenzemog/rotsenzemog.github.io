@@ -20,7 +20,7 @@ layout: default
   <div>
     <span class="category-tag">{{ featured_post.category }}</span>
     {% for tag in featured_post.tags %}
-        <span class="post-tag">{{ tag }}</span>
+        <span class="post-tags">{{ tag }}</span>
       {% endfor %}
     <h2 class="card-title" style="font-size: 2rem;"><a href="{{ featured_post.url | relative_url }}">{{ featured_post.title }}</a></h2>
     <p class="card-excerpt">{{ featured_post.excerpt | strip_html | truncatewords: 25 }}</p>

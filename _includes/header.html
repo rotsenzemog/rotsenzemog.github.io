@@ -1,5 +1,5 @@
 <header class="site-header">
-  <!-- 1. FRANJA TOP PRINCIPAL -->
+  <!-- FRANJA SUPERIOR BLANCA -->
   <div class="header-top">
     <div class="container header-top-content">
       <a href="{{ '/' | relative_url }}" class="site-branding">
@@ -9,23 +9,23 @@
     </div>
   </div>
 
-  <!-- 2. SUBBARRA DE MENÚ INFERIOR -->
+  <!-- NAV BAR OSCURA -->
   <nav class="header-nav-bar" id="sticky-nav">
     <div class="container nav-bar-content">
       
-      <!-- Logo pequeño (scroll/móvil) -->
+      <!-- Logo Sticky (Scroll) -->
       <a href="{{ '/' | relative_url }}" class="sticky-logo-link" aria-label="Inicio">
         <img src="{{ '/assets/images/logo-rotsen.svg' | relative_url }}" alt="Rotsen Zemog" class="header-logo-sticky">
       </a>
 
-      <!-- Botón Hamburguesa Móvil -->
+      <!-- Botón Hamburguesa -->
       <button class="mobile-menu-toggle" id="menuToggle" aria-label="Abrir menú">
         <span></span>
         <span></span>
         <span></span>
       </button>
 
-      <!-- Menú de Navegación -->
+      <!-- Lista de Navegación -->
       <ul class="nav-menu" id="navMenu">
         <li><a href="{{ '/yo/' | relative_url }}">Yo</a></li>
         <li><a href="{{ '/mis-obras/' | relative_url }}">Mis obras</a></li>
@@ -54,6 +54,7 @@
 
     if (menuToggle && navMenu) {
       menuToggle.addEventListener('click', () => {
+        menuToggle.classList.toggle('active');
         navMenu.classList.toggle('active');
       });
     }

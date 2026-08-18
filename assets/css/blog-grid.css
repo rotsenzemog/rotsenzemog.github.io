@@ -1,8 +1,8 @@
 /* ==========================================
-   ESTILOS DE BLOG: GRID 4 COLUMNAS, BUSCADOR Y PAGINACIÓN
+   ESTILOS GENERALES DE BLOG: GRIDS, TARJETAS Y HERRAMIENTAS
    ========================================== */
 
-/* CONTENEDOR PRINCIPAL GRID 4 COLUMNAS */
+/* CONTENEDOR PRINCIPAL GRID 4 COLUMNAS (BITÁCORA) */
 .grid-4 {
   display: grid !important;
   grid-template-columns: repeat(4, 1fr) !important;
@@ -10,7 +10,7 @@
   width: 100% !important;
 }
 
-/* Adaptación responsive para móviles y tablets */
+/* Adaptación responsive */
 @media (max-width: 1024px) {
   .grid-4 {
     grid-template-columns: repeat(2, 1fr) !important;
@@ -24,13 +24,12 @@
 }
 
 /* ==========================================
-   TARJETAS DE BLOG (GRID 4) FIX ESTRUCTURAL DEFINITIVO
+   ESTRUCTURA DE TARJETAS DE POST (UNIVERSAL: INDEX & BITÁCORA)
    ========================================== */
 
-/* Contenedor principal de cada tarjeta */
-.grid-4 article,
-.grid-4 article.card,
-.grid-4 .card {
+/* Contenedor principal de la tarjeta */
+article.card,
+.card {
   display: flex !important;
   flex-direction: column !important;
   justify-content: flex-start !important;
@@ -44,14 +43,15 @@
   transition: transform 0.2s ease;
 }
 
-.grid-4 article:hover,
-.grid-4 .card:hover {
+article.card:hover,
+.card:hover {
   transform: translateY(-4px);
+  box-shadow: none !important;
 }
 
 /* 1. IMAGEN DE LA TARJETA */
-.grid-4 article > a,
-.grid-4 .card > a {
+article.card > a,
+.card > a {
   display: block !important;
   width: 100% !important;
   height: 180px !important;
@@ -60,8 +60,8 @@
   overflow: hidden !important;
 }
 
-.grid-4 .card-img,
-.grid-4 article img {
+.card-img,
+article.card img {
   display: block !important;
   width: 100% !important;
   height: 180px !important;
@@ -71,52 +71,60 @@
   border-radius: 8px !important;
 }
 
-/* 2. ETIQUETAS DE CATEGORÍA Y TAGS (FONDO AZUL Y TEXTO BLANCO) */
-.grid-4 .category-tag,
-.grid-4 .post-tag,
-.grid-4 .tag-item,
-.post-tags .tag-item {
+/* ==========================================
+   2. CATEGORÍAS Y ETIQUETAS (TAGS)
+   ========================================== */
+
+/* Contenedor flexible para alinear categoría y tags */
+.tags-container {
+  display: flex !important;
+  flex-wrap: wrap !important;
+  gap: 4px !important;
+  margin: 6px 0 8px 0 !important;
+  align-items: center !important;
+}
+
+/* Apariencia de etiquetas con fondo azul y texto blanco */
+.category-tag,
+.post-tag,
+.tag-item,
+.post-tags {
   display: inline-block !important;
   align-self: flex-start !important;
   background-color: #00aeef !important; /* Azul claro */
   color: #ffffff !important;           /* Texto blanco */
-  font-size: 0.48rem !important;
+  font-size: 0.68rem !important;
   font-weight: 700 !important;
   text-transform: uppercase !important;
-  letter-spacing: 0.1px !important;
-  padding: 1x 10px !important;
+  letter-spacing: 0.5px !important;
+  padding: 3px 8px !important;
   border-radius: 4px !important;
-  margin: 1px !important;
+  margin: 2px 2px 2px 0 !important;
   text-decoration: none !important;
   flex: 0 0 auto !important;
   height: auto !important;
+  line-height: 1.2 !important;
   transition: background-color 0.2s ease;
 }
 
-.grid-4 .category-tag:hover,
-.grid-4 .post-tag:hover,
-.grid-4 .tag-item:hover,
-.post-tags .tag-item:hover {
-  background-color: #0095cc !important; /* Ligero oscurecimiento al pasar el cursor */
+.category-tag:hover,
+.post-tag:hover,
+.tag-item:hover,
+.post-tags:hover {
+  background-color: #0095cc !important; /* Azul ligeramente más oscuro */
 }
 
-/* Contenedor para agrupar múltiples tags */
-.grid-4 .tags-container,
-.grid-4 .post-tags {
-  display: flex !important;
-  flex-wrap: wrap !important;
-  gap: 4px !important;
-  margin: 4px 0 !important;
-}
+/* ==========================================
+   3. TÍTULO, EXTRACTO Y FECHA DE TARJETAS
+   ========================================== */
 
-/* 3. TÍTULO DE LA TARJETA */
-.grid-4 h2.card-title,
-.grid-4 .card-title {
+/* Título */
+h2.card-title,
+h3.card-title,
+.card-title {
   display: block !important;
   width: 100% !important;
   height: auto !important;
-  min-height: 0 !important;
-  max-height: none !important;
   margin: 4px 0 6px 0 !important;
   padding: 0 !important;
   font-size: 1.15rem !important;
@@ -125,26 +133,22 @@
   flex: 0 0 auto !important;
 }
 
-/* Enlaces DENTRO del título */
-.grid-4 h2.card-title a,
-.grid-4 .card-title a {
+.card-title a {
   display: inline !important;
-  height: auto !important;
-  max-height: none !important;
-  flex: none !important;
   color: #0f172a !important;
   text-decoration: none !important;
   margin: 0 !important;
   padding: 0 !important;
+  transition: color 0.2s ease;
 }
 
-.grid-4 .card-title a:hover {
+.card-title a:hover {
   color: #00aeef !important;
 }
 
-/* 4. EXTRACTO / TEXTO */
-.grid-4 .card-excerpt,
-.grid-4 p.card-excerpt {
+/* Extracto / Descripción corta */
+.card-excerpt,
+p.card-excerpt {
   margin: 4px 0 12px 0 !important;
   font-size: 0.88rem !important;
   color: #475569 !important;
@@ -154,56 +158,26 @@
   height: auto !important;
 }
 
-/* 5. FECHA / PIE DE TARJETA */
-.grid-4 small {
+/* Fecha / Pie de tarjeta */
+small,
+.card small {
   margin-top: auto !important;
   color: #64748b !important;
   font-size: 0.78rem !important;
   flex: 0 0 auto !important;
   height: auto !important;
-}
-
-/* PAGINADOR INFERIOR */
-.pagination-container {
-  margin-top: 50px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 20px;
-}
-
-.btn-pagination {
-  padding: 8px 18px;
-  background-color: #1e293b;
-  color: #ffffff;
-  border: 1px solid #334155;
-  border-radius: 6px;
-  cursor: pointer;
-  font-weight: 600;
-  transition: all 0.2s ease;
-}
-
-.btn-pagination:hover:not(:disabled) {
-  background-color: #00aeef;
-  border-color: #00aeef;
-}
-
-.btn-pagination:disabled {
-  opacity: 0.4;
-  cursor: not-allowed;
+  display: block;
 }
 
 /* ==========================================
-   AJUSTES LIMPIOS DEL BLOG (SIN FONDOS OSCUROS)
+   BARRA DE BÚSQUEDA, FILTROS Y PAGINACIÓN
    ========================================== */
 
-/* Reducción del margen superior del encabezado */
 .section-header {
   margin-top: 0 !important;
   margin-bottom: 20px !important;
 }
 
-/* Barra de herramientas (Buscador y Ordenar) limpia */
 .blog-tools {
   display: flex;
   justify-content: space-between;
@@ -254,69 +228,32 @@
   cursor: pointer;
 }
 
-/* Tarjetas de Posts Transparentes / Limpias */
-.grid-4 .card {
-  display: flex !important;
-  flex-direction: column !important;
-  background-color: transparent !important;
-  border: none !important;
-  border-radius: 0 !important;
-  overflow: hidden;
-  height: 100%;
-  padding: 0 !important;
-  transition: transform 0.2s ease;
+/* Paginador */
+.pagination-container {
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
 }
 
-.grid-4 .card:hover {
-  transform: translateY(-4px);
-  box-shadow: none !important;
+.btn-pagination {
+  padding: 8px 18px;
+  background-color: #1e293b;
+  color: #ffffff;
+  border: 1px solid #334155;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: all 0.2s ease;
 }
 
-/* Imagen de la tarjeta */
-.grid-4 .card a:first-child {
-  display: block;
-  width: 100%;
-  height: 180px;
-  overflow: hidden;
-  border-radius: 8px;
+.btn-pagination:hover:not(:disabled) {
+  background-color: #00aeef;
+  border-color: #00aeef;
 }
 
-.grid-4 .card-img {
-  width: 100% !important;
-  height: 100% !important;
-  object-fit: cover !important;
-  display: block;
-}
-
-.grid-4 .card-title {
-  display: block !important;
-  flex-grow: 0 !important;
-  flex-shrink: 0 !important;
-  height: auto !important;
-  margin-top: 6px !important;
-  margin-bottom: 4px !important;
-  font-size: 1.1rem !important;
-  line-height: 1.25 !important;
-}
-
-.grid-4 .card-title a {
-  color: #0f172a !important;
-  text-decoration: none;
-}
-
-.grid-4 .card-title a:hover {
-  color: #00aeef !important;
-}
-
-.grid-4 .card-excerpt {
-  margin: 0 0 10px 0 !important;
-  font-size: 0.88rem;
-  color: #475569 !important;
-  line-height: 1.5;
-}
-
-.grid-4 small {
-  margin-top: auto !important;
-  padding: 0;
-  color: #64748b !important;
+.btn-pagination:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
 }

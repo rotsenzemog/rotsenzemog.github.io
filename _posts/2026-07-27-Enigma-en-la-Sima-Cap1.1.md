@@ -2,6 +2,11 @@
 layout: post
 title: "Enigma en la Sima — Capítulo 1.1"
 category: "Obra propia"
+tags:
+  - Ciencia Ficción
+  - Novela Corta
+  - Saga Génesis
+  - Literatura
 image: "/assets/images/posts/Enigma-en-la-Sima.webp"
 ---
 

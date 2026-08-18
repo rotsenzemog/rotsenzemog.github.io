@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Enigma en la Sima — Capítulo 1.1"
-category: "Ciencia Ficción"
+category: "Obra propia"
 image: "/assets/images/posts/Enigma-en-la-Sima.webp"
 ---
 

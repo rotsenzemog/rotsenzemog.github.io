@@ -53,7 +53,8 @@
     const dropdownToggle = document.getElementById('dropdownToggle');
 
     if (menuToggle && navMenu) {
-      menuToggle.addEventListener('click', () => {
+      menuToggle.addEventListener('click', (e) => {
+        e.stopPropagation();
         menuToggle.classList.toggle('active');
         navMenu.classList.toggle('active');
       });
@@ -63,9 +64,20 @@
       dropdownToggle.addEventListener('click', (e) => {
         if (window.innerWidth <= 768) {
           e.preventDefault();
+          e.stopPropagation();
           dropdownToggle.parentElement.classList.toggle('open');
         }
       });
     }
+
+    // Cerrar menú al hacer clic fuera
+    document.addEventListener('click', (e) => {
+      if (navMenu && navMenu.classList.contains('active')) {
+        if (!navMenu.contains(e.target) && !menuToggle.contains(e.target)) {
+          navMenu.classList.remove('active');
+          menuToggle.classList.remove('active');
+        }
+      }
+    });
   });
 </script>

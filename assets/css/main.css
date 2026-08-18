@@ -1,0 +1,18 @@
+/* ==========================================
+   CARRIL PRINCIPAL DE IMPORTACIÓN CSS
+   ========================================== */
+
+/* 1. Reset y Variables (SIEMPRE PRIMERO) */
+@import url('base.css');
+
+/* 2. Componentes Globales */
+@import url('header.css');
+@import url('footer.css');
+
+/* 3. Secciones del Sitio */
+@import url('hero.css');
+@import url('quotes.css');
+@import url('blog-grid.css');
+@import url('newsletter.css');
+@import url('platforms.css');
+@import url('yo-page.css');

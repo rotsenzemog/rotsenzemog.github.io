@@ -107,6 +107,10 @@ article.card img {
   transition: background-color 0.2s ease;
 }
 
+.category-tag {
+  background-color: #014499 !important;
+}
+
 .category-tag:hover,
 .post-tag:hover,
 .tag-item:hover,

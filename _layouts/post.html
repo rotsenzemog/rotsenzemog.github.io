@@ -2,7 +2,7 @@
 layout: default
 ---
 <article style="max-width: 750px; margin: 40px auto;">
-  <span class="category-tag">{{ page.category }}</span>
+  
   <h1 style="font-family: var(--font-serif); font-size: 2.8rem; margin: 10px 0;">{{ page.title }}</h1>
   <p style="color: var(--muted-text); margin-bottom: 30px;">Escrito {{ page.date | date: "%d/%m/%Y" }} por {{ site.author.name }}</p>
   
@@ -13,6 +13,16 @@ layout: default
   <div class="post-content" style="font-size: 1.1rem; line-height: 1.8;">
     {{ content }}
   </div>
+
+  <!-- CONTENEDOR DE CATEGORÍA Y ETIQUETAS -->
+    <div class="tags-container">
+      {% if featured_post.category %}
+        <span class="category-tag">{{ featured_post.category }}</span>
+      {% endif %}
+      {% for tag in featured_post.tags %}
+        <span class="post-tag">{{ tag }}</span>
+      {% endfor %}
+    </div>
   
   <!-- Sección de Comentarios Disqus -->
 {% if page.comments != false %}

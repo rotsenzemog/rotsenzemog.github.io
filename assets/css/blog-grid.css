@@ -264,3 +264,46 @@ small,
   opacity: 0.4;
   cursor: not-allowed;
 }
+
+/* ==========================================
+   CARRUSEL DE POSTS RELACIONADOS
+   ========================================== */
+
+.related-carousel {
+  display: flex !important;
+  gap: 20px !important;
+  overflow-x: auto !important;
+  scroll-snap-type: x mandatory !important;
+  padding-bottom: 15px !important;
+  -webkit-overflow-scrolling: touch;
+}
+
+/* Personalización de la barra de desplazamiento */
+.related-carousel::-webkit-scrollbar {
+  height: 6px;
+}
+
+.related-carousel::-webkit-scrollbar-track {
+  background: #f1f5f9;
+  border-radius: 10px;
+}
+
+.related-carousel::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border-radius: 10px;
+}
+
+.related-carousel::-webkit-scrollbar-thumb:hover {
+  background: #00aeef;
+}
+
+/* Ajuste de cada tarjeta dentro del carrusel */
+.related-card {
+  flex: 0 0 240px !important; /* Ancho fijo para cada tarjeta en el carrusel */
+  scroll-snap-align: start !important;
+}
+
+.related-card img {
+  height: 140px !important;
+  aspect-ratio: 16 / 9 !important;
+}

@@ -50,24 +50,27 @@ article.card:hover,
 }
 
 /* 1. IMAGEN DE LA TARJETA */
+/* Enlace contenedor de la imagen flexible */
 article.card > a,
 .card > a {
   display: block !important;
   width: 100% !important;
-  height: 180px !important;
+  height: auto !important; /* Libera la altura fija */
   margin-bottom: 8px !important;
   border-radius: 8px !important;
   overflow: hidden !important;
 }
 
+/* Imagen con proporción dinámica respecto al ancho */
 .card-img,
 article.card img {
   display: block !important;
   width: 100% !important;
-  height: 180px !important;
-  max-height: 180px !important;
-  object-fit: cover !important;
-  object-position: center !important;
+  height: auto !important;             /* Cancela los 180px estáticos */
+  max-height: none !important;         /* Elimina la restricción previa */
+  aspect-ratio: 16 / 9 !important;    /* Ajusta automáticamente la altura en proporción 16:9 */
+  object-fit: cover !important;        /* Cubre todo el área sin deformar */
+  object-position: center !important;  /* Centra la imagen */
   border-radius: 8px !important;
 }
 

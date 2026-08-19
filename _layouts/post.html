@@ -24,6 +24,50 @@ layout: default
     <span class="post-tag">{{ tag }}</span>
   {% endfor %}
 </div>
+
+  <!-- CARRUSEL DE POSTS RELACIONADOS -->
+  {% assign related_posts = site.posts | where: "category", page.category | where_not: "url", page.url %}
+  
+  <!-- Si no hay suficientes por categoría, busca por tags -->
+  {% if related_posts.size == 0 %}
+    {% assign related_posts = "" | split: "" %}
+    {% for post in site.posts %}
+      {% if post.url != page.url %}
+        {% for tag in post.tags %}
+          {% if page.tags contains tag %}
+            {% assign related_posts = related_posts | push: post | uniq %}
+          {% endif %}
+        {% endfor %}
+      {% endif %}
+    {% endfor %}
+  {% endif %}
+
+  {% if related_posts.size > 0 %}
+  <section class="related-posts-section" style="margin-top: 40px; padding-top: 30px; border-top: 1px solid #e2e8f0;">
+    <h3 style="font-family: var(--font-serif); font-size: 1.5rem; margin-bottom: 20px;">Publicaciones relacionadas</h3>
+    
+    <div class="related-carousel">
+      {% for post in related_posts limit:6 %}
+      <article class="card related-card">
+        <a href="{{ post.url | relative_url }}">
+          <img src="{{ post.image | relative_url }}" class="card-img" alt="{{ post.title }}">
+        </a>
+        
+        <div class="tags-container">
+          {% if post.category %}
+            <span class="category-tag">{{ post.category }}</span>
+          {% endif %}
+        </div>
+
+        <h4 class="card-title" style="font-size: 1rem; margin-top: 6px;">
+          <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
+        </h4>
+        <small style="color: var(--muted-text); margin-top: auto;">{{ post.date | date: "%d %b %Y" }}</small>
+      </article>
+      {% endfor %}
+    </div>
+  </section>
+  {% endif %}
   
   <!-- Sección de Comentarios Disqus -->
 {% if page.comments != false %}

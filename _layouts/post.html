@@ -25,24 +25,77 @@ layout: default
   {% endfor %}
 </div>
 
-  <!-- CARRUSEL DE POSTS RELACIONADOS -->
-  {% assign related_posts = site.posts | where: "category", page.category | where_not: "url", page.url %}
-  
-  <!-- Si no hay suficientes por categoría, busca por tags -->
-  {% if related_posts.size == 0 %}
-    {% assign related_posts = "" | split: "" %}
-    {% for post in site.posts %}
-      {% if post.url != page.url %}
-        {% for tag in post.tags %}
-          {% if page.tags contains tag %}
-            {% assign related_posts = related_posts | push: post | uniq %}
-          {% endif %}
-        {% endfor %}
-      {% endif %}
-    {% endfor %}
-  {% endif %}
+  <!-- CARRUSEL DE POSTS RELACIONADOS (FILTRO INTELIGENTE POR PUNTUACIÓN) -->
+  {% assign level_6 = "" | split: "" %}
+  {% assign level_5 = "" | split: "" %}
+  {% assign level_4 = "" | split: "" %}
+  {% assign level_3 = "" | split: "" %}
+  {% assign level_2 = "" | split: "" %}
+  {% assign level_1 = "" | split: "" %}
 
+  {% for post in site.posts %}
+    {% if post.url != page.url %}
+      {% assign match_count = 0 %}
+      
+      <!-- 1. Sumar punto si coinciden en categoría -->
+      {% if post.category == page.category and page.category != nil %}
+        {% assign match_count = match_count | plus: 1 %}
+      {% endif %}
+      
+      <!-- 2. Sumar punto por CADA etiqueta (tag) coincidente -->
+      {% for tag in post.tags %}
+        {% if page.tags contains tag %}
+          {% assign match_count = match_count | plus: 1 %}
+        {% endif %}
+      {% endfor %}
+      
+      <!-- 3. Clasificar el post en un array según su nivel de coincidencia -->
+      {% if match_count >= 6 %}
+        {% assign level_6 = level_6 | push: post %}
+      {% elsif match_count == 5 %}
+        {% assign level_5 = level_5 | push: post %}
+      {% elsif match_count == 4 %}
+        {% assign level_4 = level_4 | push: post %}
+      {% elsif match_count == 3 %}
+        {% assign level_3 = level_3 | push: post %}
+      {% elsif match_count == 2 %}
+        {% assign level_2 = level_2 | push: post %}
+      {% elsif match_count == 1 %}
+        {% assign level_1 = level_1 | push: post %}
+      {% endif %}
+    {% endif %}
+  {% endfor %}
+
+  <!-- 4. Unir todos los arrays priorizando las puntuaciones más altas -->
+  {% assign related_posts = level_6 | concat: level_5 | concat: level_4 | concat: level_3 | concat: level_2 | concat: level_1 %}
+
+  <!-- 5. Renderizar el Carrusel solo si hay al menos 1 resultado -->
   {% if related_posts.size > 0 %}
+  <section class="related-posts-section" style="margin-top: 40px; padding-top: 30px; border-top: 1px solid #e2e8f0;">
+    <h3 style="font-family: var(--font-serif); font-size: 1.5rem; margin-bottom: 20px;">Publicaciones relacionadas</h3>
+    
+    <div class="related-carousel">
+      {% for post in related_posts limit:6 %}
+      <article class="card related-card">
+        <a href="{{ post.url | relative_url }}">
+          <img src="{{ post.image | relative_url }}" class="card-img" alt="{{ post.title }}">
+        </a>
+        
+        <div class="tags-container">
+          {% if post.category %}
+            <span class="category-tag">{{ post.category }}</span>
+          {% endif %}
+        </div>
+
+        <h4 class="card-title" style="font-size: 1rem; margin-top: 6px;">
+          <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
+        </h4>
+        <small style="color: var(--muted-text); margin-top: auto;">{{ post.date | date: "%d %b %Y" }}</small>
+      </article>
+      {% endfor %}
+    </div>
+  </section>
+  {% endif %}
   <section class="related-posts-section" style="margin-top: 40px; padding-top: 30px; border-top: 1px solid #e2e8f0;">
     <h3 style="font-family: var(--font-serif); font-size: 1.5rem; margin-bottom: 20px;">Publicaciones relacionadas</h3>
     

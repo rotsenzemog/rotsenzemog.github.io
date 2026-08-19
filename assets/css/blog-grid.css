@@ -68,7 +68,7 @@ article.card img {
   width: 100% !important;
   height: auto !important;             /* Cancela los 180px estáticos */
   max-height: none !important;         /* Elimina la restricción previa */
-  aspect-ratio: 16 / 9 !important;    /* Ajusta automáticamente la altura en proporción 16:9 */
+  aspect-ratio: 3 / 2 !important;    /* Ajusta automáticamente la altura en proporción 16:9 */
   object-fit: cover !important;        /* Cubre todo el área sin deformar */
   object-position: center !important;  /* Centra la imagen */
   border-radius: 8px !important;

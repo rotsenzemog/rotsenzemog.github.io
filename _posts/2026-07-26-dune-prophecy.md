@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Reseña de Duna: La Profecía - Primera Temporada"
+title: "Reseña de Dune: Prophecy - Primera Temporada"
 category: "Reseña"
 tags:
   - Ciencia Ficción
@@ -10,7 +10,7 @@ tags:
 image: "assets/images/posts/dune-profecia.webp"
 ---
 
-Aunque la obra pertenece al mismo universo audiovisual y se basa al igual que los largometrajes en la saga de libros escritos por Frank Herbert, esta está ambientada aproximadamente 10.000 años antes de los hechos narrados en la novela original, donde la trama gira en torno al personaje de Paul Atreides. Por lo tanto, aunque sí que se hace referencia directa a las casas Atreides y Harkonnen, presentando los orígenes de su rivalidad, no debemos esperar ver a los mismos personajes que ya conocemos de la pantalla grande, pues en este caso el rol protagónico recae sobre las hermanas Valya y Tula Harkonnen, así como en menor medida, sobre la familia real perteneciente a la Casa Corrino.
+Aunque la obra televisiva pertenece al mismo universo audiovisual y se basa al igual que los largometrajes cinematográficos en la saga literaria escrita por Frank Herbert, esta está ambientada aproximadamente 10.000 años antes que los hechos narrados en la novela original, donde la trama gira en torno al personaje de Paul Atreides. Por lo tanto, aunque sí que se hace referencia directa a las casas Atreides y Harkonnen, presentando los orígenes de su rivalidad, no debemos esperar ver a los mismos personajes que ya conocemos de la pantalla grande, pues en este caso el rol protagónico recae sobre las hermanas Valya y Tula Harkonnen, así como en menor medida, sobre la familia real perteneciente a la Casa Corrino.
  
 La narrativa se centra en la génesis y evolución de la hermandad Bene Gesserit, una orden monástica constituida exclusivamente por mujeres, que son entrenadas en métodos de manipulación y espionaje, además de capacidades psíquicas sobrehumanas, que son fácilmente confundibles con la magia e incluso brujería, pero que en realidad tienen justificación científica. De forma equivalente, el antagonista principal de esta temporada, posee poderes que parecen superar los límites de lo físico, convirtiéndose en una gran amenaza para los fines de la hermandad.
  

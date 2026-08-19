@@ -15,14 +15,15 @@ layout: default
   </div>
 
   <!-- CONTENEDOR DE CATEGORÍA Y ETIQUETAS -->
-    <div class="tags-container">
-      {% if featured_post.category %}
-        <span class="category-tag">{{ featured_post.category }}</span>
-      {% endif %}
-      {% for tag in featured_post.tags %}
-        <span class="post-tag">{{ tag }}</span>
-      {% endfor %}
-    </div>
+<div class="tags-container" style="margin-top: 30px;">
+  {% if page.category %}
+    <span class="category-tag">{{ page.category }}</span>
+  {% endif %}
+  
+  {% for tag in page.tags %}
+    <span class="post-tag">{{ tag }}</span>
+  {% endfor %}
+</div>
   
   <!-- Sección de Comentarios Disqus -->
 {% if page.comments != false %}

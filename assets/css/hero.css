@@ -208,7 +208,7 @@
 .btn-more {
   display: inline-block;
   padding: 12px 28px;
-  background-color: transparent;
+  background-color: #00b9fe;
   color: var(--text-color, #1e293b);
   border: 2px solid var(--accent-color, #0f172a);
   border-radius: 6px;

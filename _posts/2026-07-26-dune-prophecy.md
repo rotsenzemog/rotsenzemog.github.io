@@ -8,6 +8,8 @@ tags:
   - HBO Max
   - Duna
 image: "assets/images/posts/dune-profecia.webp"
+permalink: /reseñas/series/reseña-dune-prophecy-t1/
+date: 2026-07-28 14:00:00 -0400
 ---
 
 Aunque la obra televisiva pertenece al mismo universo audiovisual y se basa al igual que los largometrajes cinematográficos en la saga literaria escrita por Frank Herbert, esta está ambientada aproximadamente 10.000 años antes que los hechos narrados en la novela original, donde la trama gira en torno al personaje de Paul Atreides. Por lo tanto, aunque sí que se hace referencia directa a las casas Atreides y Harkonnen, presentando los orígenes de su rivalidad, no debemos esperar ver a los mismos personajes que ya conocemos de la pantalla grande, pues en este caso el rol protagónico recae sobre las hermanas Valya y Tula Harkonnen, así como en menor medida, sobre la familia real perteneciente a la Casa Corrino.

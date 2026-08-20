@@ -23,6 +23,38 @@
   }
 }
 
+/* CONTENEDOR PRINCIPAL GRID 3 COLUMNAS (POSTS RECIENTES) */
+.grid-3 {
+  display: grid !important;
+  grid-template-columns: repeat(3, 1fr) !important;
+  gap: 24px !important;
+  width: 100% !important;
+  box-sizing: border-box !important;
+}
+
+/* Adaptación responsive para tablets y móviles */
+@media (max-width: 1024px) {
+  .grid-3 {
+    grid-template-columns: repeat(2, 1fr) !important;
+  }
+}
+
+@media (max-width: 640px) {
+  .grid-3 {
+    grid-template-columns: 1fr !important; /* Pasa a 1 sola columna centrada */
+    gap: 20px !important;
+  }
+}
+
+/* Prevención de desbordamiento horizontal global */
+.recent-posts-section,
+.grid-3,
+.card {
+  max-width: 100% !important;
+  overflow-x: hidden;
+  box-sizing: border-box !important;
+}
+
 /* ==========================================
    ESTRUCTURA DE TARJETAS DE POST (UNIVERSAL: INDEX & BITÁCORA)
    ========================================== */

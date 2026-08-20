@@ -22,7 +22,7 @@ El nombre Génesis representa tanto el inicio de esta aventura literaria como el
 El corazón de la Saga Génesis lo constituirán tres novelas, cuyo desarrollo se encuentra actualmente en curso y que serán accesibles en formato de pago, aunque aún no tengo bien definido el medio para su distribución; posiblemente se trate tanto de ejemplares impresos como de publicación digital u online. Estas obras constituyen el núcleo central del universo narrativo, tanto en su trama como en su carga filosófica e incluso en su potencial económico.
 
 
-### BioGénesis: El genoma del alma
+### BioGénesis: Genoma del alma
 
 A inicios del siglo XXII, la humanidad enfrenta una amenaza sin precedentes: un virus letal llamado Némesis, que impide el intercambio de material genético entre los infectados. En este contexto, una joven pareja lucha por su amor en medio de un mundo fracturado por la guerra entre Occidente, que apuesta por la ingeniería genética para preservar la vida biológica, y el Imperio Oriental, que ha implementado la conversión cibernética de sus ciudadanos como forma de trascendencia.
 

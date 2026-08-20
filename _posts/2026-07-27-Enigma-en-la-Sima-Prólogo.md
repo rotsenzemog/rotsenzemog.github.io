@@ -1,4 +1,4 @@
----
+--- 
 layout: post
 title: "Génesis: Enigma en la Sima - Prólogo"
 category: "Obra propia"

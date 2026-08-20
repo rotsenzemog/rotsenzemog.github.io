@@ -181,8 +181,12 @@ small,
    ========================================== */
 
 .section-header {
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: flex-start !important;
+  text-align: left !important;
   margin-top: 0 !important;
-  margin-bottom: 20px !important;
+  margin-bottom: 30px !important;
 }
 
 .blog-tools {

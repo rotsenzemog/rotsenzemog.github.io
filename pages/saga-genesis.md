@@ -39,14 +39,14 @@ Las divisiones internas y los enfrentamientos entre facciones de la sociedad bio
 
 Previo al argumento de la trilogía principal, existe una serie de obras preludio ambientadas en el siglo XXI. Estos relatos cortos o historias medianamente extensas construyen las bases de este mundo, contextualizan los eventos y siembran las semillas narrativas que florecerán en las novelas de la trilogía. Estos textos estarán disponibles en su mayoría de forma gratuita en mis redes sociales y las diferentes plataformas de publicación de las que dispongo.
 
-### Enigma en la sima
+### Génesis: Enigma en la sima
 
 Un grupo de exploradores se adentra en la enigmática Sima Humboldt, en el corazón del tepuy Sarisariñama, para investigar la desaparición de una expedición anterior. Lo que descubren en su interior podría acelerar el avance de la ciencia y la tecnología durante los años venideros.
 
-### Al acecho de Némesis
+### Génesis: La era de Némesis
 
 En un mundo colapsado por una pandemia devastadora, dos jóvenes desconocidos deben colaborar mutuamente para sobrevivir. Los infectados no solo mueren: se transforman en psicópatas violentos y necrófilos. Entre la locura y la desolación, nace un vinculo irrompible entre ellos.
 
-### El sacrificio de la musa
+### Génesis: El sacrificio de la musa
 
 Un reconocido artista plástico recibe una oferta para salvar su vida: convertirse en un cyborg. Pero como pintor clásico y naturalista, teme que la conversión digital de su conciencia destruya su capacidad creativa. ¿Puede el arte sobrevivir a la inmortalidad artificial?

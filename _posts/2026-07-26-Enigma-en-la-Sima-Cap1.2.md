@@ -9,7 +9,7 @@ tags:
   - Literatura
 image: "/assets/images/posts/Enigma-en-la-Sima.webp"
 ---
-
+ 
 La inmensidad del abismo Humboldt era abrumadora; sus visitantes parecían diminutos insectos posados al borde de un pozo interminable. Dos años atrás, el lugar había sido escenario de una trágica expedición: un cuarteto de investigadores entró en su boca, pero jamás salió de vuelta. Ahora era el turno de un nuevo grupo de exploradores que descendía a las profundidades del descomunal hueco en busca de respuestas, esperando esta vez regresar sano y salvo.
 
 Tras retirarse los vehículos de transporte aéreo y los guías nativos que los llevaron hasta el lugar, los excursionistas se abrieron paso entre los grandes árboles y prepararon una transitoria base logística en la superficie desde la cual afrontarían el desafío. La agrupación se dividió en dos partes con la intención de bajar primero una fracción y luego la otra, reduciendo así los riesgos de hacerlo todos a la vez. Entonces el líder de la tropa dio el primer paso.

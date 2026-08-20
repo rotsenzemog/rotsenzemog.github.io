@@ -21,7 +21,7 @@ def get_latest_post():
 
 def generate_social_copys(post_content, post_title):
     # Usamos Gemini para analizar el post y redactar los textos
-    model = genai.GenerativeModel('gemini-1.5-flash')
+    model = genai.GenerativeModel('gemini-2.5-flash')
     prompt = f"""
     Eres un experto Social Media Manager para un blog de literatura, ciencia ficción y tecnología.
     Basándote en el siguiente artículo titulado "{post_title}", redacta propuestas de contenido para redes sociales:

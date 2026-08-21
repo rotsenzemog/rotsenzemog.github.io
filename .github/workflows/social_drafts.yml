@@ -4,18 +4,18 @@ on:
   push:
     paths:
       - '_posts/**'
-  workflow_dispatch: # Permite ejecución manual desde la pestaña Actions
+  workflow_dispatch:
 
 jobs:
   generate-drafts:
     runs-on: ubuntu-latest
     permissions:
-      contents: write # OBLIGATORIO: Permite a GitHub Actions guardar panel.html en tu repo
+      contents: write
     steps:
       - name: Descargar repositorio
         uses: actions/checkout@v3
         with:
-          fetch-depth: 0 # Necesario para revisar el historial de Git
+          fetch-depth: 0
 
       - name: Configurar Python
         uses: actions/setup-python@v4
@@ -32,7 +32,8 @@ jobs:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
           TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
           TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
-          SITE_URL: "https://rotsenzemog.github.io/panel.html"
+          SITE_URL: "https://rotsenzemog.github.io/repost.html"
+          PANEL_SECRET_PIN: "tu_clave_secreta" # Cambia esto por tu PIN personal
           FORCE_RUN: ${{ github.event_name == 'workflow_dispatch' }}
         run: python scripts/social_generator.py
 
@@ -40,6 +41,6 @@ jobs:
         run: |
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
-          git add panel.html || true
-          git commit -m "Update social panel HTML [skip ci]" || true
+          git add repost.html || true
+          git commit -m "Update repost.html [skip ci]" || true
           git push

@@ -13,7 +13,7 @@ layout: default
 <!-- Post Destacado -->
 {% assign featured_post = site.posts.first %}
 {% if featured_post %}
-<div class="featured-post">
+<div class="outstanding featured-post">
   <a href="{{ featured_post.url | relative_url }}">
     <img src="{{ featured_post.image | relative_url }}" class="card-img featured-img" alt="{{ featured_post.title }}">
   </a>
@@ -90,7 +90,7 @@ layout: default
 {% assign featured_page = site.pages | where: "permalink", "/saga-genesis/" | first %}
 
 {% if featured_page %}
-<div class="featured-post">
+<div class="outstanding featured-post">
   <a href="{{ featured_page.url | relative_url }}">
     <img src="{{ featured_page.image | relative_url }}" class="card-img featured-img" alt="{{ featured_page.title }}">
   </a>

@@ -181,6 +181,11 @@ h3.card-title,
   transition: color 0.2s ease;
 }
 
+.outstanding a {
+  font-size: 2.50rem !important;
+}
+
+
 .card-title a:hover {
   color: #00aeef !important;
 }

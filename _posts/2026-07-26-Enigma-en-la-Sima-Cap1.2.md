@@ -8,7 +8,7 @@ tags:
   - Saga Génesis
   - Literatura
 image: "/assets/images/posts/Enigma-en-la-Sima.webp"
----
+--- 
  
 La inmensidad del abismo Humboldt era abrumadora; sus visitantes parecían diminutos insectos posados al borde de un pozo interminable. Dos años atrás, el lugar había sido escenario de una trágica expedición: un cuarteto de investigadores entró en su boca, pero jamás salió de vuelta. Ahora era el turno de un nuevo grupo de exploradores que descendía a las profundidades del descomunal hueco en busca de respuestas, esperando esta vez regresar sano y salvo.
 

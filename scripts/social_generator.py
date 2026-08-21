@@ -9,7 +9,9 @@ import requests
 GEMINI_KEY = os.environ.get("GEMINI_API_KEY")
 TELEGRAM_TOKEN = os.environ.get("TELEGRAM_BOT_TOKEN")
 TELEGRAM_CHAT_ID = os.environ.get("TELEGRAM_CHAT_ID")
-SITE_URL = os.environ.get("SITE_URL", "https://rotsenzemog.github.io/panel.html")
+SITE_URL = os.environ.get("SITE_URL", "https://rotsenzemog.github.io/repost.html")
+# Puedes definir un PIN o clave secreta en GitHub Secrets (ej. 1234)
+SECRET_PIN = os.environ.get("PANEL_SECRET_PIN", "admin123")
 
 genai.configure(api_key=GEMINI_KEY)
 
@@ -20,7 +22,6 @@ def get_latest_post_info():
     
     latest_file = max(list_of_files, key=os.path.getctime)
     
-    # Verificamos si el archivo es NUEVO o una EDICIÓN mediante Git
     try:
         res = subprocess.run(['git', 'log', '--oneline', latest_file], capture_output=True, text=True)
         commits_count = len(res.stdout.strip().split('\n'))
@@ -38,7 +39,7 @@ def generate_social_copys(post_content, post_title):
     2. Post para Facebook/LinkedIn.
     3. Breve boletín para Substack.
 
-    Responde ESTRICTAMENTE en formato JSON válido con la siguiente estructura (sin Markdown alrededor del JSON):
+    Responde ESTRICTAMENTE en formato JSON válido con la siguiente estructura (sin Markdown):
     {{
       "twitter": "Texto del hilo para X aquí",
       "facebook": "Texto para Facebook aquí",
@@ -49,19 +50,17 @@ def generate_social_copys(post_content, post_title):
     {post_content[:3500]}
     """
     response = model.generate_content(prompt)
-    
-    # Limpiar formato por si Gemini incluye bloques de código
     clean_text = response.text.strip().replace('```json', '').replace('```', '')
     return json.loads(clean_text)
 
 def update_web_panel(title, copys_json):
-    # Genera/actualiza un archivo HTML interactivo
+    # Genera/Sobrescribe el archivo repost.html con bloqueo de acceso
     html_content = f"""<!DOCTYPE html>
 <html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Panel de Publicación Social</title>
+    <title>Panel Social - Repost</title>
     <style>
         body {{ font-family: system-ui, sans-serif; background: #0f172a; color: #f8fafc; padding: 20px; max-width: 800px; margin: auto; }}
         .card {{ background: #1e293b; padding: 20px; border-radius: 12px; margin-bottom: 20px; border: 1px solid #334155; }}
@@ -70,44 +69,79 @@ def update_web_panel(title, copys_json):
         textarea {{ width: 100%; height: 120px; background: #0f172a; color: #f8fafc; border: 1px solid #475569; border-radius: 6px; padding: 10px; box-sizing: border-box; font-family: monospace; }}
         .btn {{ background: #3b82f6; color: white; border: none; padding: 10px 16px; border-radius: 6px; cursor: pointer; font-weight: bold; margin-right: 8px; margin-top: 8px; text-decoration: none; display: inline-block; }}
         .btn-green {{ background: #22c55e; }}
-        .btn-gray {{ background: #64748b; }}
+        #protected-content {{ display: none; }}
+        #login-box {{ background: #1e293b; padding: 30px; border-radius: 12px; text-align: center; margin-top: 50px; border: 1px solid #334155; }}
+        input[type="password"] {{ padding: 10px; border-radius: 6px; border: 1px solid #475569; background: #0f172a; color: white; font-size: 1rem; width: 200px; text-align: center; }}
     </style>
 </head>
 <body>
-    <h1>🚀 Panel Social: {title}</h1>
-    
-    <div class="card">
-        <h2>🧵 Hilo para X (Twitter)</h2>
-        <textarea id="tw">{copys_json.get('twitter', '')}</textarea>
-        <button class="btn" onclick="copyToClipboard('tw')">📋 Copiar Texto</button>
-        <a class="btn btn-green" href="https://twitter.com/intent/tweet" target="_blank">🐤 Abrir X</a>
+
+    <div id="login-box">
+        🔒 <h2>Acceso Restringido</h2>
+        <p>Introduce tu PIN para acceder al panel:</p>
+        <input type="password" id="pinInput" placeholder="PIN Secreto">
+        <br><br>
+        <button class="btn" onclick="verifyPin()">Entrar</button>
     </div>
 
-    <div class="card">
-        <h2>📘 Post para Facebook / LinkedIn</h2>
-        <textarea id="fb">{copys_json.get('facebook', '')}</textarea>
-        <button class="btn" onclick="copyToClipboard('fb')">📋 Copiar Texto</button>
-        <a class="btn btn-green" href="https://www.facebook.com" target="_blank">📘 Abrir Facebook</a>
-    </div>
+    <div id="protected-content">
+        <h1>🚀 Panel Social: {title}</h1>
+        
+        <div class="card">
+            <h2>🧵 Hilo para X (Twitter)</h2>
+            <textarea id="tw">{copys_json.get('twitter', '')}</textarea>
+            <button class="btn" onclick="copyToClipboard('tw')">📋 Copiar Texto</button>
+            <a class="btn btn-green" href="https://twitter.com/intent/tweet" target="_blank">🐤 Abrir X</a>
+        </div>
 
-    <div class="card">
-        <h2>✉️ Boletín para Substack</h2>
-        <textarea id="sub">{copys_json.get('substack', '')}</textarea>
-        <button class="btn" onclick="copyToClipboard('sub')">📋 Copiar Texto</button>
+        <div class="card">
+            <h2>📘 Post para Facebook / LinkedIn</h2>
+            <textarea id="fb">{copys_json.get('facebook', '')}</textarea>
+            <button class="btn" onclick="copyToClipboard('fb')">📋 Copiar Texto</button>
+            <a class="btn btn-green" href="https://www.facebook.com" target="_blank">📘 Abrir Facebook</a>
+        </div>
+
+        <div class="card">
+            <h2>✉️ Boletín para Substack</h2>
+            <textarea id="sub">{copys_json.get('substack', '')}</textarea>
+            <button class="btn" onclick="copyToClipboard('sub')">📋 Copiar Texto</button>
+        </div>
     </div>
 
     <script>
+        const AUTH_PIN = "{SECRET_PIN}";
+
+        function verifyPin() {{
+            const input = document.getElementById('pinInput').value;
+            if (input === AUTH_PIN) {{
+                localStorage.setItem('repost_auth', AUTH_PIN);
+                showContent();
+            }} else {{
+                alert("PIN incorrecto");
+            }}
+        }}
+
+        function showContent() {{
+            document.getElementById('login-box').style.display = 'none';
+            document.getElementById('protected-content').style.display = 'block';
+        }}
+
         function copyToClipboard(id) {{
             const copyText = document.getElementById(id);
             copyText.select();
             navigator.clipboard.writeText(copyText.value);
             alert("¡Copiado al portapapeles!");
         }}
+
+        // Comprobar autenticación guardada al cargar
+        if (localStorage.getItem('repost_auth') === AUTH_PIN) {{
+            showContent();
+        }}
     </script>
 </body>
 </html>
 """
-    with open("panel.html", "w", encoding="utf-8") as f:
+    with open("repost.html", "w", encoding="utf-8") as f:
         f.write(html_content)
 
 def send_telegram_notice(message):
@@ -122,8 +156,6 @@ def send_telegram_notice(message):
 
 if __name__ == "__main__":
     latest_post_path, is_new = get_latest_post_info()
-    
-    # Permitir forzar ejecución si se pasa un parámetro manual
     force_run = os.environ.get("FORCE_RUN", "false").lower() == "true"
     
     if latest_post_path:
@@ -139,8 +171,8 @@ if __name__ == "__main__":
             msg = (
                 f"🚀 **NUEVA PUBLICACIÓN DETECTADA**\n\n"
                 f"📌 **Título:** {title}\n\n"
-                f"Se han generado los borradores para tus redes sociales.\n"
-                f"🔗 **Accede al panel para revisar y publicar:**\n{SITE_URL}"
+                f"Se han generado los borradores.\n"
+                f"🔗 **Accede al panel repost:**\n{SITE_URL}"
             )
             send_telegram_notice(msg)
         else:
@@ -148,7 +180,6 @@ if __name__ == "__main__":
             msg = (
                 f"📝 **POST ACTUALIZADO**\n\n"
                 f"📌 **Título:** {title}\n\n"
-                f"El artículo se ha modificado. No se ejecutó Gemini automáticamente para no consumir API.\n"
-                f"Si deseas regenerar borradores, entra al panel web:\n{SITE_URL}"
+                f"El artículo se ha modificado. Si deseas regenerar borradores, ejecuta la acción manual en GitHub Actions."
             )
             send_telegram_notice(msg)

@@ -1,4 +1,4 @@
----
+--- 
 layout: post
 title: "Reseña de Dune: Prophecy - Primera Temporada"
 category: "Reseña"

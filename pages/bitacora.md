@@ -8,7 +8,7 @@ permalink: /bitacora/
   
   <div class="section-header" style="text-align: center; margin-bottom: 30px;">
     <h1 class="section-title">Bitácora</h1>
-    <p style="color: var(--muted-text); margin-top: 8px;">Explora el catálogo completo de obras, reseñas y artículos.</p>
+    <p style="color: var(--muted-text); margin-top: 8px;">Explora el catálogo completo de reseñas y artículos.</p>
   </div>
 
   <!-- BARRA DE HERRAMIENTAS: BÚSQUEDA Y ORDEN -->
@@ -28,31 +28,16 @@ permalink: /bitacora/
   <!-- GRID DE 4 COLUMNAS (Inicialmente vacío, cargado vía JS) -->
   <div id="postsGrid" class="grid-4">
     {% for post in site.posts %}
-    <article class="card post-item" 
-             data-title="{{ post.title | downcase }}" 
-             data-excerpt="{{ post.excerpt | strip_html | downcase }}"
-             data-date="{{ post.date | date: '%Y%m%d%H%M%S' }}">
-      <a href="{{ post.url | relative_url }}">
-        <img src="{{ post.image | relative_url }}" class="card-img" alt="{{ post.title }}">
-      </a>
-      
-      <!-- CONTENEDOR DE CATEGORÍA Y ETIQUETAS -->
-      <div class="tags-container">
-        {% if post.category %}
-          <span class="category-tag">{{ post.category }}</span>
-        {% endif %}
-        
-        {% for tag in post.tags %}
-          <span class="post-tag">{{ tag }}</span>
-        {% endfor %}
-      </div>
-
-      <h2 class="card-title">
-        <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
-      </h2>
-      <p class="card-excerpt">{{ post.excerpt | strip_html | truncatewords: 12 }}</p>
-      <small style="color: var(--muted-text); display: block; margin-top: auto;">{{ post.date | date: "%d %b %Y" }}</small>
-    </article>
+      {% unless post.categories contains "Obra propia" %}
+      <article class="card post-item" 
+               data-title="{{ post.title | downcase }}" 
+               data-excerpt="{{ post.excerpt | strip_html | downcase }}"
+               data-date="{{ post.date | date: '%Y%m%d%H%M%S' }}">
+        <a href="{{ post.url | relative_url }}">
+          <img src="{{ post.image | relative_url }}" class="card-img" alt="{{ post.title }}">
+        </a>
+      </article>
+      {% endunless %}
     {% endfor %}
   </div>
 

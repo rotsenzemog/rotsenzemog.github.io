@@ -36,6 +36,7 @@
   width: auto;
   object-fit: contain;
   transition: transform 0.2s ease;
+  filter: brightness(0%) invert(10%);
 }
 
 .site-branding:hover .header-logo-top {

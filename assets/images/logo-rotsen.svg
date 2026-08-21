@@ -13,7 +13,18 @@
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns="http://www.w3.org/2000/svg"
-   xmlns:svg="http://www.w3.org/2000/svg"><sodipodi:namedview
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <style>
+    /* Estilo para Tema Oscuro */
+    @media (prefers-color-scheme: dark) {
+      #path115316-7,
+      #path115318-5,
+      #path115320-3 {
+        fill: #ffffff !important;
+      }
+    }
+  </style>
+  <sodipodi:namedview
      id="namedview7"
      pagecolor="#505050"
      bordercolor="#ffffff"
@@ -33,25 +44,34 @@
      inkscape:window-maximized="1"
      inkscape:current-layer="g1796"
      inkscape:showpageshadow="0"
-     inkscape:deskcolor="#505050" /><defs
-     id="defs2" /><g
+     inkscape:deskcolor="#505050" />
+  <defs
+     id="defs2" />
+  <g
      inkscape:label="Capa 1"
      inkscape:groupmode="layer"
      id="layer1"
-     transform="translate(-225.94624,-689.74924)"><g
+     transform="translate(-225.94624,-689.74924)">
+    <g
        id="g1796"
-       transform="translate(-10.442203,97.837742)"><path
+       transform="translate(-10.442203,97.837742)">
+      <path
          id="path115316-7"
          style="fill:#000000;stroke-width:4.17199"
          d="m 240.90083,602.49899 5.0064,5.60694 41.05668,-0.0211 -13.43594,21.92662 c 3.41272,5.4394 7.046,11.36978 10.08672,16.3347 l 6.52608,-0.0801 -9.99833,-16.31891 c 5.59857,-9.14391 11.24886,-18.25571 16.73362,-27.46838 -8.5585,-0.008 -38.41254,0.011 -55.97523,0.0202 z"
-         sodipodi:nodetypes="cccccccccc" /><path
+         sodipodi:nodetypes="cccccccccc" />
+      <path
          id="path115318-5"
          style="fill:#000000;stroke-width:4.17199"
          d="m 248.90657,611.55328 5.0064,5.60694 h 17.38469 l -17.82552,29.09234 c 8.61598,0.0913 17.20619,0 25.87298,0 l -3.33759,-5.60692 h -12.52496 l 14.39095,-23.48542 3.33759,-5.60694 z"
-         sodipodi:nodetypes="cccccccccc" /><path
+         sodipodi:nodetypes="cccccccccc" />
+      <path
          id="path115320-3"
          style="fill:#000000;fill-opacity:1;stroke-width:4.17199"
          d="m 255.7526,620.64168 0.38936,16.39594 5.50458,-8.88196 -0.28815,-7.5783 z"
          sodipodi:nodetypes="ccccc"
          inkscape:transform-center-x="-0.22496129"
-         inkscape:transform-center-y="1.0650953" /></g></g></svg>
+         inkscape:transform-center-y="1.0650953" />
+    </g>
+  </g>
+</svg>

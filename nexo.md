@@ -12,7 +12,7 @@ permalink: /nexo/
   </div>
 
   <!-- CONTENEDOR PRINCIPAL DE NEXOS -->
-  <div class="nexo-feed" style="max-width: 850px; margin: 0 auto;">
+  <div class="nexo-feed" style="margin: 0 auto;">
     {% assign nexos_ordenados = site.nexos | sort: 'date' | reverse %}
     {% for item in nexos_ordenados %}
       <article class="nexo-card">

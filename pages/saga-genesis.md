@@ -43,7 +43,7 @@ Previo al argumento de la trilogía principal, existe una serie de obras preludi
 
 Un grupo de exploradores se adentra en la enigmática Sima Humboldt, en el corazón del tepuy Sarisariñama, para investigar la desaparición de una expedición anterior. Lo que descubren en su interior podría acelerar el avance de la ciencia y la tecnología durante los años venideros.
 
-### Génesis: La era de Némesis
+### Génesis: Brote Némesis
 
 En un mundo colapsado por una pandemia devastadora, dos jóvenes desconocidos deben colaborar mutuamente para sobrevivir. Los infectados no solo mueren: se transforman en psicópatas violentos y necrófilos. Entre la locura y la desolación, nace un vinculo irrompible entre ellos.
 

@@ -3,7 +3,7 @@ layout: post
 title: "Saga Génesis: El nacimiento de un universo literario"
 permalink: /saga-genesis/
 image: https://storage.ko-fi.com/cdn/useruploads/display/84054556-5b1a-43d1-9ee5-a27373144159_saga-genesis.png
-category: ""
+category: "Universo compartido"
 excerpt: "Mi proyecto literario más ambicioso es: La Saga Génesis. Se trata de un universo de ciencia ficción en construcción y expansión, diseñado para conectar múltiples historias en torno a una misma línea argumental."
 ---
 

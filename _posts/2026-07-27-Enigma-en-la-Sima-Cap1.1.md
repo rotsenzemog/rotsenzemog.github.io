@@ -26,7 +26,7 @@ Aunque su conducta proyectaba entusiasmo y determinación hacia el exterior, la 
 
 Su sonrisa transmitía seguridad y entusiasmo, pese a que internamente albergaba ansiedad e incertidumbre.
 
-—¡Listísimo! —afirmó Edgar con una sonrisa que le iluminaba el rostro—. Ya estoy impaciente por empezar. Vámonos ya, que se hace tarde. —Ajustó su arnés por tercera vez, asegurándose de que cada hebilla estuviera perfectamente cerrada.
+—¡Listísimo! —afirmó Elián con una sonrisa que le iluminaba el rostro—. Ya estoy impaciente por empezar. Vámonos ya, que se hace tarde. —Ajustó su arnés por tercera vez, asegurándose de que cada hebilla estuviera perfectamente cerrada.
 
 —Afirmativo —replicó Leonel tajante, asintiendo con un movimiento breve y preciso de cabeza. Su voz era grave y su rostro lucía inexpresivo, como un soldado en formación, mientras sus ojos escrutaban el entorno con discreta intensidad.
 

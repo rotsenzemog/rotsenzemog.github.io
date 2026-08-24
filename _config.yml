@@ -35,3 +35,7 @@ paginate_path: "/blog/page:num/"
 collections:
   nexos:
     output: false
+
+  lore:
+    output: true
+    permalink: /lore/:path/

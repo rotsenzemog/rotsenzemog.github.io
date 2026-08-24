@@ -167,6 +167,11 @@
   margin: 0 100px 0;
 }
 
+.dark-section .quote-author{
+    margin: 0 100px 0;
+   color: #38bdf875;
+  }
+
 /* Columna Derecha: Imagen */
 .quote-image-container {
   flex: 0 0 45%;
@@ -313,6 +318,12 @@
 
   .hero-banner p {
     font-size: 1rem;
+  }
+  .quote-dark-text {
+    margin: 40px;
+  }
+   .dark-section .quote-author{
+    margin: 0 10px 0;
   }
 }
 

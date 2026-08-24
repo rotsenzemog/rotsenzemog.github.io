@@ -127,7 +127,7 @@
   position: absolute;
   top: -30px;
   left: -20px;
-  font-size: 8rem;
+  font-size: 12rem;
   line-height: 1;
   font-family: Georgia, serif;
   color: rgba(255, 255, 255, 0.08);
@@ -147,6 +147,16 @@
   z-index: 1;
 }
 
+.quote-dark-text {
+  font-family: var(--font-serif);
+  font-size: 1.35rem;
+  font-style: italic;
+  color: #556486;
+  line-height: 1.6;
+  max-width: 700px;
+  margin: 10px 1px 40px 100px;
+}
+
 /* Firma del Autor */
 .quote-author {
   font-size: 1.05rem;
@@ -154,7 +164,7 @@
   letter-spacing: 2px;
   text-transform: uppercase;
   color: #38bdf8; /* Tono de acento sobrio */
-  margin: 0;
+  margin: 0 100px 0;
 }
 
 /* Columna Derecha: Imagen */

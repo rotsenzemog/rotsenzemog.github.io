@@ -4,12 +4,12 @@ title: "Saga Génesis: El nacimiento de un universo literario"
 permalink: /saga-genesis/
 image: https://storage.ko-fi.com/cdn/useruploads/display/84054556-5b1a-43d1-9ee5-a27373144159_saga-genesis.png
 category: "Universo compartido"
-excerpt: "Mi proyecto literario más ambicioso es: La Saga Génesis. Se trata de un universo de ciencia ficción en construcción y expansión, diseñado para conectar múltiples historias en torno a una misma línea argumental."
+excerpt: "Mis proyectos literarios se fusionan para dar paso a algo mucho más ambicioso, la Saga Génesis. Se trata de un universo de ciencia ficción que conecta múltiples historias"
 ---
 
-Mis proyectos literarios se fusionan para dar paso a algo más ambicioso, la Saga Génesis. Se trata de un universo de ciencia ficción en construcción y expansión, diseñado para conectar múltiples historias en torno a una misma línea argumental. No es solo una trilogía, sino un marco narrativo, en el que cada historia, desde relatos breves hasta novelas completas, forma parte de una visión mayor. Con esta saga, pretendo dar inicio formal a una nueva etapa en mi desarrollo como autor, con una perspectiva más enfocada, constante y profesional.
+Mis proyectos literarios se fusionan para dar paso a algo mucho más ambicioso, la Saga Génesis. Se trata de un universo de ciencia ficción en construcción y expansión, diseñado para conectar múltiples historias en torno a una línea temporal y argumental. No es solo una trilogía, sino un marco narrativo, en el que cada obra, desde relatos breves hasta novelas completas, forma parte de una misma historia de dimensión aún mayor. Con esta saga, pretendo dar inicio formal a una nueva etapa en mi desarrollo como autor, con una perspectiva más enfocada, constante y profesional.
 
-Antes tenía varias ideas para historias individuales, que pretendía convertir en sagas independientes, pero ahora he conseguido adecuarlas todas a un universo cohesionado y creo que es la forma más eficiente y elegante. Aunque no me opongo a la posibilidad de escribir luego algunas historias fuera de esta línea narrativa, hasta el momento, Génesis es mi única y gran apuesta.
+Antes tenía varias ideas para historias individuales, que pretendía desarrollar como sagas independientes, pero ahora he conseguido conectarlas a un universo cohesionado y creo que es la forma más eficiente y elegante de presentarlas. Aunque no me opongo a la posibilidad de escribir luego algunas historias fuera de este canon narrativo, por el momento, Génesis es mi única y gran apuesta como escritor.
 
  
 ### ¿Por qué “Génesis”?
@@ -18,10 +18,11 @@ El nombre Génesis representa tanto el inicio de esta aventura literaria como el
 
 ###  Estructura de la Saga
 
-La Saga Génesis se organiza en tres bloques principales:
- 1. La Trilogía Principal (ambientada a partir del año 2100)
- 2. La Sub-saga Cyberocracy (ambientada a mediados del siglo XXI)
- 3. Las Obras Preludio (relatos y novelas cortas que exploran eventos específicos)
+La Saga Génesis se organiza en tres bloques principales: 
+
+** La Trilogía Principal (ambientada a partir del año 2100)
+** La Sub-saga Cyberocracy (ambientada a mediados del siglo XXI)
+** Las Obras Preludio (relatos y novelas cortas que exploran eventos específicos)
 
 ### La Trilogía Principal
 

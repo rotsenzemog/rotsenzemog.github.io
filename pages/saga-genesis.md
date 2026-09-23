@@ -20,9 +20,9 @@ El nombre Génesis representa tanto el inicio de esta aventura literaria como el
 
 La Saga Génesis se organiza en tres bloques principales: 
 
-** - La Trilogía Principal (ambientada a partir del año 2100)
-** - La Sub-saga Cyberocracy (ambientada a mediados del siglo XXI)
-** - Las Obras Preludio (relatos y novelas cortas que exploran eventos específicos)
+   - La Trilogía Principal (ambientada a partir del año 2100)
+   - La Sub-saga Cyberocracy (ambientada a mediados del siglo XXI)
+   - Las Obras Preludio (relatos y novelas cortas que exploran eventos específicos)
 
 ### La Trilogía Principal
 

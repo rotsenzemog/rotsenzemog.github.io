@@ -40,6 +40,14 @@ permalink: /identidad/
     <p>Lejos de esto ser una excusa, mi posible condición de dislexia es un estímulo que me exige revisar cada palabra con lupa antes de compartirla al mundo.</p>
   </div>
 
+    <!-- 2. SILUETA ENIGMÁTICA -->
+  <div class="yo-card photo-card">
+    <div class="photo-wrapper">
+      <img src="/assets/images/escritor.webp" alt="Rotsen Zemog" onerror="this.src='https://picsum.photos/400/500?grayscale'">
+    </div>
+    <span class="photo-caption">No cuento anécdotas, narro acontecimientos que aún no han sido presenciados.</span>
+  </div>
+
   <!-- 5. CITA EN CABECERA -->
   <div class="yo-card quote-card">
     <blockquote>"Tengo un cerebro caprichoso. Mi memoria olvida reglas simples de ortografía y eventos cotidianos del día a día, pero mi imaginación construye algoritmos complejos, mundos distópicos y personajes profundos."</blockquote>

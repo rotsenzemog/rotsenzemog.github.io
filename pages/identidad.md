@@ -23,7 +23,7 @@ permalink: /identidad/
     <div class="photo-wrapper">
       <img src="/assets/images/escritor.webp" alt="Rotsen Zemog" onerror="this.src='https://picsum.photos/400/500?grayscale'">
     </div>
-    <span class="photo-caption">No cuento anécdotas, narro acontecimientos que aún no han sido presenciados.</span>
+    <span class="photo-caption">Toda máquina esconde una virtud; la mía escribe.</span>
   </div>
 
   <!-- 3. INGENIERÍA Y LETRAS -->
@@ -53,7 +53,7 @@ permalink: /identidad/
     <div class="photo-wrapper">
       <img src="/assets/images/escritor1.webp" alt="Rotsen Zemog" onerror="this.src='https://picsum.photos/400/500?grayscale'">
     </div>
-    <span class="photo-caption">No cuento anécdotas, narro acontecimientos que aún no han sido presenciados.</span>
+    <span class="photo-caption">Cada página es un planeta: algunos habitables, otros solo explorables.</span>
   </div>
 
   <!-- 5. CITA EN CABECERA -->
@@ -72,7 +72,7 @@ permalink: /identidad/
     <div class="photo-wrapper">
       <img src="/assets/images/escritor2.webp" alt="Rotsen Zemog" onerror="this.src='https://picsum.photos/400/500?grayscale'">
     </div>
-    <span class="photo-caption">No cuento anécdotas, narro acontecimientos que aún no han sido presenciados.</span>
+    <span class="photo-caption">No busco la verdad, persigo las sombras que deja tras de sí.</span>
   </div>
 
   <!-- 7. EL PENSAMIENTO DISRUPTIVO -->
@@ -86,7 +86,7 @@ permalink: /identidad/
     <div class="photo-wrapper">
       <img src="/assets/images/escritor3.webp" alt="Rotsen Zemog" onerror="this.src='https://picsum.photos/400/500?grayscale'">
     </div>
-    <span class="photo-caption">No cuento anécdotas, narro acontecimientos que aún no han sido presenciados.</span>
+    <span class="photo-caption">Cada relato es una carta lanzada al vacío, esperando que alguien la descubra.</span>
   </div>
 
   <!-- 8. EL PROCESO DE EDICIÓN -->
@@ -98,9 +98,9 @@ permalink: /identidad/
   <!-- 2. SILUETA ENIGMÁTICA -->
   <div class="yo-card photo-card">
     <div class="photo-wrapper">
-      <img src="/assets/images/escritor5.webp" alt="Rotsen Zemog" onerror="this.src='https://picsum.photos/400/500?grayscale'">
+      <img src="/assets/images/escritor4.webp" alt="Rotsen Zemog" onerror="this.src='https://picsum.photos/400/500?grayscale'">
     </div>
-    <span class="photo-caption">No cuento anécdotas, narro acontecimientos que aún no han sido presenciados.</span>
+    <span class="photo-caption">Cuento lo que vendrá porque pocos se atreven a mirar hacia adelante.</span>
   </div>
 
   <!-- 9. REALIDAD Y RESISTENCIA -->
@@ -114,7 +114,7 @@ permalink: /identidad/
     <div class="photo-wrapper">
       <img src="/assets/images/escritor5.webp" alt="Rotsen Zemog" onerror="this.src='https://picsum.photos/400/500?grayscale'">
     </div>
-    <span class="photo-caption">No cuento anécdotas, narro acontecimientos que aún no han sido presenciados.</span>
+    <span class="photo-caption">Quizá el porvenir ya está escrito y yo solo lo transcribo.</span>
   </div>
 
   <!-- 10. EL CAMINO DE SALIDA -->
@@ -128,7 +128,7 @@ permalink: /identidad/
     <div class="photo-wrapper">
       <img src="/assets/images/escritor6.webp" alt="Rotsen Zemog" onerror="this.src='https://picsum.photos/400/500?grayscale'">
     </div>
-    <span class="photo-caption">No cuento anécdotas, narro acontecimientos que aún no han sido presenciados.</span>
+    <span class="photo-caption">No todos los viajes necesitan un destino. Algunos solo necesitan una página.</span>
   </div>
 
 </div>

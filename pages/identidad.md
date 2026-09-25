@@ -57,6 +57,14 @@ permalink: /identidad/
     <p>Es grato pensar que mentes brillantes como Einstein, Jobs o Spielberg compartieron este mismo rasgo neurológico que creo tener y, aunque en ningún modo pretendo posicionarme a la altura intelectual de estos gigantes, resulta útil saber que esto a ellos no les impidió el desarrollo de sus capacidades. La dislexia dificulta la norma lineal en que se percibe el contexto, pero impulsa un pensamiento holístico y favorece la creatividad de forma sistémica: un superpoder para concebir universos ficticios e imaginar tecnologías futuras.</p>
   </div>
 
+    <!-- 2. SILUETA ENIGMÁTICA -->
+  <div class="yo-card photo-card">
+    <div class="photo-wrapper">
+      <img src="/assets/images/escritor.webp" alt="Rotsen Zemog" onerror="this.src='https://picsum.photos/400/500?grayscale'">
+    </div>
+    <span class="photo-caption">No cuento anécdotas, narro acontecimientos que aún no han sido presenciados.</span>
+  </div>
+
   <!-- 8. EL PROCESO DE EDICIÓN -->
   <div class="yo-card">
     <h3>La tecnología como aliada</h3>
@@ -73,6 +81,14 @@ permalink: /identidad/
   <div class="yo-card">
     <h3>Soy venezolano</h3>
     <p>Uno de los principales sellos que intento imprimirles a mis escritos es un enfoque venezolano y latinoamericanista de la ciencia ficción; el mundo está ya cansado de ver a las naves de las invasiones extraterrestres aterrizar en Nueva York, las cepas de los virus zombis infectar a la población de Londres, las hordas de robots rebeldes tomar Washington y los asteroides supermasivos impactar en Tokio. Mis historias, en su mayoría, se ubican en nuestra parte del planeta y con personajes como nosotros.</p>
+  </div>
+
+    <!-- 2. SILUETA ENIGMÁTICA -->
+  <div class="yo-card photo-card">
+    <div class="photo-wrapper">
+      <img src="/assets/images/escritor.webp" alt="Rotsen Zemog" onerror="this.src='https://picsum.photos/400/500?grayscale'">
+    </div>
+    <span class="photo-caption">No cuento anécdotas, narro acontecimientos que aún no han sido presenciados.</span>
   </div>
 
 </div>

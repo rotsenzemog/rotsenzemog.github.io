@@ -95,14 +95,6 @@ permalink: /identidad/
     <p>Escribir para mí implica revisar exhaustivamente cada palabra para minimizar la presencia de errores. Desde que comencé años atrás a redactar contenido para sitios web, los correctores ortográficos automatizados han sido mis grandes aliados y facilitadores de esta labor. Anteriormente, el proceso de pulir un texto tomaba el doble de tiempo, pero con la aparición de la inteligencia artificial todo se ha vuelto más sencillo.</p>
   </div>
 
-  <!-- 2. SILUETA ENIGMÁTICA -->
-  <div class="yo-card photo-card">
-    <div class="photo-wrapper">
-      <img src="/assets/images/escritor4.webp" alt="Rotsen Zemog" onerror="this.src='https://picsum.photos/400/500?grayscale'">
-    </div>
-    <span class="photo-caption">Cuento lo que vendrá porque pocos se atreven a mirar hacia adelante.</span>
-  </div>
-
   <!-- 9. REALIDAD Y RESISTENCIA -->
   <div class="yo-card tall">
     <h3>Los 40 son los nuevos 30</h3>

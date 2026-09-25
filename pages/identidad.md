@@ -32,6 +32,14 @@ permalink: /identidad/
     <p>Siempre la ciencia ficción ha sido mi género favorito; las películas de las sagas Volver al futuro, Terminator y Matrix fueron mis principales focos de interés en el aspecto narrativo durante mi juventud. Luego, aunque nunca he sido un muy asiduo lector, descubrí las obras de Isaac Asimov, principalmente la saga Fundación, y mi gusto por la literatura comenzó a prosperar. </p>
   </div>
 
+  <!-- 2. SILUETA ENIGMÁTICA -->
+  <div class="yo-card photo-card">
+    <div class="photo-wrapper">
+      <img src="/assets/images/escritor0.webp" alt="Rotsen Zemog" onerror="this.src='https://picsum.photos/400/500?grayscale'">
+    </div>
+    <span class="photo-caption">No cuento anécdotas, narro acontecimientos que aún no han sido presenciados.</span>
+  </div>
+
   <!-- 4. LA DISLEXIA Y EL ORIGEN -->
   <div class="yo-card tall">
     <h3>Una innata acompañante</h3>
@@ -43,7 +51,7 @@ permalink: /identidad/
     <!-- 2. SILUETA ENIGMÁTICA -->
   <div class="yo-card photo-card">
     <div class="photo-wrapper">
-      <img src="/assets/images/escritor.webp" alt="Rotsen Zemog" onerror="this.src='https://picsum.photos/400/500?grayscale'">
+      <img src="/assets/images/escritor1.webp" alt="Rotsen Zemog" onerror="this.src='https://picsum.photos/400/500?grayscale'">
     </div>
     <span class="photo-caption">No cuento anécdotas, narro acontecimientos que aún no han sido presenciados.</span>
   </div>
@@ -58,6 +66,14 @@ permalink: /identidad/
     <h3>Antecedente autoral</h3>
     <p>De joven escribí a lápiz una historia sobre héroes adolescentes; recuerdo que la llamé Fuerza 5. La vergüenza por mis errores ortográficos me hizo esconderla y abandonar la literatura durante años;  por lo que solo leía esporádicamente y en privado historias breves..</p>
   </div>
+  
+  <!-- 2. SILUETA ENIGMÁTICA -->
+  <div class="yo-card photo-card">
+    <div class="photo-wrapper">
+      <img src="/assets/images/escritor2.webp" alt="Rotsen Zemog" onerror="this.src='https://picsum.photos/400/500?grayscale'">
+    </div>
+    <span class="photo-caption">No cuento anécdotas, narro acontecimientos que aún no han sido presenciados.</span>
+  </div>
 
   <!-- 7. EL PENSAMIENTO DISRUPTIVO -->
   <div class="yo-card highlight">
@@ -68,7 +84,7 @@ permalink: /identidad/
     <!-- 2. SILUETA ENIGMÁTICA -->
   <div class="yo-card photo-card">
     <div class="photo-wrapper">
-      <img src="/assets/images/escritor.webp" alt="Rotsen Zemog" onerror="this.src='https://picsum.photos/400/500?grayscale'">
+      <img src="/assets/images/escritor3.webp" alt="Rotsen Zemog" onerror="this.src='https://picsum.photos/400/500?grayscale'">
     </div>
     <span class="photo-caption">No cuento anécdotas, narro acontecimientos que aún no han sido presenciados.</span>
   </div>
@@ -79,10 +95,26 @@ permalink: /identidad/
     <p>Escribir para mí implica revisar exhaustivamente cada palabra para minimizar la presencia de errores. Desde que comencé años atrás a redactar contenido para sitios web, los correctores ortográficos automatizados han sido mis grandes aliados y facilitadores de esta labor. Anteriormente, el proceso de pulir un texto tomaba el doble de tiempo, pero con la aparición de la inteligencia artificial todo se ha vuelto más sencillo.</p>
   </div>
 
+  <!-- 2. SILUETA ENIGMÁTICA -->
+  <div class="yo-card photo-card">
+    <div class="photo-wrapper">
+      <img src="/assets/images/escritor5.webp" alt="Rotsen Zemog" onerror="this.src='https://picsum.photos/400/500?grayscale'">
+    </div>
+    <span class="photo-caption">No cuento anécdotas, narro acontecimientos que aún no han sido presenciados.</span>
+  </div>
+
   <!-- 9. REALIDAD Y RESISTENCIA -->
   <div class="yo-card tall">
     <h3>Los 40 son los nuevos 30</h3>
     <p>Tengo una edad que quizá no sea la mejor para iniciarse en una actividad como la litera, aunque hoy en día la madurez sí se consigue combinar correctamente con la motivación y la pasión; puede ser un gran momento para explorar nuevos horizontes y eso es precisamente lo que pretendo, descubrir mi lado artístico.</p>
+  </div>
+
+  <!-- 2. SILUETA ENIGMÁTICA -->
+  <div class="yo-card photo-card">
+    <div class="photo-wrapper">
+      <img src="/assets/images/escritor5.webp" alt="Rotsen Zemog" onerror="this.src='https://picsum.photos/400/500?grayscale'">
+    </div>
+    <span class="photo-caption">No cuento anécdotas, narro acontecimientos que aún no han sido presenciados.</span>
   </div>
 
   <!-- 10. EL CAMINO DE SALIDA -->
@@ -94,7 +126,7 @@ permalink: /identidad/
     <!-- 2. SILUETA ENIGMÁTICA -->
   <div class="yo-card photo-card">
     <div class="photo-wrapper">
-      <img src="/assets/images/escritor.webp" alt="Rotsen Zemog" onerror="this.src='https://picsum.photos/400/500?grayscale'">
+      <img src="/assets/images/escritor6.webp" alt="Rotsen Zemog" onerror="this.src='https://picsum.photos/400/500?grayscale'">
     </div>
     <span class="photo-caption">No cuento anécdotas, narro acontecimientos que aún no han sido presenciados.</span>
   </div>

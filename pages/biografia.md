@@ -1,7 +1,7 @@
 ---
 layout: default
-title: "Identidad"
-permalink: /identidad/
+title: "Biografia"
+permalink: /biografia/
 ---
 
 <div class="yo-hero">
